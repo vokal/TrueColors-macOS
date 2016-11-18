@@ -1,0 +1,996 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		2737D9BCC16CF6DCD22F3352CB084BA2 /* Mogenerator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 45FECA75AFF514E67C5A80FBCEC55990 /* Build configuration list for PBXAggregateTarget "Mogenerator" */;
+			buildPhases = (
+				5EC70E672E81909E7FF1A4C61274ECF1 /* Generate Models */,
+			);
+			dependencies = (
+			);
+			name = Mogenerator;
+			productName = Mogenerator;
+		};
+		CDDA57D38EF2F26D68C769D18E3D180C /* Distribute */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F1B4789A8E1F591217B9F11525AC610E /* Build configuration list for PBXAggregateTarget "Distribute" */;
+			buildPhases = (
+				0C91373D1B3A04B9A7E553C2B3DE3EF7 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Distribute;
+			productName = Distribute;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		03B301458A0C3E26095989715473F26F /* TRUColorSerializationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B29B6208C9CA99570777E8E898C94333 /* TRUColorSerializationTests.m */; };
+		0697F6432D5879A7999CA4F58ED19E1C /* TRURowHoverButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE19F574D38749FC67F716D15CB21C4 /* TRURowHoverButton.m */; };
+		0A699B4BF5DB08AF7FFDD2FACA4E4D26 /* libPods-TrueColorsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E981E50B096153AA6FE69C10A4016C38 /* libPods-TrueColorsTests.a */; };
+		13D919F855223032C62D48769AF409CF /* CASLBaseSpec+TRU.m in Sources */ = {isa = PBXBuildFile; fileRef = 645458DA1EADCCA307E139E8B694072A /* CASLBaseSpec+TRU.m */; };
+		257C9EC9B23CC34C61D6D88579566349 /* Acknowledgements.html in Resources */ = {isa = PBXBuildFile; fileRef = 0486E047C1CF0CDBEF0987D592A17FF6 /* Acknowledgements.html */; };
+		27FB85AEDF72FA09DB0F3E7A815152E3 /* TRUUpdatingPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D205E00A3A5B5350B629CBA7EA0D095 /* TRUUpdatingPreferencesViewController.xib */; };
+		311C48FA1ADFBDB48E12B3F8B3CEFAAE /* NSFont+TRU.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C26BB039E7621216572ED2E7A00609 /* NSFont+TRU.m */; };
+		330007861A53661562E05F3891F2B2F1 /* TRUIncludedFontTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 443F0C430A8AB70B65E36DB8F47BA89D /* TRUIncludedFontTableCellView.m */; };
+		38CB1D969A6FCC3AE949A79B07359979 /* TRULocalizedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 44AC7F6F33DAEEE292FD33285F65CD2D /* TRULocalizedString.m */; };
+		40468C847D3BA3AC344F90EABA8DAA17 /* TRUMetricPopUpButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7F984C553BC4F357EA26054B6282E5 /* TRUMetricPopUpButton.m */; };
+		477F404F5126E8D65C7370F3EF46A721 /* TRUDocumentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D61538C5A14CEBB90FCF67CD8113629 /* TRUDocumentTests.m */; };
+		4C0CF751D87C0150444952632818340F /* TRUIncludedFontsSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA791F63CF4A4BBD1652B7B880EA691 /* TRUIncludedFontsSectionView.m */; };
+		535CDAB3ACA5ADB1CF38297ECB37AADD /* TRUIncludedFontListDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7961AD15CD4957031E7D5D90BE8EB4 /* TRUIncludedFontListDelegate.m */; };
+		63274D5517474AC984A32AD8F1E5DA25 /* TRUFontSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 318D9E97D58E603BF52AD0DEB1BE33FF /* TRUFontSpec.m */; };
+		64040BD5D627747BC210A9A3D9784E33 /* TRUContextMenuOutlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24437210884913405E8DAA418275E29B /* TRUContextMenuOutlineView.m */; };
+		64AD021E8C65AD81DA4AB17DB4381825 /* TRUFontMenuPopUpButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 807CA424D94399C907AFAC5A8CAFC454 /* TRUFontMenuPopUpButton.m */; };
+		669312CF57CF46F9B0E522EFE2DE0A29 /* TRUFontPreviewTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 23157CAA33EA19C86455123EAA60CBED /* TRUFontPreviewTextField.m */; };
+		678E02C3404ADC4BC48A0B3D96B99BE9 /* TRUUpdatingPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6065343451FF15DD7392425D3ED39AF8 /* TRUUpdatingPreferencesViewController.m */; };
+		67F14FFA38ACFCE29198A29C7DD390ED /* TRUColorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 722827E2A6A1C8912D7479DE53916369 /* TRUColorSpec.m */; };
+		73A6A76E4FFC81812F89196DAC03F6AD /* TRUDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 62872D6C7B5ECABA459B12BF0867BA31 /* TRUDocument.m */; };
+		754AD726DBED3389684D1F98576780D2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A819A8F8E64F5804923DB2EE01BD22B5 /* MainMenu.xib */; };
+		7552C2BBA0570E4066D7C1C88B2663D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABCB0FFA2FFCC69F25D15E89BFC83139 /* Images.xcassets */; };
+		763E97FA9DE2F8973961B0642F84D015 /* TRUFontMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8B26C7159AF381A42AF84C125C8BBD /* TRUFontMenuItem.m */; };
+		8243B5C3FB82692E7DDB995DEE203759 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A53ECBEF1B9628F4E012ED4E3BCB17 /* main.m */; };
+		893BABEE2133FD071461ECDCD4547483 /* TRUDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9E7B66D35154B1E371ECA2D4FDA991F /* TRUDocument.xib */; };
+		9650AFC3DC5B55C3A0209506D97698D0 /* TRUIncludedFontTreeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A32AF29638E50AE899446D9CD35D56 /* TRUIncludedFontTreeObject.m */; };
+		968FF35760DD65D5C0C6A8A4FAF0CE3D /* TRUCustomMenuPopUpButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 392EDDF71101495455CA9E21098AC9B6 /* TRUCustomMenuPopUpButton.m */; };
+		99E3E55F74C7CB6F395C28FA99A58D89 /* test documents in Resources */ = {isa = PBXBuildFile; fileRef = 51C26EAF5A071F901A1653FF62B9613E /* test documents */; };
+		A9B1A1CC9A3CE782E652284FA6911C9C /* TRUReplaceFontWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1644F176A709895E67019AF735200C /* TRUReplaceFontWindowController.m */; };
+		AA417FD28088E1FADC155D4DE1B6ECE9 /* TRUTreeBasedPopUpButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8781B9C2A8C0E4EE8C0EA700A7B4932A /* TRUTreeBasedPopUpButton.m */; };
+		AB399A2717B14F025AE44809888F6651 /* TRUColorPopUpButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D87D59D92EEA7232146A692FC7BE5BD5 /* TRUColorPopUpButton.m */; };
+		B32524A1DDAEF870D9A9DD105E710C5C /* TRUVokalTitlebarBrandingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE31F27295691E13DDA4BF63A6436C02 /* TRUVokalTitlebarBrandingViewController.xib */; };
+		BB5725BEE98F9568FC878DD83E2D8CD3 /* libPods-TrueColors.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDA384F205D4BC78DC674FDCC6D9422 /* libPods-TrueColors.a */; };
+		C21CC99C51942D6F97AB90900EEA6FD2 /* TRUOutlineTreeDragController.m in Sources */ = {isa = PBXBuildFile; fileRef = F60160277767895E7F7D8F37DAFCEE0F /* TRUOutlineTreeDragController.m */; };
+		CBA85B6C04D937D9C86F8DEDE060CF42 /* TRUSpecTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D06A0B6AB344CFA5292F8530582B9ADC /* TRUSpecTests.m */; };
+		D1B7EE515449CB37C1A9E7DFB4452AE5 /* TRUPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99DF2C68C246AE5CB607AC1EC9BE28CA /* TRUPreferencesWindowController.m */; };
+		D6E5A8BAD4249C0BD3A214FBD7E7B4C1 /* TRUVokalTitlebarBrandingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB891B72F6736C40850FEF1E30A1AF87 /* TRUVokalTitlebarBrandingViewController.m */; };
+		D74F10B810D0D5C2FDA8BAB8E7543199 /* TRUSpecOutlineViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8995113204FD5B94885FF09FC0B95E86 /* TRUSpecOutlineViewDelegate.m */; };
+		DC048DFC9716D0C7E44BC9E60F9501B4 /* TRUMetricSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 338788E916DF0923111A4EA24CEDBC5C /* TRUMetricSpec.m */; };
+		DD32A09DF780F274C0F07154B6478FA9 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E2C73FF7DEE5ADA02E7C0D58FB2AE664 /* Credits.rtf */; };
+		E89EE83EB5F6D7C73936B56E7B9F5C08 /* TRUReplaceFontWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CD286E18A588905F6C1415351CD8F32 /* TRUReplaceFontWindowController.xib */; };
+		EFEE4FCCA78DE76737B59DF55D42C8A1 /* TRUAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B91F5DFA5F86BCCDE887E6DB7FC5FD /* TRUAppDelegate.m */; };
+		F607FA0EE6B16883B64C5F360C9C78AA /* NSTableRowView+TRU.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF5F52417D469B6C97970876DB5AD91 /* NSTableRowView+TRU.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8CF92593A65B733A54A675FCCE559C92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AD1EDBCF4CC03ED463525A57716C8F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCFD8E8B953601F585A9764261BE74BE;
+			remoteInfo = TrueColors;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0486E047C1CF0CDBEF0987D592A17FF6 /* Acknowledgements.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Acknowledgements.html; sourceTree = "<group>"; };
+		06F0FD8EC84DCA78FA5283C109212B96 /* TRUBaseSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRUBaseSpec.h; sourceTree = "<group>"; };
+		08A388EA20C3347FD72B4FB981F0B013 /* TRUIncludedFontsSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRUIncludedFontsSectionView.h; sourceTree = "<group>"; };
+		09307C255DC93E0C1CD2436B91085A19 /* TRUFontMenuPopUpButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRUFontMenuPopUpButton.h; sourceTree = "<group>"; };
+		0A7F984C553BC4F357EA26054B6282E5 /* TRUMetricPopUpButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRUMetricPopUpButton.m; sourceTree = "<group>"; };
+		0B6AE1A856E64477351FA37321D76878 /* TRURowHoverButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRURowHoverButton.h; sourceTree = "<group>"; };
+		0FB0DC069C5DEB2818A42F519A65D393 /* Pods-TrueColorsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrueColorsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrueColorsTests/Pods-TrueColorsTests.release.xcconfig"; sourceTree = "<group>"; };
+		1276A8E78BCF297B60868409D7A3BC8F /* TRUOutlineTreeDragController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRUOutlineTreeDragController.h; sourceTree = "<group>"; };
+		230BF6B2409AD5A84D93C7251B06152A /* TrueColors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrueColors.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23157CAA33EA19C86455123EAA60CBED /* TRUFontPreviewTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRUFontPreviewTextField.m; sourceTree = "<group>"; };
+		24437210884913405E8DAA418275E29B /* TRUContextMenuOutlineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRUContextMenuOutlineView.m; sourceTree = "<group>"; };
+		2C1644F176A709895E67019AF735200C /* TRUReplaceFontWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRUReplaceFontWindowController.m; sourceTree = "<group>"; };
+		2CF5F52417D469B6C97970876DB5AD91 /* NSTableRowView+TRU.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTableRowView+TRU.m"; sourceTree = "<group>"; };
+		2D205E00A3A5B5350B629CBA7EA0D095 /* TRUUpdatingPreferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRUUpdatingPreferencesViewController.xib; sourceTree = "<group>"; };
+		2E20161C23989AC8FA5AD9D0134D03D9 /* TRUCustomMenuPopUpButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRUCustomMenuPopUpButton.h; sourceTree = "<group>"; };
+		318D9E97D58E603BF52AD0DEB1BE33FF /* TRUFontSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRUFontSpec.m; sourceTree = "<group>"; };
+		321A7A71388CD42B49321695D0912435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TRUDocument.xib; sourceTree = "<group>"; };
+		338788E916DF0923111A4EA24CEDBC5C /* TRUMetricSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRUMetricSpec.m; sourceTree = "<group>"; };
+		35B8A62F05C3E97D93E550585D223299 /* TRUIncludedFontTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRUIncludedFontTableCellView.h; sourceTree = "<group>"; };
+		392EDDF71101495455CA9E21098AC9B6 /* TRUCustomMenuPopUpButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRUCustomMenuPopUpButton.m; sourceTree = "<group>"; };
+		443F0C430A8AB70B65E36DB8F47BA89D /* TRUIncludedFontTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRUIncludedFontTableCellView.m; sourceTree = "<group>"; };
+		44AC7F6F33DAEEE292FD33285F65CD2D /* TRULocalizedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRULocalizedString.m; sourceTree = "<group>"; };
+		481857DA035C853CEDBEB86DB8B98504 /* TRUIncludedFontListDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRUIncludedFontListDelegate.h; sourceTree = "<group>"; };
+		51C26EAF5A071F901A1653FF62B9613E /* test documents */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "test documents"; sourceTree = "<group>"; };
+		5A277490AB5F252884C6F9EDD549AD47 /* TRUPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRUPreferencesWindowController.h; sourceTree = "<group>"; };
+		5CE27BA754C34EAEBB8A5BE50EF70F13 /* TRUDocument_testable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRUDocument_testable.h; sourceTree = "<group>"; };
+		6065343451FF15DD7392425D3ED39AF8 /* TRUUpdatingPreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRUUpdatingPreferencesViewController.m; sourceTree = "<group>"; };
+		60ADA776B35BE97D8AF8567ECC90D7FD /* TRUColorSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRUColorSpec.h; sourceTree = "<group>"; };
+		62872D6C7B5ECABA459B12BF0867BA31 /* TRUDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRUDocument.m; sourceTree = "<group>"; };
+		645458DA1EADCCA307E139E8B694072A /* CASLBaseSpec+TRU.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CASLBaseSpec+TRU.m"; sourceTree = "<group>"; };
+		65098606B2B3CDD9EF32DE89F13CD62D /* CASLBaseSpec+TRU.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CASLBaseSpec+TRU.h"; sourceTree = "<group>"; };
+		6A2E2F5FFB8F42387BD3CEA2A8CB29D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CD286E18A588905F6C1415351CD8F32 /* TRUReplaceFontWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRUReplaceFontWindowController.xib; sourceTree = "<group>"; };
+		6E12609D1A237DC499DA89B1229856C7 /* TRUSpecOutlineViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRUSpecOutlineViewDelegate.h; sourceTree = "<group>"; };
+		722827E2A6A1C8912D7479DE53916369 /* TRUColorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRUColorSpec.m; sourceTree = "<group>"; };
+		758253C2EE0E570A2B27E94BCBBC4764 /* TRUTreeBasedPopUpButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRUTreeBasedPopUpButton.h; sourceTree = "<group>"; };
+		78EE85B743ADC7B44EC6F5C97F437B08 /* TRUUpdatingPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRUUpdatingPreferencesViewController.h; sourceTree = "<group>"; };
+		79C1105D9C3EA8A0CEDA294A3BE65F10 /* TRUReplaceFontWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRUReplaceFontWindowController.h; sourceTree = "<group>"; };
+		7A8B26C7159AF381A42AF84C125C8BBD /* TRUFontMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRUFontMenuItem.m; sourceTree = "<group>"; };
+		7E696B689D83694ECA0BFE69D2808685 /* TrueColorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrueColorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		807CA424D94399C907AFAC5A8CAFC454 /* TRUFontMenuPopUpButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRUFontMenuPopUpButton.m; sourceTree = "<group>"; };
+		846A6D665708965CAB621F47EA826909 /* NSFont+TRU.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFont+TRU.h"; sourceTree = "<group>"; };
+		8781B9C2A8C0E4EE8C0EA700A7B4932A /* TRUTreeBasedPopUpButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRUTreeBasedPopUpButton.m; sourceTree = "<group>"; };
+		88AD5863C1B696064BF81330E842B5B3 /* TRUMetricPopUpButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRUMetricPopUpButton.h; sourceTree = "<group>"; };
+		8995113204FD5B94885FF09FC0B95E86 /* TRUSpecOutlineViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRUSpecOutlineViewDelegate.m; sourceTree = "<group>"; };
+		8A36125EC9C267D663DFB3218AEF8333 /* TRUIncludedFontTreeObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRUIncludedFontTreeObject.h; sourceTree = "<group>"; };
+		8D172172E117BEE27B4008B1088AC37B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E7961AD15CD4957031E7D5D90BE8EB4 /* TRUIncludedFontListDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRUIncludedFontListDelegate.m; sourceTree = "<group>"; };
+		91A53ECBEF1B9628F4E012ED4E3BCB17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		979DA4C535C11001808D38FCC86F7699 /* TRUMetricSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRUMetricSpec.h; sourceTree = "<group>"; };
+		99DF2C68C246AE5CB607AC1EC9BE28CA /* TRUPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRUPreferencesWindowController.m; sourceTree = "<group>"; };
+		9B1E8D84B6560BFD6E5EE70F6FDD437D /* TRUContextMenuOutlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRUContextMenuOutlineView.h; sourceTree = "<group>"; };
+		9D61538C5A14CEBB90FCF67CD8113629 /* TRUDocumentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRUDocumentTests.m; sourceTree = "<group>"; };
+		A9A32AF29638E50AE899446D9CD35D56 /* TRUIncludedFontTreeObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRUIncludedFontTreeObject.m; sourceTree = "<group>"; };
+		ABCB0FFA2FFCC69F25D15E89BFC83139 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B29B6208C9CA99570777E8E898C94333 /* TRUColorSerializationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRUColorSerializationTests.m; sourceTree = "<group>"; };
+		B63B5CC72F5EBDB6E83AE25B58463464 /* Pods-TrueColors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrueColors.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrueColors/Pods-TrueColors.release.xcconfig"; sourceTree = "<group>"; };
+		B7C52A1A8B02ECACB02EF2C6F8332AA1 /* TRUDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRUDocument.h; sourceTree = "<group>"; };
+		BC5B34143D19655012AA7E0F99689BF4 /* TRULocalizedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRULocalizedString.h; sourceTree = "<group>"; };
+		C2B91F5DFA5F86BCCDE887E6DB7FC5FD /* TRUAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRUAppDelegate.m; sourceTree = "<group>"; };
+		CBE3084B11B09EC941E085181B96EFB0 /* TRUAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRUAppDelegate.h; sourceTree = "<group>"; };
+		CDDA384F205D4BC78DC674FDCC6D9422 /* libPods-TrueColors.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TrueColors.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDE13C94DC026749D26958AD637BF8AF /* TRUPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRUPrefixHeader.pch; sourceTree = "<group>"; };
+		CEA3FBC64B64A3F6494E525E4DC6F0D4 /* TRUFontMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRUFontMenuItem.h; sourceTree = "<group>"; };
+		D06A0B6AB344CFA5292F8530582B9ADC /* TRUSpecTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRUSpecTests.m; sourceTree = "<group>"; };
+		D632FA223CEDAC035360B4E2CB2E62C4 /* Pods-TrueColors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrueColors.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrueColors/Pods-TrueColors.debug.xcconfig"; sourceTree = "<group>"; };
+		D87D59D92EEA7232146A692FC7BE5BD5 /* TRUColorPopUpButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRUColorPopUpButton.m; sourceTree = "<group>"; };
+		DCDB669AFE8F3C18F5FC9A4495CD76EF /* TRUFontPreviewTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRUFontPreviewTextField.h; sourceTree = "<group>"; };
+		DF96A92AB75B870FE17869C834F95E1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		E2C26BB039E7621216572ED2E7A00609 /* NSFont+TRU.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFont+TRU.m"; sourceTree = "<group>"; };
+		E2C73FF7DEE5ADA02E7C0D58FB2AE664 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		E864D71D0A7BF1EA3F783B92ADD4FD64 /* TRUColorPopUpButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRUColorPopUpButton.h; sourceTree = "<group>"; };
+		E981E50B096153AA6FE69C10A4016C38 /* libPods-TrueColorsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TrueColorsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB891B72F6736C40850FEF1E30A1AF87 /* TRUVokalTitlebarBrandingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRUVokalTitlebarBrandingViewController.m; sourceTree = "<group>"; };
+		EBE19F574D38749FC67F716D15CB21C4 /* TRURowHoverButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRURowHoverButton.m; sourceTree = "<group>"; };
+		ECBD1AE95DF7D09C9320F07B5A3A11F6 /* TRUVokalTitlebarBrandingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRUVokalTitlebarBrandingViewController.h; sourceTree = "<group>"; };
+		EE31F27295691E13DDA4BF63A6436C02 /* TRUVokalTitlebarBrandingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRUVokalTitlebarBrandingViewController.xib; sourceTree = "<group>"; };
+		F60160277767895E7F7D8F37DAFCEE0F /* TRUOutlineTreeDragController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRUOutlineTreeDragController.m; sourceTree = "<group>"; };
+		FAAA74979CE7AA28650827F8130B1AC3 /* Pods-TrueColorsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrueColorsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrueColorsTests/Pods-TrueColorsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FABDF46615F737864DC2E290EA4BC67F /* NSTableRowView+TRU.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTableRowView+TRU.h"; sourceTree = "<group>"; };
+		FD7BA0961DD0BF865BF4CCABE641B02D /* TRUFontSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRUFontSpec.h; sourceTree = "<group>"; };
+		FFA791F63CF4A4BBD1652B7B880EA691 /* TRUIncludedFontsSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRUIncludedFontsSectionView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B444A59F07DCDB92799900ABEFC5942B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5725BEE98F9568FC878DD83E2D8CD3 /* libPods-TrueColors.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCB6E535609B6DB5F0A0AEAA03F0552E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A699B4BF5DB08AF7FFDD2FACA4E4D26 /* libPods-TrueColorsTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16615862BD2E43CA8CAA4B9B216B8EF2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8D172172E117BEE27B4008B1088AC37B /* Info.plist */,
+				CDE13C94DC026749D26958AD637BF8AF /* TRUPrefixHeader.pch */,
+				91A53ECBEF1B9628F4E012ED4E3BCB17 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1BBFCCCCC69901FDE770B4947AA2C1B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				230BF6B2409AD5A84D93C7251B06152A /* TrueColors.app */,
+				7E696B689D83694ECA0BFE69D2808685 /* TrueColorsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2293CBD16673D0364FC2C425B76BA05E /* User-Generated Items */ = {
+			isa = PBXGroup;
+			children = (
+				06F0FD8EC84DCA78FA5283C109212B96 /* TRUBaseSpec.h */,
+				60ADA776B35BE97D8AF8567ECC90D7FD /* TRUColorSpec.h */,
+				722827E2A6A1C8912D7479DE53916369 /* TRUColorSpec.m */,
+				FD7BA0961DD0BF865BF4CCABE641B02D /* TRUFontSpec.h */,
+				318D9E97D58E603BF52AD0DEB1BE33FF /* TRUFontSpec.m */,
+				979DA4C535C11001808D38FCC86F7699 /* TRUMetricSpec.h */,
+				338788E916DF0923111A4EA24CEDBC5C /* TRUMetricSpec.m */,
+			);
+			path = "User-Generated Items";
+			sourceTree = "<group>";
+		};
+		23B18A19E68F8DE5B827F45A77891060 /* Font Menu */ = {
+			isa = PBXGroup;
+			children = (
+				CEA3FBC64B64A3F6494E525E4DC6F0D4 /* TRUFontMenuItem.h */,
+				7A8B26C7159AF381A42AF84C125C8BBD /* TRUFontMenuItem.m */,
+				09307C255DC93E0C1CD2436B91085A19 /* TRUFontMenuPopUpButton.h */,
+				807CA424D94399C907AFAC5A8CAFC454 /* TRUFontMenuPopUpButton.m */,
+			);
+			path = "Font Menu";
+			sourceTree = "<group>";
+		};
+		29A04B0EEF7D9DF2F03FF9A36DD8B708 /* Preview Font */ = {
+			isa = PBXGroup;
+			children = (
+				DCDB669AFE8F3C18F5FC9A4495CD76EF /* TRUFontPreviewTextField.h */,
+				23157CAA33EA19C86455123EAA60CBED /* TRUFontPreviewTextField.m */,
+			);
+			path = "Preview Font";
+			sourceTree = "<group>";
+		};
+		56D811B6EDAB528117AF7A3919FD49F3 /* TrueColors */ = {
+			isa = PBXGroup;
+			children = (
+				7C178082948F270F4A100F6F046E671E /* Categories */,
+				D43B732A21F3258F274AFEA6BA5A2A23 /* Controllers */,
+				82AB7D6017342084B4604E9A5EF80A20 /* Models */,
+				7B2B10838E567C9EF9987D7503EB926F /* Preferences */,
+				8AD74AD6559FCAC14499200D27F253D0 /* Resources */,
+				16615862BD2E43CA8CAA4B9B216B8EF2 /* Supporting Files */,
+				9278F346F03139EDADF5887F1D5475E8 /* Views */,
+				A819A8F8E64F5804923DB2EE01BD22B5 /* MainMenu.xib */,
+				CBE3084B11B09EC941E085181B96EFB0 /* TRUAppDelegate.h */,
+				C2B91F5DFA5F86BCCDE887E6DB7FC5FD /* TRUAppDelegate.m */,
+				B7C52A1A8B02ECACB02EF2C6F8332AA1 /* TRUDocument.h */,
+				62872D6C7B5ECABA459B12BF0867BA31 /* TRUDocument.m */,
+				F9E7B66D35154B1E371ECA2D4FDA991F /* TRUDocument.xib */,
+				5CE27BA754C34EAEBB8A5BE50EF70F13 /* TRUDocument_testable.h */,
+			);
+			path = TrueColors;
+			sourceTree = "<group>";
+		};
+		5BB4F0B215A7FA6D927F053C22AAC0F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D632FA223CEDAC035360B4E2CB2E62C4 /* Pods-TrueColors.debug.xcconfig */,
+				B63B5CC72F5EBDB6E83AE25B58463464 /* Pods-TrueColors.release.xcconfig */,
+				FAAA74979CE7AA28650827F8130B1AC3 /* Pods-TrueColorsTests.debug.xcconfig */,
+				0FB0DC069C5DEB2818A42F519A65D393 /* Pods-TrueColorsTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7B2B10838E567C9EF9987D7503EB926F /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				A7C398B55F830DF077CE224C4B64871D /* Updating */,
+				5A277490AB5F252884C6F9EDD549AD47 /* TRUPreferencesWindowController.h */,
+				99DF2C68C246AE5CB607AC1EC9BE28CA /* TRUPreferencesWindowController.m */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		7C178082948F270F4A100F6F046E671E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				65098606B2B3CDD9EF32DE89F13CD62D /* CASLBaseSpec+TRU.h */,
+				645458DA1EADCCA307E139E8B694072A /* CASLBaseSpec+TRU.m */,
+				846A6D665708965CAB621F47EA826909 /* NSFont+TRU.h */,
+				E2C26BB039E7621216572ED2E7A00609 /* NSFont+TRU.m */,
+				FABDF46615F737864DC2E290EA4BC67F /* NSTableRowView+TRU.h */,
+				2CF5F52417D469B6C97970876DB5AD91 /* NSTableRowView+TRU.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		82AB7D6017342084B4604E9A5EF80A20 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2293CBD16673D0364FC2C425B76BA05E /* User-Generated Items */,
+				8A36125EC9C267D663DFB3218AEF8333 /* TRUIncludedFontTreeObject.h */,
+				A9A32AF29638E50AE899446D9CD35D56 /* TRUIncludedFontTreeObject.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8ACEBD538D02B2832D6BD3D3BFDC58BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDDA384F205D4BC78DC674FDCC6D9422 /* libPods-TrueColors.a */,
+				E981E50B096153AA6FE69C10A4016C38 /* libPods-TrueColorsTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8AD74AD6559FCAC14499200D27F253D0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0486E047C1CF0CDBEF0987D592A17FF6 /* Acknowledgements.html */,
+				E2C73FF7DEE5ADA02E7C0D58FB2AE664 /* Credits.rtf */,
+				ABCB0FFA2FFCC69F25D15E89BFC83139 /* Images.xcassets */,
+				BC5B34143D19655012AA7E0F99689BF4 /* TRULocalizedString.h */,
+				44AC7F6F33DAEEE292FD33285F65CD2D /* TRULocalizedString.m */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9278F346F03139EDADF5887F1D5475E8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				23B18A19E68F8DE5B827F45A77891060 /* Font Menu */,
+				CACE98B0D71DE472F6BBE5C55338B8EA /* PopUpButtons */,
+				29A04B0EEF7D9DF2F03FF9A36DD8B708 /* Preview Font */,
+				9B1E8D84B6560BFD6E5EE70F6FDD437D /* TRUContextMenuOutlineView.h */,
+				24437210884913405E8DAA418275E29B /* TRUContextMenuOutlineView.m */,
+				35B8A62F05C3E97D93E550585D223299 /* TRUIncludedFontTableCellView.h */,
+				443F0C430A8AB70B65E36DB8F47BA89D /* TRUIncludedFontTableCellView.m */,
+				08A388EA20C3347FD72B4FB981F0B013 /* TRUIncludedFontsSectionView.h */,
+				FFA791F63CF4A4BBD1652B7B880EA691 /* TRUIncludedFontsSectionView.m */,
+				0B6AE1A856E64477351FA37321D76878 /* TRURowHoverButton.h */,
+				EBE19F574D38749FC67F716D15CB21C4 /* TRURowHoverButton.m */,
+				ECBD1AE95DF7D09C9320F07B5A3A11F6 /* TRUVokalTitlebarBrandingViewController.h */,
+				EB891B72F6736C40850FEF1E30A1AF87 /* TRUVokalTitlebarBrandingViewController.m */,
+				EE31F27295691E13DDA4BF63A6436C02 /* TRUVokalTitlebarBrandingViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		96B4D44D80F8D33315100F183196B64A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6A2E2F5FFB8F42387BD3CEA2A8CB29D6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9A55DEF300604928D636E7F1D814B535 /* TrueColorsTests */ = {
+			isa = PBXGroup;
+			children = (
+				96B4D44D80F8D33315100F183196B64A /* Supporting Files */,
+				51C26EAF5A071F901A1653FF62B9613E /* test documents */,
+				B29B6208C9CA99570777E8E898C94333 /* TRUColorSerializationTests.m */,
+				9D61538C5A14CEBB90FCF67CD8113629 /* TRUDocumentTests.m */,
+				D06A0B6AB344CFA5292F8530582B9ADC /* TRUSpecTests.m */,
+			);
+			path = TrueColorsTests;
+			sourceTree = "<group>";
+		};
+		A7C398B55F830DF077CE224C4B64871D /* Updating */ = {
+			isa = PBXGroup;
+			children = (
+				78EE85B743ADC7B44EC6F5C97F437B08 /* TRUUpdatingPreferencesViewController.h */,
+				6065343451FF15DD7392425D3ED39AF8 /* TRUUpdatingPreferencesViewController.m */,
+				2D205E00A3A5B5350B629CBA7EA0D095 /* TRUUpdatingPreferencesViewController.xib */,
+			);
+			path = Updating;
+			sourceTree = "<group>";
+		};
+		CACE98B0D71DE472F6BBE5C55338B8EA /* PopUpButtons */ = {
+			isa = PBXGroup;
+			children = (
+				E864D71D0A7BF1EA3F783B92ADD4FD64 /* TRUColorPopUpButton.h */,
+				D87D59D92EEA7232146A692FC7BE5BD5 /* TRUColorPopUpButton.m */,
+				2E20161C23989AC8FA5AD9D0134D03D9 /* TRUCustomMenuPopUpButton.h */,
+				392EDDF71101495455CA9E21098AC9B6 /* TRUCustomMenuPopUpButton.m */,
+				88AD5863C1B696064BF81330E842B5B3 /* TRUMetricPopUpButton.h */,
+				0A7F984C553BC4F357EA26054B6282E5 /* TRUMetricPopUpButton.m */,
+				758253C2EE0E570A2B27E94BCBBC4764 /* TRUTreeBasedPopUpButton.h */,
+				8781B9C2A8C0E4EE8C0EA700A7B4932A /* TRUTreeBasedPopUpButton.m */,
+			);
+			path = PopUpButtons;
+			sourceTree = "<group>";
+		};
+		D43B732A21F3258F274AFEA6BA5A2A23 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				481857DA035C853CEDBEB86DB8B98504 /* TRUIncludedFontListDelegate.h */,
+				8E7961AD15CD4957031E7D5D90BE8EB4 /* TRUIncludedFontListDelegate.m */,
+				1276A8E78BCF297B60868409D7A3BC8F /* TRUOutlineTreeDragController.h */,
+				F60160277767895E7F7D8F37DAFCEE0F /* TRUOutlineTreeDragController.m */,
+				79C1105D9C3EA8A0CEDA294A3BE65F10 /* TRUReplaceFontWindowController.h */,
+				2C1644F176A709895E67019AF735200C /* TRUReplaceFontWindowController.m */,
+				6CD286E18A588905F6C1415351CD8F32 /* TRUReplaceFontWindowController.xib */,
+				6E12609D1A237DC499DA89B1229856C7 /* TRUSpecOutlineViewDelegate.h */,
+				8995113204FD5B94885FF09FC0B95E86 /* TRUSpecOutlineViewDelegate.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		ED591031F639AACAEC14E4A47E53F939 = {
+			isa = PBXGroup;
+			children = (
+				8ACEBD538D02B2832D6BD3D3BFDC58BE /* Frameworks */,
+				5BB4F0B215A7FA6D927F053C22AAC0F0 /* Pods */,
+				1BBFCCCCC69901FDE770B4947AA2C1B5 /* Products */,
+				56D811B6EDAB528117AF7A3919FD49F3 /* TrueColors */,
+				9A55DEF300604928D636E7F1D814B535 /* TrueColorsTests */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C67F46C2250B4405C62343128C09BAF6 /* TrueColorsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EEF57922145C6EA42F2D6F46B9396C4 /* Build configuration list for PBXNativeTarget "TrueColorsTests" */;
+			buildPhases = (
+				7B4F25A76B5F05527B4CBBF36D6944FA /* [CP] Check Pods Manifest.lock */,
+				84B4B1DF279652B2D047BA45FCC70329 /* Sources */,
+				BCB6E535609B6DB5F0A0AEAA03F0552E /* Frameworks */,
+				0265472FA0CEE53486E467A763EAF9A8 /* Resources */,
+				2043B218602275AA88428F10D79D57B6 /* [CP] Embed Pods Frameworks */,
+				2810A1373AAD2ACC6E5FF02CE0D227B9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF71E42DEE0D479FE74A668D5D8C8A60 /* PBXTargetDependency */,
+			);
+			name = TrueColorsTests;
+			productName = TrueColorsTests;
+			productReference = 7E696B689D83694ECA0BFE69D2808685 /* TrueColorsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FCFD8E8B953601F585A9764261BE74BE /* TrueColors */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D205CFACC22751901987711DF27AC2C3 /* Build configuration list for PBXNativeTarget "TrueColors" */;
+			buildPhases = (
+				907C885978B7C2702C9EC9D39AD8E115 /* [CP] Check Pods Manifest.lock */,
+				ADE0ACCCFF5660FFFA1801916F1C6D77 /* Sources */,
+				B444A59F07DCDB92799900ABEFC5942B /* Frameworks */,
+				6891E9A6BC25CD6B2D0C1AE085B91B84 /* Resources */,
+				70047CD69FF5FD5C9ECBCD1562BDEA3F /* Version Incrementing Run Script */,
+				E7DA9C7E2ABA3CD11FDE5BA923D37422 /* [CP] Embed Pods Frameworks */,
+				227456AD2B35DF4361993DA51E14B9B6 /* Sign Sparkle.framework */,
+				21ECCAA10976C6E5465F27034CED74F5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrueColors;
+			productName = TrueColors;
+			productReference = 230BF6B2409AD5A84D93C7251B06152A /* TrueColors.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4AD1EDBCF4CC03ED463525A57716C8F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TRU;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Vokal;
+				TargetAttributes = {
+					2737D9BCC16CF6DCD22F3352CB084BA2 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					C67F46C2250B4405C62343128C09BAF6 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = FCFD8E8B953601F585A9764261BE74BE;
+					};
+					CDDA57D38EF2F26D68C769D18E3D180C = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					FCFD8E8B953601F585A9764261BE74BE = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = 3E3884A5E93A18CFE00FF3468DAE3EE3 /* Build configuration list for PBXProject "TrueColors" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED591031F639AACAEC14E4A47E53F939;
+			productRefGroup = 1BBFCCCCC69901FDE770B4947AA2C1B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCFD8E8B953601F585A9764261BE74BE /* TrueColors */,
+				C67F46C2250B4405C62343128C09BAF6 /* TrueColorsTests */,
+				CDDA57D38EF2F26D68C769D18E3D180C /* Distribute */,
+				2737D9BCC16CF6DCD22F3352CB084BA2 /* Mogenerator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0265472FA0CEE53486E467A763EAF9A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99E3E55F74C7CB6F395C28FA99A58D89 /* test documents in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6891E9A6BC25CD6B2D0C1AE085B91B84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				257C9EC9B23CC34C61D6D88579566349 /* Acknowledgements.html in Resources */,
+				DD32A09DF780F274C0F07154B6478FA9 /* Credits.rtf in Resources */,
+				7552C2BBA0570E4066D7C1C88B2663D2 /* Images.xcassets in Resources */,
+				754AD726DBED3389684D1F98576780D2 /* MainMenu.xib in Resources */,
+				893BABEE2133FD071461ECDCD4547483 /* TRUDocument.xib in Resources */,
+				E89EE83EB5F6D7C73936B56E7B9F5C08 /* TRUReplaceFontWindowController.xib in Resources */,
+				27FB85AEDF72FA09DB0F3E7A815152E3 /* TRUUpdatingPreferencesViewController.xib in Resources */,
+				B32524A1DDAEF870D9A9DD105E710C5C /* TRUVokalTitlebarBrandingViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C91373D1B3A04B9A7E553C2B3DE3EF7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "exec \"${PROJECT_DIR}/util/distribute.sh\"";
+		};
+		2043B218602275AA88428F10D79D57B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrueColorsTests/Pods-TrueColorsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21ECCAA10976C6E5465F27034CED74F5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrueColors/Pods-TrueColors-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		227456AD2B35DF4361993DA51E14B9B6 /* Sign Sparkle.framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Sign Sparkle.framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "LOCATION=\"${BUILT_PRODUCTS_DIR}\"/\"${FRAMEWORKS_FOLDER_PATH}\"\n\n# Usually set by Xcode\n#CODE_SIGN_IDENTITY=\"Developer ID Application: Hobbyist Software\"\n\ncodesign --verbose --force --sign \"$CODE_SIGN_IDENTITY\" \"$LOCATION/Sparkle.framework/Versions/A\"\n";
+		};
+		2810A1373AAD2ACC6E5FF02CE0D227B9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrueColorsTests/Pods-TrueColorsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EC70E672E81909E7FF1A4C61274ECF1 /* Generate Models */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Models";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PROJECT_DIR}/util/mogenerator.sh\"";
+		};
+		70047CD69FF5FD5C9ECBCD1562BDEA3F /* Version Incrementing Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Version Incrementing Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Update build number with number of git commits\nbuildNumber=$(git rev-list HEAD --count)\necho \"Updating build number to $buildNumber\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\nbaseVersion=$(/usr/libexec/PlistBuddy -c \"Print :TRUBaseVersionNumber\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\")\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString $baseVersion ($buildNumber)\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"";
+		};
+		7B4F25A76B5F05527B4CBBF36D6944FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		907C885978B7C2702C9EC9D39AD8E115 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E7DA9C7E2ABA3CD11FDE5BA923D37422 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrueColors/Pods-TrueColors-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84B4B1DF279652B2D047BA45FCC70329 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03B301458A0C3E26095989715473F26F /* TRUColorSerializationTests.m in Sources */,
+				477F404F5126E8D65C7370F3EF46A721 /* TRUDocumentTests.m in Sources */,
+				CBA85B6C04D937D9C86F8DEDE060CF42 /* TRUSpecTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADE0ACCCFF5660FFFA1801916F1C6D77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13D919F855223032C62D48769AF409CF /* CASLBaseSpec+TRU.m in Sources */,
+				311C48FA1ADFBDB48E12B3F8B3CEFAAE /* NSFont+TRU.m in Sources */,
+				F607FA0EE6B16883B64C5F360C9C78AA /* NSTableRowView+TRU.m in Sources */,
+				EFEE4FCCA78DE76737B59DF55D42C8A1 /* TRUAppDelegate.m in Sources */,
+				AB399A2717B14F025AE44809888F6651 /* TRUColorPopUpButton.m in Sources */,
+				67F14FFA38ACFCE29198A29C7DD390ED /* TRUColorSpec.m in Sources */,
+				64040BD5D627747BC210A9A3D9784E33 /* TRUContextMenuOutlineView.m in Sources */,
+				968FF35760DD65D5C0C6A8A4FAF0CE3D /* TRUCustomMenuPopUpButton.m in Sources */,
+				73A6A76E4FFC81812F89196DAC03F6AD /* TRUDocument.m in Sources */,
+				763E97FA9DE2F8973961B0642F84D015 /* TRUFontMenuItem.m in Sources */,
+				64AD021E8C65AD81DA4AB17DB4381825 /* TRUFontMenuPopUpButton.m in Sources */,
+				669312CF57CF46F9B0E522EFE2DE0A29 /* TRUFontPreviewTextField.m in Sources */,
+				63274D5517474AC984A32AD8F1E5DA25 /* TRUFontSpec.m in Sources */,
+				535CDAB3ACA5ADB1CF38297ECB37AADD /* TRUIncludedFontListDelegate.m in Sources */,
+				330007861A53661562E05F3891F2B2F1 /* TRUIncludedFontTableCellView.m in Sources */,
+				9650AFC3DC5B55C3A0209506D97698D0 /* TRUIncludedFontTreeObject.m in Sources */,
+				4C0CF751D87C0150444952632818340F /* TRUIncludedFontsSectionView.m in Sources */,
+				38CB1D969A6FCC3AE949A79B07359979 /* TRULocalizedString.m in Sources */,
+				40468C847D3BA3AC344F90EABA8DAA17 /* TRUMetricPopUpButton.m in Sources */,
+				DC048DFC9716D0C7E44BC9E60F9501B4 /* TRUMetricSpec.m in Sources */,
+				C21CC99C51942D6F97AB90900EEA6FD2 /* TRUOutlineTreeDragController.m in Sources */,
+				D1B7EE515449CB37C1A9E7DFB4452AE5 /* TRUPreferencesWindowController.m in Sources */,
+				A9B1A1CC9A3CE782E652284FA6911C9C /* TRUReplaceFontWindowController.m in Sources */,
+				0697F6432D5879A7999CA4F58ED19E1C /* TRURowHoverButton.m in Sources */,
+				D74F10B810D0D5C2FDA8BAB8E7543199 /* TRUSpecOutlineViewDelegate.m in Sources */,
+				AA417FD28088E1FADC155D4DE1B6ECE9 /* TRUTreeBasedPopUpButton.m in Sources */,
+				678E02C3404ADC4BC48A0B3D96B99BE9 /* TRUUpdatingPreferencesViewController.m in Sources */,
+				D6E5A8BAD4249C0BD3A214FBD7E7B4C1 /* TRUVokalTitlebarBrandingViewController.m in Sources */,
+				8243B5C3FB82692E7DDB995DEE203759 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF71E42DEE0D479FE74A668D5D8C8A60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCFD8E8B953601F585A9764261BE74BE /* TrueColors */;
+			targetProxy = 8CF92593A65B733A54A675FCCE559C92 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A819A8F8E64F5804923DB2EE01BD22B5 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF96A92AB75B870FE17869C834F95E1F /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		F9E7B66D35154B1E371ECA2D4FDA991F /* TRUDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				321A7A71388CD42B49321695D0912435 /* Base */,
+			);
+			name = TRUDocument.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		10687A1E13E2E25819B6229E16AC782A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FB0DC069C5DEB2818A42F519A65D393 /* Pods-TrueColorsTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TrueColorsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.vokal.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrueColors.app/Contents/MacOS/TrueColors";
+			};
+			name = Release;
+		};
+		2224688A5AF16D84E88C462CDDF82C60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3322FFF0CFF563A247E3F431B596DC2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B63B5CC72F5EBDB6E83AE25B58463464 /* Pods-TrueColors.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREFIX_HEADER = TrueColors/TRUPrefixHeader.pch;
+				INFOPLIST_FILE = TrueColors/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.vokal.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4C9ABF3536593D8BF75DBF759BAE1F5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D632FA223CEDAC035360B4E2CB2E62C4 /* Pods-TrueColors.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREFIX_HEADER = TrueColors/TRUPrefixHeader.pch;
+				INFOPLIST_FILE = TrueColors/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.vokal.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7D949F9CB758F421FAA40CCC5E1714D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8216155F002AB6FCCD34290FAA08336D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B783D4298F0E0C145CF1A98670880CDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B938599D42EF1561DE9C5A9C09340ECF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAAA74979CE7AA28650827F8130B1AC3 /* Pods-TrueColorsTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TrueColorsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.vokal.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrueColors.app/Contents/MacOS/TrueColors";
+			};
+			name = Debug;
+		};
+		C10445C05E3A0A163BA28DF1EB709AEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				WARNING_CFLAGS = "-Wunused-parameter";
+			};
+			name = Debug;
+		};
+		F27CA955AED6563FCCA7165EBBE34718 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				WARNING_CFLAGS = "-Wunused-parameter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E3884A5E93A18CFE00FF3468DAE3EE3 /* Build configuration list for PBXProject "TrueColors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C10445C05E3A0A163BA28DF1EB709AEE /* Debug */,
+				F27CA955AED6563FCCA7165EBBE34718 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45FECA75AFF514E67C5A80FBCEC55990 /* Build configuration list for PBXAggregateTarget "Mogenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8216155F002AB6FCCD34290FAA08336D /* Debug */,
+				B783D4298F0E0C145CF1A98670880CDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EEF57922145C6EA42F2D6F46B9396C4 /* Build configuration list for PBXNativeTarget "TrueColorsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B938599D42EF1561DE9C5A9C09340ECF /* Debug */,
+				10687A1E13E2E25819B6229E16AC782A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D205CFACC22751901987711DF27AC2C3 /* Build configuration list for PBXNativeTarget "TrueColors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C9ABF3536593D8BF75DBF759BAE1F5A /* Debug */,
+				3322FFF0CFF563A247E3F431B596DC2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1B4789A8E1F591217B9F11525AC610E /* Build configuration list for PBXAggregateTarget "Distribute" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D949F9CB758F421FAA40CCC5E1714D0 /* Debug */,
+				2224688A5AF16D84E88C462CDDF82C60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4AD1EDBCF4CC03ED463525A57716C8F5 /* Project object */;
+}

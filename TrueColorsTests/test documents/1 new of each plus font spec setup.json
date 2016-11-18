@@ -1,0 +1,27 @@
+{
+  "metrics" : [
+    {
+      "name" : "New Metric",
+      "value" : 0
+    }
+  ],
+  "fonts" : [
+    {
+      "color_path" : [
+        "New Color"
+      ],
+      "size_path" : [
+        "New Metric"
+      ],
+      "name" : "New Text Style",
+      "font_name" : "BitstreamVeraSans-Roman",
+      "file_name" : "BitstreamVeraSans-Roman.ttf"
+    }
+  ],
+  "colors" : [
+    {
+      "name" : "New Color",
+      "rgba" : "#000000FF"
+    }
+  ]
+}

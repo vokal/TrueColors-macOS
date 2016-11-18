@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1108" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="TRUVokalTitlebarBrandingViewController">
+            <connections>
+                <outlet property="view" destination="sd7-mX-rh0" id="liS-WV-N6F"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="sd7-mX-rh0">
+            <rect key="frame" x="0.0" y="0.0" width="556" height="257"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zYs-06-AZh">
+                    <rect key="frame" x="-20" y="0.0" width="556" height="257"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="zYs-06-AZh" secondAttribute="height" multiplier="556:257" id="zZG-7v-KZJ"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="vokal-on-clear" id="tWD-bD-Ysz"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="zYs-06-AZh" firstAttribute="top" secondItem="sd7-mX-rh0" secondAttribute="top" id="7Vc-x8-BKY"/>
+                <constraint firstAttribute="trailing" secondItem="zYs-06-AZh" secondAttribute="trailing" constant="20" id="LP8-3l-6j7"/>
+                <constraint firstAttribute="bottom" secondItem="zYs-06-AZh" secondAttribute="bottom" id="Qwf-ki-chP"/>
+            </constraints>
+            <point key="canvasLocation" x="545.5" y="502"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="vokal-on-clear" width="556" height="257"/>
+    </resources>
+</document>

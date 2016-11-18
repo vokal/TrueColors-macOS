@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="TRUReplaceFontWindowController">
+            <connections>
+                <outlet property="fontNameImageView" destination="Z8J-Gn-m9X" id="8h4-87-lDs"/>
+                <outlet property="fontPopUpButton" destination="ECf-gm-4Ad" id="ap3-ta-eCf"/>
+                <outlet property="window" destination="TP1-gX-faA" id="pJm-r5-8F1"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="TP1-gX-faA" userLabel="Replace-Font Sheet" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" utility="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="0.0" y="0.0" width="300" height="101"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+            <value key="minSize" type="size" width="300" height="101"/>
+            <value key="maxSize" type="size" width="600" height="101"/>
+            <view key="contentView" id="q3t-0J-Uje">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="101"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dZw-78-w43">
+                        <rect key="frame" x="18" y="64" width="56" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Replace " id="b2l-ub-Mtg">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z8J-Gn-m9X">
+                        <rect key="frame" x="72" y="65" width="14" height="14"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSSmartBadgeTemplate" id="PqX-eF-TgN"/>
+                    </imageView>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5LM-F2-b1B">
+                        <rect key="frame" x="84" y="64" width="37" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title=" with " id="594-45-FO3">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ECf-gm-4Ad" customClass="TRUFontMenuPopUpButton">
+                        <rect key="frame" x="117" y="58" width="166" height="26"/>
+                        <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="qAP-Tq-nEM" id="dQO-Sy-XCf">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="menu"/>
+                            <menu key="menu" id="K22-t4-vAF">
+                                <items>
+                                    <menuItem title="Item 1" state="on" id="qAP-Tq-nEM"/>
+                                    <menuItem title="Item 2" id="6ha-uo-W5S"/>
+                                    <menuItem title="Item 3" id="iiD-J5-TyD"/>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                    </popUpButton>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3ps-MB-Bee">
+                        <rect key="frame" x="197" y="13" width="89" height="32"/>
+                        <buttonCell key="cell" type="push" title="Replace" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="APE-X7-IMZ">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="replace:" target="-2" id="RHe-r0-oKw"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="U3Y-S3-mH9">
+                        <rect key="frame" x="115" y="13" width="82" height="32"/>
+                        <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="aJa-bs-lVB">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="cancel:" target="-2" id="IPQ-3c-OaK"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5LM-F2-b1B" firstAttribute="centerY" secondItem="dZw-78-w43" secondAttribute="centerY" id="1od-s2-X36"/>
+                    <constraint firstItem="dZw-78-w43" firstAttribute="leading" secondItem="q3t-0J-Uje" secondAttribute="leading" constant="20" id="4vp-XN-EA2"/>
+                    <constraint firstItem="3ps-MB-Bee" firstAttribute="leading" secondItem="U3Y-S3-mH9" secondAttribute="trailing" constant="12" id="5hw-IG-bBw"/>
+                    <constraint firstItem="dZw-78-w43" firstAttribute="top" secondItem="q3t-0J-Uje" secondAttribute="top" constant="20" id="AUE-ZQ-imE"/>
+                    <constraint firstItem="Z8J-Gn-m9X" firstAttribute="leading" secondItem="dZw-78-w43" secondAttribute="trailing" id="FmJ-qm-0Ii"/>
+                    <constraint firstAttribute="trailing" secondItem="3ps-MB-Bee" secondAttribute="trailing" constant="20" id="HOj-7L-8ld"/>
+                    <constraint firstItem="3ps-MB-Bee" firstAttribute="top" secondItem="ECf-gm-4Ad" secondAttribute="bottom" constant="20" id="KoN-d4-YGr"/>
+                    <constraint firstItem="3ps-MB-Bee" firstAttribute="baseline" secondItem="U3Y-S3-mH9" secondAttribute="baseline" id="TZu-tr-9J2"/>
+                    <constraint firstItem="5LM-F2-b1B" firstAttribute="leading" secondItem="Z8J-Gn-m9X" secondAttribute="trailing" id="anP-Qc-Te7"/>
+                    <constraint firstAttribute="trailing" secondItem="ECf-gm-4Ad" secondAttribute="trailing" constant="20" id="d9U-q2-vCp"/>
+                    <constraint firstItem="ECf-gm-4Ad" firstAttribute="bottom" secondItem="5LM-F2-b1B" secondAttribute="bottom" constant="3" id="fNu-Cc-GvE"/>
+                    <constraint firstAttribute="bottom" secondItem="3ps-MB-Bee" secondAttribute="bottom" constant="20" id="ggn-KZ-3UK"/>
+                    <constraint firstItem="dZw-78-w43" firstAttribute="centerY" secondItem="Z8J-Gn-m9X" secondAttribute="centerY" id="opH-Gt-Gpa"/>
+                    <constraint firstItem="ECf-gm-4Ad" firstAttribute="leading" secondItem="5LM-F2-b1B" secondAttribute="trailing" id="pXd-Ng-Hae"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="6FM-sN-Baf"/>
+            </connections>
+            <point key="canvasLocation" x="366" y="312.5"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="NSSmartBadgeTemplate" width="14" height="14"/>
+    </resources>
+</document>

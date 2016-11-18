@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="TRUUpdatingPreferencesViewController">
+            <connections>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="337" height="61"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="hSl-Yr-lGV">
+                    <rect key="frame" x="18" y="22" width="217" height="18"/>
+                    <buttonCell key="cell" type="check" title="Automatically check for updates" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="t7D-3d-6sy">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <binding destination="86E-M0-vMh" name="value" keyPath="automaticallyChecksForUpdates" id="696-X8-R4J"/>
+                    </connections>
+                </button>
+                <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LRL-49-rqd">
+                    <rect key="frame" x="239" y="17" width="81" height="26"/>
+                    <popUpButtonCell key="cell" type="push" title="Weekly" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" tag="604800" imageScaling="proportionallyDown" inset="2" selectedItem="T1m-vO-93d" id="Tht-uY-842">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" id="boH-QM-cGr">
+                            <items>
+                                <menuItem title="Hourly" tag="3600" id="87l-iF-LLe"/>
+                                <menuItem title="Daily" tag="86400" id="boj-SE-nBM"/>
+                                <menuItem title="Weekly" state="on" tag="604800" id="T1m-vO-93d"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <binding destination="86E-M0-vMh" name="enabled" keyPath="automaticallyChecksForUpdates" id="AQ3-Pp-K0E"/>
+                        <binding destination="86E-M0-vMh" name="selectedTag" keyPath="updateCheckInterval" id="B0N-cy-Ymt"/>
+                    </connections>
+                </popUpButton>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="LRL-49-rqd" secondAttribute="bottom" constant="20" id="0pT-T8-l7X"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LRL-49-rqd" secondAttribute="trailing" constant="20" id="4k7-nJ-ISO"/>
+                <constraint firstItem="LRL-49-rqd" firstAttribute="baseline" secondItem="hSl-Yr-lGV" secondAttribute="baseline" id="Jp0-jg-Az4"/>
+                <constraint firstItem="LRL-49-rqd" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="VBD-ey-D4u"/>
+                <constraint firstItem="LRL-49-rqd" firstAttribute="leading" secondItem="hSl-Yr-lGV" secondAttribute="trailing" constant="8" id="cgn-Pp-1UC"/>
+                <constraint firstItem="hSl-Yr-lGV" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="eNe-ky-cJO"/>
+            </constraints>
+            <point key="canvasLocation" x="67.5" y="91.5"/>
+        </customView>
+        <customObject id="86E-M0-vMh" customClass="SUUpdater"/>
+        <userDefaultsController representsSharedInstance="YES" id="gBy-YC-l4c"/>
+    </objects>
+</document>

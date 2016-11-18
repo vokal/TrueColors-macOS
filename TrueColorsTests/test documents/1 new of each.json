@@ -1,0 +1,19 @@
+{
+  "metrics" : [
+    {
+      "name" : "New Metric",
+      "value" : 0
+    }
+  ],
+  "fonts" : [
+    {
+      "name" : "New Text Style"
+    }
+  ],
+  "colors" : [
+    {
+      "name" : "New Color",
+      "rgba" : "#000000FF"
+    }
+  ]
+}

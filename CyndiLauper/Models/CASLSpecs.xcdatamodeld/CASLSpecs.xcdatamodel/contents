@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15G1004" minimumToolsVersion="Xcode 7.0">
+    <entity name="BaseSpec" representedClassName="CASLBaseSpec" isAbstract="YES" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="root" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="parentSpec" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BaseSpec" inverseName="subSpecs" inverseEntity="BaseSpec" syncable="YES"/>
+        <relationship name="subSpecs" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="BaseSpec" inverseName="parentSpec" inverseEntity="BaseSpec" syncable="YES"/>
+    </entity>
+    <entity name="ColorSpec" representedClassName="CASLColorSpec" parentEntity="BaseSpec" syncable="YES">
+        <attribute name="color" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="fontSpecs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FontSpec" inverseName="colorSpec" inverseEntity="FontSpec" syncable="YES"/>
+    </entity>
+    <entity name="FontSpec" representedClassName="CASLFontSpec" parentEntity="BaseSpec" syncable="YES">
+        <relationship name="colorSpec" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ColorSpec" inverseName="fontSpecs" inverseEntity="ColorSpec" syncable="YES"/>
+        <relationship name="fontFace" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IncludedFont" inverseName="fontSpecs" inverseEntity="IncludedFont" syncable="YES"/>
+        <relationship name="size" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MetricSpec" inverseName="fontSpecs" inverseEntity="MetricSpec" syncable="YES"/>
+    </entity>
+    <entity name="IncludedFont" representedClassName="CASLIncludedFont" parentEntity="BaseSpec" syncable="YES">
+        <attribute name="font" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="fontSpecs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FontSpec" inverseName="fontFace" inverseEntity="FontSpec" syncable="YES"/>
+    </entity>
+    <entity name="MetricSpec" representedClassName="CASLMetricSpec" parentEntity="BaseSpec" syncable="YES">
+        <attribute name="value" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="fontSpecs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FontSpec" inverseName="size" inverseEntity="FontSpec" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="BaseSpec" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="ColorSpec" positionX="-54" positionY="0" width="128" height="75"/>
+        <element name="MetricSpec" positionX="-36" positionY="18" width="128" height="75"/>
+        <element name="FontSpec" positionX="-18" positionY="36" width="128" height="90"/>
+        <element name="IncludedFont" positionX="0" positionY="45" width="128" height="75"/>
+    </elements>
+</model>

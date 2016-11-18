@@ -1,0 +1,1 @@
+../../../../CyndiLauper/Categories/NSManagedObjectModel+CASL.h

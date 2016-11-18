@@ -1,0 +1,8 @@
+Colors:
+<TRUColorSpec (0x6000000a9fc0): New Group [#000000FF]>
+| <TRUColorSpec (0x6000000aa080): New Color [#000000FF]>
+| <TRUColorSpec (0x6000000aa0e0): New Color 3 [#000000FF]>
+<TRUColorSpec (0x6000000aa140): New Color 2 [#000000FF]>
+Metrics:
+
+Fonts:

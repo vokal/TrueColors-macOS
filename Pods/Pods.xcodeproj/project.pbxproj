@@ -1,0 +1,2974 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01D03E910DFFCC3A16E2DC64CBF98CC7 /* NSColor+BFColorPickerPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3208B3C0CE8EC59BEF833C7B0E970F /* NSColor+BFColorPickerPopover.m */; };
+		0236FFC42CF6C0238E01DF06618F27C4 /* DCOTransparentScroller-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD77EB3DBFBA55B2BC6D3813FDA3AD5 /* DCOTransparentScroller-dummy.m */; };
+		058534364798123029F415B51F978593 /* _CASLColorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFFB229A0514A0991C0FCA25E377C5C /* _CASLColorSpec.m */; settings = {COMPILER_FLAGS = "-Wunused-parameter"; }; };
+		05AD3893E5E62BCFCE56A19E0FF8A290 /* ZZStandardDecryptInputStream.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7CBD50EEE2CDBEC899CF30420E3382D8 /* ZZStandardDecryptInputStream.mm */; settings = {COMPILER_FLAGS = "-fno-objc-exceptions -fno-exceptions -std=c++11 -stdlib=libc++ -DOS_OBJECT_USE_OBJC=0"; }; };
+		08225A8B6CC1E33AFAF23D5EDE6A459B /* NSColor+CASL.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A5D052151CAB523459E43882D6FD86 /* NSColor+CASL.m */; settings = {COMPILER_FLAGS = "-Wunused-parameter"; }; };
+		085DB56690808473E88BB2C764187869 /* ZZAESDecryptInputStream.mm in Sources */ = {isa = PBXBuildFile; fileRef = EFD27A668774020D74928639FF0BB59F /* ZZAESDecryptInputStream.mm */; settings = {COMPILER_FLAGS = "-fno-objc-exceptions -fno-exceptions -std=c++11 -stdlib=libc++ -DOS_OBJECT_USE_OBJC=0"; }; };
+		096580924DDC6F7E9A97F069124F9311 /* DCOTransparentScroller.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D8412CC9C9021F826FC761B960BF692 /* DCOTransparentScroller.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A37A31B8FBF92B9D249B719083CC946 /* Pods-TrueColors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F094064696CD479E388CC26A20D8D8D /* Pods-TrueColors-dummy.m */; };
+		0CAF595A6A6E71E985283B50060FCD6C /* ZZChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 872B707DD151A1785DCC91D1AD81A6AF /* ZZChannel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D634472FE235768670A1C54D7BD38F7 /* MAKVONotificationCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = BDAC9170B88B24BA993B367198777E24 /* MAKVONotificationCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0EA7CEA2A19C2B772F43C88D7A66C62B /* CASLBaseSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 099D445D5DDBF173E314FF79605CD8F1 /* CASLBaseSpec.m */; settings = {COMPILER_FLAGS = "-Wunused-parameter"; }; };
+		0EF17A500D3587BC336E887ADC77BACE /* CASLDocumentSerializerJsonV1.h in Headers */ = {isa = PBXBuildFile; fileRef = F03145E705F11F08FAD8B387A4959CD7 /* CASLDocumentSerializerJsonV1.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FE3C07033FDC60C6750F0066C82B469 /* _CASLFontSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 923F5C050CF1463D47D3DDDCFD12E3E5 /* _CASLFontSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		109421DAD3C2ADC59625B65DE4C558C3 /* NSColorPanel+BFColorPickerPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DC2B8CB060692A8DE0FA1D9B85D0E0 /* NSColorPanel+BFColorPickerPopover.m */; };
+		11EB8B4F6AF4581E3A523A9AE2A000A7 /* UICKeyChainStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 92AFF567519EDE8FE7B9FF8D5CD40121 /* UICKeyChainStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		133A3ADCC22AE3F88025E9990697B38D /* Vokoder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD47DE226A44462E15E1B219F0A93FC /* Vokoder-dummy.m */; };
+		13860E57730CB68C980144C1246E8166 /* VOKUtilities-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 812A6DF58E85CCC1E9280954D46182B9 /* VOKUtilities-dummy.m */; };
+		140E90D4AAD3357AD5C932CAD5227608 /* ZZDeflateOutputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = B8799BFADBF3CF84638DCABA33F1BA42 /* ZZDeflateOutputStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1523ECABEAC8045673063FA3D6E70899 /* ILGDynamicObjC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 801B9204844DE86EC73A5E7EFC5627E1 /* ILGDynamicObjC-dummy.m */; };
+		15698A6DF9424E91CCDFFFC9F891630C /* ZZNewArchiveEntry.mm in Sources */ = {isa = PBXBuildFile; fileRef = 00E33D35D941298B7942E3517B0E101A /* ZZNewArchiveEntry.mm */; settings = {COMPILER_FLAGS = "-fno-objc-exceptions -fno-exceptions -std=c++11 -stdlib=libc++ -DOS_OBJECT_USE_OBJC=0"; }; };
+		15ADB6BFF7D6CCAFB5B1BBD42CE1118D /* ZZChannelOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = AE935BC5D2ADDDB57B9D058600D96BB5 /* ZZChannelOutput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		188674B1FBA04FFD17E44815B59FB590 /* VOKCoreDataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8887C1F9E5BED81419AF61153677868A /* VOKCoreDataManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18D234716A540BCB266035F4359BFECB /* Pods-TrueColorsTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 619524C8CC626F2E36106D4C6CDB6D68 /* Pods-TrueColorsTests-dummy.m */; };
+		1BF2AD3C6FE8E7FB1A09BDCEFA6F5263 /* VOKCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 79445E964287F8FC32B983A79E706E10 /* VOKCoreDataManager.m */; };
+		1CF35A59261877A44CB46A32AE991E51 /* CASLFontSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 139B062AEA430F256384CBF3217E02E7 /* CASLFontSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E1767474C4AA0944307B5F542D2BE85 /* CASLSpecsModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 31AF5BF13178DA694C1553BEFF0B1CAE /* CASLSpecsModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2258D631D15F5408000F60E4BB264262 /* NSManagedObjectModel+CASL.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C518C198EB882CC036E6B107014B9BD /* NSManagedObjectModel+CASL.m */; settings = {COMPILER_FLAGS = "-Wunused-parameter"; }; };
+		23DA4A38A0F5999A47726AD2E3A3CB64 /* ILGClasses.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6876275B2F95CC0781382D994E1DE3 /* ILGClasses.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		25D2DEB9A1232CE238BACD391EE056D8 /* BFColorPickerPopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68CE3FE7EA80265168DB2A4A000DDD2C /* BFColorPickerPopoverView.m */; };
+		2630F9BCDA0FB87CA1E27510C8B1D88F /* _CASLIncludedFont.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC4B3A5D74166B49A85B16FB3321722 /* _CASLIncludedFont.m */; settings = {COMPILER_FLAGS = "-Wunused-parameter"; }; };
+		266C2EB085F2A07622C62FB075718E2C /* ILGClasses.h in Headers */ = {isa = PBXBuildFile; fileRef = 869B5154502141C012BA472A1C847BDE /* ILGClasses.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26E8E70BCB8A4271A84875CB3B142139 /* ZZStandardCryptoEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05C9E7346302DB676ECEE92003226EAA /* ZZStandardCryptoEngine.cpp */; settings = {COMPILER_FLAGS = "-fno-exceptions -std=c++11 -stdlib=libc++ -DOS_OBJECT_USE_OBJC=0"; }; };
+		26FDBFD0355D52984C452520F3102713 /* _CASLIncludedFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A541C797183444681814BDD52AAC01 /* _CASLIncludedFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		296C49C6C6DB064578F454F3319882AD /* MAKVONotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D7ED33AF4A63A9B85A4EA744302AE18D /* MAKVONotificationCenter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2C95790636E21C6849AEC79F172CB825 /* VOKManagedObjectMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 06039549FED41DA6C0BC7DB6407A0731 /* VOKManagedObjectMap.m */; };
+		2CD7DC83398784B137445E52BD86C504 /* BFPopoverColorWell.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD84862C22B8EDA8774159E76C53DF9 /* BFPopoverColorWell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		301C20D9A38A3AC7BD45C240E3789C8C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 401D2715E3ECF45767B49F2CC295F881 /* Cocoa.framework */; };
+		3079F64EB39231C378FB7F6844513DBD /* CASLColorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E4606D507269BE6BCC13C894B6E208 /* CASLColorSpec.m */; settings = {COMPILER_FLAGS = "-Wunused-parameter"; }; };
+		30E1A35B04A1072026635B7DD0D403C8 /* MASPreferences-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA1924E7800FB10E66407033C4E9DD /* MASPreferences-dummy.m */; };
+		311B5AFD1BBD1730D855D283A76F359D /* BFColorPickerPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = D984977CF92EC7B13A94BC550E0B2D02 /* BFColorPickerPopover.m */; };
+		32EB5756026F0C5815A92B2CBA5E0D51 /* NSColor+CASL.h in Headers */ = {isa = PBXBuildFile; fileRef = BBDCAD9C356001659C32342894F30525 /* NSColor+CASL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		339C139BAC46239DF1C0F48B3F9BECEB /* _CASLMetricSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 476B658A06645553CE9EE8D7738B1E28 /* _CASLMetricSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		350405D2CC9495C198D6B5C3129975A0 /* ZZError.h in Headers */ = {isa = PBXBuildFile; fileRef = B06D7BD83D496B1F33AEAE10AC470D20 /* ZZError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35DE720F91A3F346EBC820B27C13C183 /* BFColorPickerPopover-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59C608FCD37535108BFC543A877A63D0 /* BFColorPickerPopover-dummy.m */; };
+		3862F65A7C64D183F3096521C6298348 /* zipzap.h in Headers */ = {isa = PBXBuildFile; fileRef = 210E85EF6996C8C64F1D0B7F6574DB8B /* zipzap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		388C22BC0C6295739569BEFD0E62A532 /* VOKKeyPathHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FBBCFFA37F19790C3C413A6040D3409 /* VOKKeyPathHelper.m */; };
+		38E6258111DEDA7AA894C3EAAFE46BC9 /* ILGHttpConstants-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9C29C822C84E66F224F68BAA08F470 /* ILGHttpConstants-dummy.m */; };
+		3E0D461EE34D21C1E3FF3A8CA2AF33E3 /* HTTPHeaderFields.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C32C32695C63B283B75FAEB560D06C4 /* HTTPHeaderFields.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		419AFF9FFBC7CFD73C6DE1905DC200D9 /* CASLColorSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B88923915DE8E8F32D6877834F36F1B /* CASLColorSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42EA4DF08B4AD892CB9771EB7815AC20 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 401D2715E3ECF45767B49F2CC295F881 /* Cocoa.framework */; };
+		4330F449DBD175CF60EE5858F60226EA /* NSFont+CASL.h in Headers */ = {isa = PBXBuildFile; fileRef = 02886F66072257ED6322DC3B1504A483 /* NSFont+CASL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43BA52D750C650FAD8BF2D7141A2F982 /* ZZDataChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF2CC07040E608C57D6AEB17174460F /* ZZDataChannel.m */; settings = {COMPILER_FLAGS = "-fno-objc-exceptions -std=c99 -DOS_OBJECT_USE_OBJC=0"; }; };
+		442B34FCD9FDFC9C1CB25BC013A62418 /* ZZNewArchiveEntryWriter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1880BC9DD4FAB31B2BABFF03BED3A910 /* ZZNewArchiveEntryWriter.mm */; settings = {COMPILER_FLAGS = "-fno-objc-exceptions -fno-exceptions -std=c++11 -stdlib=libc++ -DOS_OBJECT_USE_OBJC=0"; }; };
+		4567A5E2A5523FF4BE62FD719D87B620 /* VOKManagedObjectMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 16C521EB5693D4EC4CF276F3DE32EF6B /* VOKManagedObjectMap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		469F26643700713411149B41C953FF67 /* BFIconTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = F1D9156CB6C835B407BA7B2FADB10F26 /* BFIconTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46F22CD0BD9CB4667740E325A1B07843 /* BFColorPickerPopoverView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A28B2F8B1AF13404BBEB0CEFE25CAD8 /* BFColorPickerPopoverView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B29508715287A6427EC7F1FB81BCC59 /* ZZStandardCryptoEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 69E1B6D0E25B7F9CF8D1E83E46C4E729 /* ZZStandardCryptoEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F3A1B4CE98F3BF4948EE0E0E2DB3717 /* BFColorPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F7602791AAD07AD51D677965EB90FD7A /* BFColorPickerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		501F11AF8A77EDDE1189D12733717791 /* CASLDocumentSerializerJsonV1.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6F3663D6599DB4FBCF36B212176C86 /* CASLDocumentSerializerJsonV1.m */; settings = {COMPILER_FLAGS = "-Wunused-parameter"; }; };
+		510229007776BA14DD7FBBADC729DC2C /* ZZInflateInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 015F8636AD8459359FC8FFE9A07AFEC4 /* ZZInflateInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-exceptions -std=c99 -DOS_OBJECT_USE_OBJC=0"; }; };
+		5448214C228F0081189701BE44A61698 /* CASLLocalizedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E9B5E7751CE5AE12D0D421CC7804ED /* CASLLocalizedString.m */; settings = {COMPILER_FLAGS = "-Wunused-parameter"; }; };
+		570E37D84206D6C5EF2C25C8C70BD5A5 /* ZZFileChannelOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9B5BFB353C3860D815E467A056394C /* ZZFileChannelOutput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5753D2C159F12A862B897424FF9F1026 /* MAKVONotificationCenter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8E33816DD5B901F59DBCB31880F623 /* MAKVONotificationCenter-dummy.m */; };
+		596FE4D3FF71FB3BD95A5F046812920C /* MASPreferencesViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F6762FE9930E2DCD1831682163391E6A /* MASPreferencesViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5BBBADA11C008237C48DDF046E53DD4A /* HTTPHeaderFields.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C4DB1CAA6BAFA63E1CDDB51DAB3C3D /* HTTPHeaderFields.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5CF2BD62A9D51B6FFFE1D8BD4104DC9D /* ZZArchiveEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = BE4E755A101D2C1CA0B5EF7364AC7209 /* ZZArchiveEntry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D9CA7A4C79A1BE98623F7E848E634EE /* ZZArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6E8CC48D65DDF2548FB939555467CC86 /* ZZArchive.mm */; settings = {COMPILER_FLAGS = "-fno-objc-exceptions -fno-exceptions -std=c++11 -stdlib=libc++ -DOS_OBJECT_USE_OBJC=0"; }; };
+		5E810F3CECFDDB0E7140BE710531D59D /* ZZFileChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C3A0A8E84FEF1F4C032BF9EFAA39530 /* ZZFileChannel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EE819069D413BA86EDEBEC287881A44 /* NSColor+BFColorPickerPopover.h in Headers */ = {isa = PBXBuildFile; fileRef = 476E5C2C2BC0FDE3CA97733D535C2ADE /* NSColor+BFColorPickerPopover.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6023321AA44BCAD41943D89E77937DF7 /* CASLMetricSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E3D277B6AA8EC9A30A9C6FEA48FF197 /* CASLMetricSpec.m */; settings = {COMPILER_FLAGS = "-Wunused-parameter"; }; };
+		61105CB93020C603855AFC81FC539274 /* VOKCoreDataManagerInternalMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = F6F8AAFAE0567BEFBB7CB803F3A2E6B9 /* VOKCoreDataManagerInternalMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		639D1503AA86BA6D829B92485EEE1F78 /* ZZOldArchiveEntryWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A754F1E8773D68F6A16A0402A48AA84 /* ZZOldArchiveEntryWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		680325EF31E4891994A290014CDDD389 /* UICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0573D0AE523AD2AEB827B7364818D506 /* UICKeyChainStore.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		68AE7F731016F1A2BA2A6BEB467AFC34 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5898EB408C35E34312164E69C1341A9E /* ApplicationServices.framework */; };
+		6CE8615DE6A7393D447B95F28DD28755 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 401D2715E3ECF45767B49F2CC295F881 /* Cocoa.framework */; };
+		6DF213BFBCC0FA8D55581E480798360E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 401D2715E3ECF45767B49F2CC295F881 /* Cocoa.framework */; };
+		732986A809B9C1FEFA03531469CFC7FA /* _CASLBaseSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D20B564D365D0619C787E3E778A1460B /* _CASLBaseSpec.m */; settings = {COMPILER_FLAGS = "-Wunused-parameter"; }; };
+		74DD6103B08C68347CFD184842501D9D /* VOKManagedObjectMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8331D3F6A669DA495CDD14525FDCCD61 /* VOKManagedObjectMapper.m */; };
+		757DA5D191020D6CFA442EE47BFF90B9 /* ZZConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = CC19938BC9652AC4A40994CC732A3F89 /* ZZConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		758437192FA6FD57885E1F549E4472F9 /* CASLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = A5E783AA101040F8E9890E0195DC50B7 /* CASLDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75E8153D31648F8B91343C1FDACAC543 /* ZZOldArchiveEntryWriter.mm in Sources */ = {isa = PBXBuildFile; fileRef = C90A7F331C2E261659A08499C7F5CF49 /* ZZOldArchiveEntryWriter.mm */; settings = {COMPILER_FLAGS = "-fno-objc-exceptions -fno-exceptions -std=c++11 -stdlib=libc++ -DOS_OBJECT_USE_OBJC=0"; }; };
+		7600447844886AFC455F655CD58A58E1 /* _CASLColorSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 32634CA2B8A2826DDA25550884A43512 /* _CASLColorSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78DD6D927B3EAC16365CD23AF34A2769 /* MASPreferences.h in Headers */ = {isa = PBXBuildFile; fileRef = D479F52D8EAD971001116AEB6FC51494 /* MASPreferences.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7948D3B4EE3526B68102E0C09FB6D6F7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 401D2715E3ECF45767B49F2CC295F881 /* Cocoa.framework */; };
+		7BB3CE94CEB0B60467D13020E9BB3FF8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 401D2715E3ECF45767B49F2CC295F881 /* Cocoa.framework */; };
+		7C076938A43B3891F41A2BD84AEE3CAE /* ZZDataChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9744EDEA504C76818E986FA96BEF37BB /* ZZDataChannel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E0C783343487AC790D8AFD000C31D45 /* MASPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD6015478CDF0A5EEFA04C70AC75BDB /* MASPreferencesWindowController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7E40EE50CABD801245A4E85DFC559232 /* ZZDataChannelOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB68D1636EE9E8E28B014F79F9CE159 /* ZZDataChannelOutput.m */; settings = {COMPILER_FLAGS = "-fno-objc-exceptions -std=c99 -DOS_OBJECT_USE_OBJC=0"; }; };
+		7F89A555AB4DB25A422A2701CAC27D0D /* ZZOldArchiveEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BE3BA928FE0E392B6A2AE28C4226E9 /* ZZOldArchiveEntry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82035F323A5E7724BE8727A4D30734D1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 401D2715E3ECF45767B49F2CC295F881 /* Cocoa.framework */; };
+		837C1F63125D1848BC5FC0C5C83198DD /* DCOTransparentScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = CCAF96657D784AD5E9B8FA4386A599D6 /* DCOTransparentScroller.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8729B79F85BE7C77B600308B2DDC88FF /* VOKMappableModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D3B1A9E7875ADF6A8DE48519D4C20FE0 /* VOKMappableModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87A378C65E2C0B9380DA1E3A1ECA160D /* BFIconTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E8B3FDED0B2079125AF56292D347E0 /* BFIconTabBar.m */; };
+		88CCCFD3E22C1D236191B084CE2B4101 /* ZZConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 68ED3DD41132CDAC546C1955C3501F18 /* ZZConstants.m */; settings = {COMPILER_FLAGS = "-fno-objc-exceptions -std=c99 -DOS_OBJECT_USE_OBJC=0"; }; };
+		88F53E1A6EA757EB1ACE063BA4D501F5 /* zipzap-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C34A9035F750E51C8C1226C5CAD0305 /* zipzap-dummy.m */; };
+		893E9DE97C48BF5C8C53ADC304416B9A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26630E1F0E62FBD3D49B80FD6C94C4C5 /* Security.framework */; };
+		8B80ECBF7B2D6AE016EC6DEF11373713 /* ZZScopeGuard.h in Headers */ = {isa = PBXBuildFile; fileRef = AED8EFD5C20D7E6CB2928AA0BC16C5EB /* ZZScopeGuard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C3E8AAEADF15D824CEE54EA908584B9 /* ZZArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CB1F20763B48EC5CCD4132F2D2F8411 /* ZZArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C79535ED1C181201CDB4B7C8EC048D4 /* CASLLocalizedString.h in Headers */ = {isa = PBXBuildFile; fileRef = B213A166C302DE392464F9A42AA2D174 /* CASLLocalizedString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D65D0732B68A22FD7A1408ABB078F96 /* NSFont+CASL.m in Sources */ = {isa = PBXBuildFile; fileRef = 402D0124CFBB165DE0AAB07F005AD71D /* NSFont+CASL.m */; settings = {COMPILER_FLAGS = "-Wunused-parameter"; }; };
+		8E235962294071F9ACF3F92F409F5733 /* ZZStoreOutputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = CA67816917DF5A740369BC56166C1226 /* ZZStoreOutputStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91931EFC863F9B400D435DA04A00C371 /* CASLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BE3444734B245741C373DF3BA94921 /* CASLDocument.m */; settings = {COMPILER_FLAGS = "-Wunused-parameter"; }; };
+		9247B3DA803569E7DE6CA918114D6AE0 /* DCOTransparentScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7071DEF1BD71B6AAB2548AF352379E /* DCOTransparentScrollView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		92E2F2D4AFF83546B9BA163257CB4F72 /* ZZNewArchiveEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = E1ABD86B0DF792ADCE8B7137086B9E08 /* ZZNewArchiveEntry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		937FC35804E0285C21AE5AA9F54A79C3 /* BFColorPickerPopover.h in Headers */ = {isa = PBXBuildFile; fileRef = E19E42B43BF8B0721E0AAE573F9F2E48 /* BFColorPickerPopover.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		956385329EBDA0218527EDF4EDE83939 /* ZZError.m in Sources */ = {isa = PBXBuildFile; fileRef = 17579446ADE3ABA2892C73E4246B1B68 /* ZZError.m */; settings = {COMPILER_FLAGS = "-fno-objc-exceptions -std=c99 -DOS_OBJECT_USE_OBJC=0"; }; };
+		98EEE2BA31F27B7853D35E0C2C26228B /* NSManagedObject+VOKManagedObjectAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 865A7924B288E8A22BC46BF690A46AEA /* NSManagedObject+VOKManagedObjectAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BC27C38E3FBD1B7B0F1C1A2A6852A5A /* ZZDataChannelOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = E75DBA080B907B350385AB122CF4DC7D /* ZZDataChannelOutput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E9CBE265A5671A6F147CDDB66A7B2DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54FDE7D54163EAA180686A5268D28AE6 /* Foundation.framework */; };
+		A092E9ED92EDC14DA6F1576CEF89E163 /* ZZDataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = CC6C1392C8548C2EABB9E229BB55DE5A /* ZZDataProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1678EC5DB1F124717D5031321449952 /* ZZHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 375F9137B0C30060BFA8257DD06AE913 /* ZZHeaders.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5AA992109BE46E768FFB9046B3E04F4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 401D2715E3ECF45767B49F2CC295F881 /* Cocoa.framework */; };
+		A5B2E2F202D98805EABAC93EB9A26C53 /* DCOAboutWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 61313A1623BAFAEDC2CF07E30944A8E6 /* DCOAboutWindowController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7C4D4C6494357CD3A978D40A1AD60CE /* ZZStoreOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4993AB97B29364595D1FEB692093BB /* ZZStoreOutputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-exceptions -std=c99 -DOS_OBJECT_USE_OBJC=0"; }; };
+		AD8FBA031ECE472787F9D4A8C12E0877 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 401D2715E3ECF45767B49F2CC295F881 /* Cocoa.framework */; };
+		AF1AADEA65581B3BA45D77EACBAD844F /* _CASLBaseSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 316AA82476C93D7BACD144F3DD747F96 /* _CASLBaseSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF640C44A8865AD8BFCEAF6B58A117E /* ZZArchiveEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E42996FED89F2957C47151338C21576 /* ZZArchiveEntry.m */; settings = {COMPILER_FLAGS = "-fno-objc-exceptions -std=c99 -DOS_OBJECT_USE_OBJC=0"; }; };
+		B043B1CD45741D0F7F1EE224DA74D7C4 /* CASLBaseSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FE0F798527D79242E686833965B2B28 /* CASLBaseSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B14C99FAEA0D7B9C1A7A14AE131EBEDF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 401D2715E3ECF45767B49F2CC295F881 /* Cocoa.framework */; };
+		B281D09DB995432D33964B8E09987EB0 /* HTTPMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 1695AB3A8A19C52D55D04E30CEE1A43B /* HTTPMethods.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B4D11BF5DD42D42DCE121DDE2972D811 /* CASLFontSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D00882C91C75C5E3EC6CCDA9A5341AE /* CASLFontSpec.m */; settings = {COMPILER_FLAGS = "-Wunused-parameter"; }; };
+		B6D1DE1FDDB7EF0D24022F991A438431 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BEF41F9488CF0AD0F1BEAB977EE1344 /* CoreData.framework */; };
+		B8E552729D69613A1F83CC0C115AA59C /* CASLDocumentSerializerZipV1.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F97C84C185BB7833645101492A6B58D /* CASLDocumentSerializerZipV1.m */; settings = {COMPILER_FLAGS = "-Wunused-parameter"; }; };
+		B977895B2D2BFA3997042AB82D09AE81 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 401D2715E3ECF45767B49F2CC295F881 /* Cocoa.framework */; };
+		BD24862FE2AC309558EBA12A48498E4B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E83F407738BE0A33709B9765136905F /* QuartzCore.framework */; };
+		BFF2D0BD9CA6DD58860C69B0CD4C5D64 /* ZZFileChannelOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = F9021BABC5C4CD192BAC9D54F8090A6C /* ZZFileChannelOutput.m */; settings = {COMPILER_FLAGS = "-fno-objc-exceptions -std=c99 -DOS_OBJECT_USE_OBJC=0"; }; };
+		C259501B321BFB2251D4DA1729796750 /* HTTPMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = F5EB82B4336A3D015801A1FBB4828B97 /* HTTPMethods.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3BDD80B7306C41BD212DE41CF0BC46A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 401D2715E3ECF45767B49F2CC295F881 /* Cocoa.framework */; };
+		C4F6EAFA355C2B7209E1B1E385FC5204 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 401D2715E3ECF45767B49F2CC295F881 /* Cocoa.framework */; };
+		C71213B2E8C3A6434B869C6FA3AEDAA3 /* ZZAESDecryptInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = BB6193CDB6502B7B5DA7B140F3BFB56D /* ZZAESDecryptInputStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7195956D04C93F0CAF5839D78D9B279 /* CASLIncludedFont.m in Sources */ = {isa = PBXBuildFile; fileRef = F142FD1DAAA30AC67646EA93042A8E4B /* CASLIncludedFont.m */; settings = {COMPILER_FLAGS = "-Wunused-parameter"; }; };
+		C8D849E62B7879B7F382C5941CC944D6 /* ZZFileChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7EBABEDF45447E98AD7B4006F2E646 /* ZZFileChannel.m */; settings = {COMPILER_FLAGS = "-fno-objc-exceptions -std=c99 -DOS_OBJECT_USE_OBJC=0"; }; };
+		CA52076BEC827DC81C1932F6D5FDF2E6 /* UICKeyChainStore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4BE86DC8D06EEA9355249C71EA09D7 /* UICKeyChainStore-dummy.m */; };
+		CA80FCF5665B2941B1C1499AD03D4BE8 /* CASLDocumentSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 316D1945269B07B52D058CBD17395B8E /* CASLDocumentSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB4C0203D0D046647CD238AC5DB2D1FD /* DCOTransparentScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E1094C8B788597638DE857D80233A34 /* DCOTransparentScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD2465B60CAA94534D5EDE984BACCBDD /* ZZInflateInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = FA8F3177FB6A8E44CC37B4338CD5AC18 /* ZZInflateInputStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDCC4F877C5B7245957905A74CB65897 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 401D2715E3ECF45767B49F2CC295F881 /* Cocoa.framework */; };
+		CEDBFD292E2BF56AE398F784876F9C4C /* VOKManagedObjectMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = C26206A84422DA27B050345F5B07BD1A /* VOKManagedObjectMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF3AD675A00EBCDD2F76C841831FFC55 /* _CASLFontSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7788A60DD06583552CD8C9DC5965D32F /* _CASLFontSpec.m */; settings = {COMPILER_FLAGS = "-Wunused-parameter"; }; };
+		D052A96DC92D18AA47D2E4092F1A6DE1 /* CyndiLauper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C67F5429960C8C44E7F932E68458705E /* CyndiLauper-dummy.m */; };
+		D366AF903BB7B47DF13B1AB7B1D3426D /* _CASLMetricSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = A4238AA3AB340A9170D7557A9DF36AF2 /* _CASLMetricSpec.m */; settings = {COMPILER_FLAGS = "-Wunused-parameter"; }; };
+		D45F8C1FDF9DE997DAEEFAE02AFCD223 /* VOKNullabilityFeatures.h in Headers */ = {isa = PBXBuildFile; fileRef = 6337B23E4CF16C140A282FE7C71A4875 /* VOKNullabilityFeatures.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D725AA88367250014A13CF169C409ED4 /* ZZArchiveEntryWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = E98BAECC8C8233A029675A0758811CB6 /* ZZArchiveEntryWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA1A33BB5AA89ED9963F90E4B12F3D4E /* CASLDocumentSerializerZipV1.h in Headers */ = {isa = PBXBuildFile; fileRef = 3925F57CA3B0A2BA8F5FC3B129DB68AD /* CASLDocumentSerializerZipV1.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB31666A13BD4EF9AD997A3157F31004 /* ZZStandardDecryptInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 67A51404042492FA8EA699D30C28D03C /* ZZStandardDecryptInputStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBF2843214000588D87ADC19EA39D18D /* NSManagedObject+VOKManagedObjectAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4359BCABCE47E7C92ACE7558AAD4A768 /* NSManagedObject+VOKManagedObjectAdditions.m */; };
+		DCB5FF61F89FC71895FBE9F45AE6FE70 /* ZZDeflateOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0FAB63472B8DEC09E743E21A399130 /* ZZDeflateOutputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-exceptions -std=c99 -DOS_OBJECT_USE_OBJC=0"; }; };
+		DCFABFA7B8F8CA0CEED730D12AE4A68E /* DCOAboutWindow-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8DF7E49EC8021B5D8841355B2F7A57 /* DCOAboutWindow-dummy.m */; };
+		DDBB61BD71D2FA7A4EC780212489DC5E /* CASLDocumentSerializerImplementation.h in Headers */ = {isa = PBXBuildFile; fileRef = D22ACE9FC0355BA0167FB01E1ED2590D /* CASLDocumentSerializerImplementation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDD9ECE5E8A5A601F3F8C6222BFD7E35 /* DCOAboutWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B895327D352E47C00B89389D0A3ABBB7 /* DCOAboutWindowController.m */; };
+		DEFC009369DC6D3C61F89C63C614F0C1 /* BFPopoverColorWell.m in Sources */ = {isa = PBXBuildFile; fileRef = 60B09A240F33579BFCBF4186496339F0 /* BFPopoverColorWell.m */; };
+		DF4F53447DEDF2E4F58F993726162990 /* CASLDocumentSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 610A0960C4485ACC72021D68C5017068 /* CASLDocumentSerializer.m */; settings = {COMPILER_FLAGS = "-Wunused-parameter"; }; };
+		DFCFE3AEACB75DAE430F75A46D9995D7 /* MASPreferencesWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D365606FA95FE21EC3B0A195C1EF337 /* MASPreferencesWindowController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E023E6EAC218192B4D339698EEBE2293 /* HTTPStatusCodes.h in Headers */ = {isa = PBXBuildFile; fileRef = 2095BAD9C9FE5F0C217EDEF811B6819E /* HTTPStatusCodes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4940B201A8DE50F92F123F6BCE90762 /* BFColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F85742A8C76A7E22DCA3C8524D6D6A3 /* BFColorPickerViewController.m */; };
+		E4EC9B7C0C6A52B5AC677FA08A5EAF1F /* NSManagedObjectModel+CASL.h in Headers */ = {isa = PBXBuildFile; fileRef = 32855DE321CEDDE5A58AF45B4216F4D2 /* NSManagedObjectModel+CASL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5D424CCFB7C14C4E4C522B795EBDFF0 /* VOKCoreDataCollectionTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 68A7F3947C9050363A79E1B8E1EBA6AF /* VOKCoreDataCollectionTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E63EFB9B228A5DBAA0A19CAF3F531E93 /* VOKKeyPathHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = F85E018BD172DDC2A1ABD7C777AC1268 /* VOKKeyPathHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F035683B7DAEC23006F52B7BCEFD4A91 /* CASLIncludedFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AD61DDF7BBAC4A7A1C98850C1092AB3 /* CASLIncludedFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F134279FD824F73A34CFC9FC1208C6F0 /* Vokoder.h in Headers */ = {isa = PBXBuildFile; fileRef = D24F47689FABB44154AB113CAF8F56DB /* Vokoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F57C3C2B783AE0FBC867BC3582A65FE3 /* ZZNewArchiveEntryWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = B68BE155F0F002239E26A1CE45B58165 /* ZZNewArchiveEntryWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA0A1B5C778EE996BA37ECDA57E56E6D /* NSColorPanel+BFColorPickerPopover.h in Headers */ = {isa = PBXBuildFile; fileRef = 89AF13AE41597EAE8850BF7E4ABEA0E7 /* NSColorPanel+BFColorPickerPopover.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA70FB836479282F31A95DA4190C5322 /* ZZOldArchiveEntry.mm in Sources */ = {isa = PBXBuildFile; fileRef = 645FDDEBAE37FA8D989DF04B0754A973 /* ZZOldArchiveEntry.mm */; settings = {COMPILER_FLAGS = "-fno-objc-exceptions -fno-exceptions -std=c++11 -stdlib=libc++ -DOS_OBJECT_USE_OBJC=0"; }; };
+		FF523376CE62EAA4EF28CFA4046B01AC /* CASLMetricSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = C8011077DCFA9A4764F30534B6A79B63 /* CASLMetricSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF636DC08E85F8989820931DB559740A /* NSColorWell+BFColorPickerPopover.h in Headers */ = {isa = PBXBuildFile; fileRef = 703E7C23BA26F31D86EF94A31DE1530A /* NSColorWell+BFColorPickerPopover.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF8F1BC5360D9BF1B859D5B1AE3ADCDA /* NSColorWell+BFColorPickerPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A837272D2577549D032EA6BDB98D94B /* NSColorWell+BFColorPickerPopover.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		970C0567F47A6264D467C78C738FE928 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B916079869A4966B8474E5FB83E747E;
+			remoteInfo = MAKVONotificationCenter;
+		};
+		1156E97F2EDF1CF5513597C969D8632B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF8661F73CD02E38BBAB9D1A0CE5C8A7;
+			remoteInfo = CyndiLauper;
+		};
+		C935D71D1D57C9FE28A821FDB760B7EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3259982B4F3ADB4584E54D7A70C980FF;
+			remoteInfo = UICKeyChainStore;
+		};
+		C767D381F4508CE72D51DFB932F62722 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BF6F455B6726E7C85743DC17CAFDD20;
+			remoteInfo = VOKUtilities;
+		};
+		E8D5CA76566823C35ECA23F40319E1CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D37E90728AE46AFAD63A0DA44CE9E986;
+			remoteInfo = MASPreferences;
+		};
+		9BE4D3DBBE8C297822632CEF649D8126 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA5E2F05EA983D823D3414221069869D;
+			remoteInfo = Vokoder;
+		};
+		44D4EBCF73A5F767B91CE73F646D1C64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3386F7507ECAC65A323584F9CFBAD32;
+			remoteInfo = zipzap;
+		};
+		6FAD7216AA79B384336D892733DC3A4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3386F7507ECAC65A323584F9CFBAD32;
+			remoteInfo = zipzap;
+		};
+		CDA87359B9E007350D6295B866D6194F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A133B4B5C05337BCC23F8A078837F064;
+			remoteInfo = DCOAboutWindow;
+		};
+		F9530FACFA3319D7F66C337BF12F8CE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 110774E0A74411EB3D9AC98D358F899E;
+			remoteInfo = BFColorPickerPopover;
+		};
+		C7F1DD3CD0C25A781982D3B7A632E8E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD87C9F3B4BDA2DBB53DA8251452153C;
+			remoteInfo = DCOTransparentScroller;
+		};
+		9E19846C346BFE4CC9BEB3E76B429238 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BF6F455B6726E7C85743DC17CAFDD20;
+			remoteInfo = VOKUtilities;
+		};
+		BAAD07A27454A07F29747B96469992AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69C3F52DD0A5FFBD9C342F59625053AA;
+			remoteInfo = ILGDynamicObjC;
+		};
+		82A5550DDEDEF9279090079C1A63ED98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD87C9F3B4BDA2DBB53DA8251452153C;
+			remoteInfo = DCOTransparentScroller;
+		};
+		88123C48255820227FFDC14551EDB205 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69C3F52DD0A5FFBD9C342F59625053AA;
+			remoteInfo = ILGDynamicObjC;
+		};
+		0C5CE6CDACC964A05E839AF72F6E3CCD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 739F5F8C5B9569DD0C1FC73E4D715DF8;
+			remoteInfo = ILGHttpConstants;
+		};
+		6797BB1361056475184CFB3F5406FF58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BF6F455B6726E7C85743DC17CAFDD20;
+			remoteInfo = VOKUtilities;
+		};
+		8772AE30AA384785C6E00F71EB2BC619 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA5E2F05EA983D823D3414221069869D;
+			remoteInfo = Vokoder;
+		};
+		6B4BCACF09813D36512DB8BA56841A0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69C3F52DD0A5FFBD9C342F59625053AA;
+			remoteInfo = ILGDynamicObjC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00E33D35D941298B7942E3517B0E101A /* ZZNewArchiveEntry.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ZZNewArchiveEntry.mm; path = zipzap/ZZNewArchiveEntry.mm; sourceTree = "<group>"; };
+		015F8636AD8459359FC8FFE9A07AFEC4 /* ZZInflateInputStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZInflateInputStream.m; path = zipzap/ZZInflateInputStream.m; sourceTree = "<group>"; };
+		02886F66072257ED6322DC3B1504A483 /* NSFont+CASL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSFont+CASL.h"; sourceTree = "<group>"; };
+		051ABA5D49CC7B77B2EF3DC6ABBF3964 /* UICKeyChainStore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICKeyChainStore-prefix.pch"; sourceTree = "<group>"; };
+		0573D0AE523AD2AEB827B7364818D506 /* UICKeyChainStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UICKeyChainStore.m; path = Lib/UICKeyChainStore/UICKeyChainStore.m; sourceTree = "<group>"; };
+		05C9E7346302DB676ECEE92003226EAA /* ZZStandardCryptoEngine.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = ZZStandardCryptoEngine.cpp; path = zipzap/ZZStandardCryptoEngine.cpp; sourceTree = "<group>"; };
+		06039549FED41DA6C0BC7DB6407A0731 /* VOKManagedObjectMap.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VOKManagedObjectMap.m; path = Pod/Classes/VOKManagedObjectMap.m; sourceTree = "<group>"; };
+		071E9F2272DA3099E5CA74E0188D3AF8 /* libMAKVONotificationCenter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMAKVONotificationCenter.a; path = libMAKVONotificationCenter.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		099D445D5DDBF173E314FF79605CD8F1 /* CASLBaseSpec.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CASLBaseSpec.m; sourceTree = "<group>"; };
+		0AFFB229A0514A0991C0FCA25E377C5C /* _CASLColorSpec.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = _CASLColorSpec.m; sourceTree = "<group>"; };
+		0C32C32695C63B283B75FAEB560D06C4 /* HTTPHeaderFields.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HTTPHeaderFields.h; sourceTree = "<group>"; };
+		0D8E33816DD5B901F59DBCB31880F623 /* MAKVONotificationCenter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MAKVONotificationCenter-dummy.m"; sourceTree = "<group>"; };
+		0E3D277B6AA8EC9A30A9C6FEA48FF197 /* CASLMetricSpec.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CASLMetricSpec.m; sourceTree = "<group>"; };
+		0F3208B3C0CE8EC59BEF833C7B0E970F /* NSColor+BFColorPickerPopover.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSColor+BFColorPickerPopover.m"; path = "BFColorPickerPopover/Extensions/NSColor+BFColorPickerPopover.m"; sourceTree = "<group>"; };
+		139B062AEA430F256384CBF3217E02E7 /* CASLFontSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CASLFontSpec.h; sourceTree = "<group>"; };
+		1595FB80A8544C131F73DBF3C782BCC4 /* DCOTransparentScroller.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DCOTransparentScroller.xcconfig; sourceTree = "<group>"; };
+		1695AB3A8A19C52D55D04E30CEE1A43B /* HTTPMethods.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HTTPMethods.m; sourceTree = "<group>"; };
+		16C521EB5693D4EC4CF276F3DE32EF6B /* VOKManagedObjectMap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VOKManagedObjectMap.h; path = Pod/Classes/VOKManagedObjectMap.h; sourceTree = "<group>"; };
+		17579446ADE3ABA2892C73E4246B1B68 /* ZZError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZError.m; path = zipzap/ZZError.m; sourceTree = "<group>"; };
+		1880BC9DD4FAB31B2BABFF03BED3A910 /* ZZNewArchiveEntryWriter.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ZZNewArchiveEntryWriter.mm; path = zipzap/ZZNewArchiveEntryWriter.mm; sourceTree = "<group>"; };
+		1958861CF4597534B1AC399D6F4606FE /* Pods-TrueColors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrueColors.debug.xcconfig"; sourceTree = "<group>"; };
+		1B572CB9984A978AF62503FFAAB84F2B /* libDCOAboutWindow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libDCOAboutWindow.a; path = libDCOAboutWindow.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BEF41F9488CF0AD0F1BEAB977EE1344 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		1C4A1876EE6B04A4083E5B382693595F /* MASPreferences.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MASPreferences.xcconfig; sourceTree = "<group>"; };
+		1E1094C8B788597638DE857D80233A34 /* DCOTransparentScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DCOTransparentScrollView.h; path = DCOTransparentScroller/DCOTransparentScrollView.h; sourceTree = "<group>"; };
+		1E42996FED89F2957C47151338C21576 /* ZZArchiveEntry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZArchiveEntry.m; path = zipzap/ZZArchiveEntry.m; sourceTree = "<group>"; };
+		2095BAD9C9FE5F0C217EDEF811B6819E /* HTTPStatusCodes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HTTPStatusCodes.h; sourceTree = "<group>"; };
+		210E85EF6996C8C64F1D0B7F6574DB8B /* zipzap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zipzap.h; path = zipzap/zipzap.h; sourceTree = "<group>"; };
+		213F1EDD352D1113E0BE78AF92C77F8E /* libPods-TrueColorsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-TrueColorsTests.a"; path = "libPods-TrueColorsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21DC2B8CB060692A8DE0FA1D9B85D0E0 /* NSColorPanel+BFColorPickerPopover.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSColorPanel+BFColorPickerPopover.m"; path = "BFColorPickerPopover/Extensions/NSColorPanel+BFColorPickerPopover.m"; sourceTree = "<group>"; };
+		26630E1F0E62FBD3D49B80FD6C94C4C5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		2A837272D2577549D032EA6BDB98D94B /* NSColorWell+BFColorPickerPopover.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSColorWell+BFColorPickerPopover.m"; path = "BFColorPickerPopover/Extensions/NSColorWell+BFColorPickerPopover.m"; sourceTree = "<group>"; };
+		2BD77EB3DBFBA55B2BC6D3813FDA3AD5 /* DCOTransparentScroller-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DCOTransparentScroller-dummy.m"; sourceTree = "<group>"; };
+		2C0FAB63472B8DEC09E743E21A399130 /* ZZDeflateOutputStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZDeflateOutputStream.m; path = zipzap/ZZDeflateOutputStream.m; sourceTree = "<group>"; };
+		2C16142EBE2451A9D9CF859BCB9A8D88 /* BFColorPickerPopover-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BFColorPickerPopover-prefix.pch"; sourceTree = "<group>"; };
+		2C9C29C822C84E66F224F68BAA08F470 /* ILGHttpConstants-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ILGHttpConstants-dummy.m"; sourceTree = "<group>"; };
+		2DF2CC07040E608C57D6AEB17174460F /* ZZDataChannel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZDataChannel.m; path = zipzap/ZZDataChannel.m; sourceTree = "<group>"; };
+		2FBBCFFA37F19790C3C413A6040D3409 /* VOKKeyPathHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VOKKeyPathHelper.m; path = Pod/VOKKeyPathHelper/VOKKeyPathHelper.m; sourceTree = "<group>"; };
+		316AA82476C93D7BACD144F3DD747F96 /* _CASLBaseSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = _CASLBaseSpec.h; sourceTree = "<group>"; };
+		316D1945269B07B52D058CBD17395B8E /* CASLDocumentSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CASLDocumentSerializer.h; sourceTree = "<group>"; };
+		31AF5BF13178DA694C1553BEFF0B1CAE /* CASLSpecsModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CASLSpecsModel.h; sourceTree = "<group>"; };
+		32634CA2B8A2826DDA25550884A43512 /* _CASLColorSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = _CASLColorSpec.h; sourceTree = "<group>"; };
+		32855DE321CEDDE5A58AF45B4216F4D2 /* NSManagedObjectModel+CASL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectModel+CASL.h"; sourceTree = "<group>"; };
+		375F9137B0C30060BFA8257DD06AE913 /* ZZHeaders.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZHeaders.h; path = zipzap/ZZHeaders.h; sourceTree = "<group>"; };
+		3925F57CA3B0A2BA8F5FC3B129DB68AD /* CASLDocumentSerializerZipV1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CASLDocumentSerializerZipV1.h; sourceTree = "<group>"; };
+		395AEA5B1A0A865274CB1E38F7F74CD5 /* Pods-TrueColors-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TrueColors-acknowledgements.plist"; sourceTree = "<group>"; };
+		39627B63A63E68CF6B14CD427FB4A257 /* libILGHttpConstants.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libILGHttpConstants.a; path = libILGHttpConstants.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A28B2F8B1AF13404BBEB0CEFE25CAD8 /* BFColorPickerPopoverView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFColorPickerPopoverView.h; path = "BFColorPickerPopover/Helper Classes/BFColorPickerPopoverView.h"; sourceTree = "<group>"; };
+		3A73AC89904B4CB8B2E43FCBC389ACB6 /* libBFColorPickerPopover.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libBFColorPickerPopover.a; path = libBFColorPickerPopover.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AD61DDF7BBAC4A7A1C98850C1092AB3 /* CASLIncludedFont.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CASLIncludedFont.h; sourceTree = "<group>"; };
+		3B6F3663D6599DB4FBCF36B212176C86 /* CASLDocumentSerializerJsonV1.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CASLDocumentSerializerJsonV1.m; sourceTree = "<group>"; };
+		3B7D39498B0F607D45E870B435CB95A9 /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HockeySDK.framework; path = "HockeySDK-Mac/HockeySDK.framework"; sourceTree = "<group>"; };
+		3B9104E4B103EEBAE166B7BF3502A3B4 /* Pods-TrueColors-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TrueColors-resources.sh"; sourceTree = "<group>"; };
+		3D82BDEC03D71C6DD490BC69166E8924 /* libzipzap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libzipzap.a; path = libzipzap.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D8412CC9C9021F826FC761B960BF692 /* DCOTransparentScroller.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DCOTransparentScroller.h; path = DCOTransparentScroller/DCOTransparentScroller.h; sourceTree = "<group>"; };
+		401D2715E3ECF45767B49F2CC295F881 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		402D0124CFBB165DE0AAB07F005AD71D /* NSFont+CASL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSFont+CASL.m"; sourceTree = "<group>"; };
+		40E945B18B6DD5A61CBC2947AAD239EE /* BFColorPickerPopover.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BFColorPickerPopover.xcconfig; sourceTree = "<group>"; };
+		42EE8B2345FF20ACC90882EF4DA3E634 /* DCOAboutWindow.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DCOAboutWindow.xib; path = DCOAboutWindow/DCOAboutWindow.xib; sourceTree = "<group>"; };
+		42FD299E712A65D222D03FF9FA03010B /* VOKUtilities.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VOKUtilities.xcconfig; sourceTree = "<group>"; };
+		430B3EA637199FCEF88EF59FCDDF24F7 /* Pods-TrueColors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrueColors.release.xcconfig"; sourceTree = "<group>"; };
+		4359BCABCE47E7C92ACE7558AAD4A768 /* NSManagedObject+VOKManagedObjectAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+VOKManagedObjectAdditions.m"; path = "Pod/Classes/NSManagedObject+VOKManagedObjectAdditions.m"; sourceTree = "<group>"; };
+		45A541C797183444681814BDD52AAC01 /* _CASLIncludedFont.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = _CASLIncludedFont.h; sourceTree = "<group>"; };
+		476B658A06645553CE9EE8D7738B1E28 /* _CASLMetricSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = _CASLMetricSpec.h; sourceTree = "<group>"; };
+		476E5C2C2BC0FDE3CA97733D535C2ADE /* NSColor+BFColorPickerPopover.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSColor+BFColorPickerPopover.h"; path = "BFColorPickerPopover/Extensions/NSColor+BFColorPickerPopover.h"; sourceTree = "<group>"; };
+		487E2D24426FCCB029A220237341E7B6 /* ILGHttpConstants.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ILGHttpConstants.xcconfig; sourceTree = "<group>"; };
+		4D00882C91C75C5E3EC6CCDA9A5341AE /* CASLFontSpec.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CASLFontSpec.m; sourceTree = "<group>"; };
+		4DD47DE226A44462E15E1B219F0A93FC /* Vokoder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Vokoder-dummy.m"; sourceTree = "<group>"; };
+		4F094064696CD479E388CC26A20D8D8D /* Pods-TrueColors-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TrueColors-dummy.m"; sourceTree = "<group>"; };
+		4FE0F798527D79242E686833965B2B28 /* CASLBaseSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CASLBaseSpec.h; sourceTree = "<group>"; };
+		54FDE7D54163EAA180686A5268D28AE6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5898EB408C35E34312164E69C1341A9E /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/ApplicationServices.framework; sourceTree = DEVELOPER_DIR; };
+		5933CD9A0DAC0519588907B3C7F83940 /* zipzap.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = zipzap.xcconfig; sourceTree = "<group>"; };
+		59C608FCD37535108BFC543A877A63D0 /* BFColorPickerPopover-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BFColorPickerPopover-dummy.m"; sourceTree = "<group>"; };
+		5BB68D1636EE9E8E28B014F79F9CE159 /* ZZDataChannelOutput.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZDataChannelOutput.m; path = zipzap/ZZDataChannelOutput.m; sourceTree = "<group>"; };
+		5BDA1924E7800FB10E66407033C4E9DD /* MASPreferences-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MASPreferences-dummy.m"; sourceTree = "<group>"; };
+		5ED4077304AB1720B21D628EFD7A11F4 /* ILGDynamicObjC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ILGDynamicObjC.xcconfig; sourceTree = "<group>"; };
+		60B09A240F33579BFCBF4186496339F0 /* BFPopoverColorWell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFPopoverColorWell.m; path = BFColorPickerPopover/BFPopoverColorWell.m; sourceTree = "<group>"; };
+		610A0960C4485ACC72021D68C5017068 /* CASLDocumentSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CASLDocumentSerializer.m; sourceTree = "<group>"; };
+		61313A1623BAFAEDC2CF07E30944A8E6 /* DCOAboutWindowController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DCOAboutWindowController.h; path = DCOAboutWindow/DCOAboutWindowController.h; sourceTree = "<group>"; };
+		619524C8CC626F2E36106D4C6CDB6D68 /* Pods-TrueColorsTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TrueColorsTests-dummy.m"; sourceTree = "<group>"; };
+		6198398CA69DD96604BCFE001E8D1F91 /* CyndiLauper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CyndiLauper-prefix.pch"; sourceTree = "<group>"; };
+		6337B23E4CF16C140A282FE7C71A4875 /* VOKNullabilityFeatures.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VOKNullabilityFeatures.h; path = Pod/Classes/VOKNullabilityFeatures.h; sourceTree = "<group>"; };
+		63CA1C0320BAA4E933E75346BA6BB4CD /* zipzap-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "zipzap-prefix.pch"; sourceTree = "<group>"; };
+		645FDDEBAE37FA8D989DF04B0754A973 /* ZZOldArchiveEntry.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ZZOldArchiveEntry.mm; path = zipzap/ZZOldArchiveEntry.mm; sourceTree = "<group>"; };
+		67A51404042492FA8EA699D30C28D03C /* ZZStandardDecryptInputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZStandardDecryptInputStream.h; path = zipzap/ZZStandardDecryptInputStream.h; sourceTree = "<group>"; };
+		68A7F3947C9050363A79E1B8E1EBA6AF /* VOKCoreDataCollectionTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VOKCoreDataCollectionTypes.h; path = Pod/Classes/VOKCoreDataCollectionTypes.h; sourceTree = "<group>"; };
+		68CE3FE7EA80265168DB2A4A000DDD2C /* BFColorPickerPopoverView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFColorPickerPopoverView.m; path = "BFColorPickerPopover/Helper Classes/BFColorPickerPopoverView.m"; sourceTree = "<group>"; };
+		68ED3DD41132CDAC546C1955C3501F18 /* ZZConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZConstants.m; path = zipzap/ZZConstants.m; sourceTree = "<group>"; };
+		69E1B6D0E25B7F9CF8D1E83E46C4E729 /* ZZStandardCryptoEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZStandardCryptoEngine.h; path = zipzap/ZZStandardCryptoEngine.h; sourceTree = "<group>"; };
+		6C518C198EB882CC036E6B107014B9BD /* NSManagedObjectModel+CASL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectModel+CASL.m"; sourceTree = "<group>"; };
+		6C7EBABEDF45447E98AD7B4006F2E646 /* ZZFileChannel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZFileChannel.m; path = zipzap/ZZFileChannel.m; sourceTree = "<group>"; };
+		6CB1F20763B48EC5CCD4132F2D2F8411 /* ZZArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZArchive.h; path = zipzap/ZZArchive.h; sourceTree = "<group>"; };
+		6E8CC48D65DDF2548FB939555467CC86 /* ZZArchive.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ZZArchive.mm; path = zipzap/ZZArchive.mm; sourceTree = "<group>"; };
+		6F97C84C185BB7833645101492A6B58D /* CASLDocumentSerializerZipV1.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CASLDocumentSerializerZipV1.m; sourceTree = "<group>"; };
+		703E7C23BA26F31D86EF94A31DE1530A /* NSColorWell+BFColorPickerPopover.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSColorWell+BFColorPickerPopover.h"; path = "BFColorPickerPopover/Extensions/NSColorWell+BFColorPickerPopover.h"; sourceTree = "<group>"; };
+		71E4606D507269BE6BCC13C894B6E208 /* CASLColorSpec.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CASLColorSpec.m; sourceTree = "<group>"; };
+		767004AB338A993F7DB72534A2CFF0AE /* MASPreferencesWindow.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = MASPreferencesWindow.xib; path = en.lproj/MASPreferencesWindow.xib; sourceTree = "<group>"; };
+		7788A60DD06583552CD8C9DC5965D32F /* _CASLFontSpec.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = _CASLFontSpec.m; sourceTree = "<group>"; };
+		79445E964287F8FC32B983A79E706E10 /* VOKCoreDataManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VOKCoreDataManager.m; path = Pod/Classes/VOKCoreDataManager.m; sourceTree = "<group>"; };
+		7A754F1E8773D68F6A16A0402A48AA84 /* ZZOldArchiveEntryWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZOldArchiveEntryWriter.h; path = zipzap/ZZOldArchiveEntryWriter.h; sourceTree = "<group>"; };
+		7CBD50EEE2CDBEC899CF30420E3382D8 /* ZZStandardDecryptInputStream.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ZZStandardDecryptInputStream.mm; path = zipzap/ZZStandardDecryptInputStream.mm; sourceTree = "<group>"; };
+		7D365606FA95FE21EC3B0A195C1EF337 /* MASPreferencesWindowController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASPreferencesWindowController.h; path = Framework/MASPreferencesWindowController.h; sourceTree = "<group>"; };
+		7F85742A8C76A7E22DCA3C8524D6D6A3 /* BFColorPickerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFColorPickerViewController.m; path = "BFColorPickerPopover/Helper Classes/BFColorPickerViewController.m"; sourceTree = "<group>"; };
+		801B9204844DE86EC73A5E7EFC5627E1 /* ILGDynamicObjC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ILGDynamicObjC-dummy.m"; sourceTree = "<group>"; };
+		805FD04197E05BCB79BDDC81CFEE98B9 /* Pods-TrueColors-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TrueColors-acknowledgements.markdown"; sourceTree = "<group>"; };
+		812A6DF58E85CCC1E9280954D46182B9 /* VOKUtilities-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VOKUtilities-dummy.m"; sourceTree = "<group>"; };
+		8331D3F6A669DA495CDD14525FDCCD61 /* VOKManagedObjectMapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VOKManagedObjectMapper.m; path = Pod/Classes/VOKManagedObjectMapper.m; sourceTree = "<group>"; };
+		8549A74FDE8ABBCC7F5D1BB2AA8285F1 /* Pods-TrueColorsTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TrueColorsTests-resources.sh"; sourceTree = "<group>"; };
+		85E8B3FDED0B2079125AF56292D347E0 /* BFIconTabBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFIconTabBar.m; path = "BFColorPickerPopover/Helper Classes/BFIconTabBar.m"; sourceTree = "<group>"; };
+		865A7924B288E8A22BC46BF690A46AEA /* NSManagedObject+VOKManagedObjectAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+VOKManagedObjectAdditions.h"; path = "Pod/Classes/NSManagedObject+VOKManagedObjectAdditions.h"; sourceTree = "<group>"; };
+		869B5154502141C012BA472A1C847BDE /* ILGClasses.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ILGClasses.h; path = Pod/ILGClasses/ILGClasses.h; sourceTree = "<group>"; };
+		872B707DD151A1785DCC91D1AD81A6AF /* ZZChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZChannel.h; path = zipzap/ZZChannel.h; sourceTree = "<group>"; };
+		8887C1F9E5BED81419AF61153677868A /* VOKCoreDataManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VOKCoreDataManager.h; path = Pod/Classes/VOKCoreDataManager.h; sourceTree = "<group>"; };
+		89AF13AE41597EAE8850BF7E4ABEA0E7 /* NSColorPanel+BFColorPickerPopover.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSColorPanel+BFColorPickerPopover.h"; path = "BFColorPickerPopover/Extensions/NSColorPanel+BFColorPickerPopover.h"; sourceTree = "<group>"; };
+		8A394941B20DD3A413521222761FC640 /* libUICKeyChainStore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libUICKeyChainStore.a; path = libUICKeyChainStore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C34A9035F750E51C8C1226C5CAD0305 /* zipzap-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "zipzap-dummy.m"; sourceTree = "<group>"; };
+		8E83F407738BE0A33709B9765136905F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		8EBBB96056A220B2BEF1F01EEE84DE2C /* VOKUtilities-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VOKUtilities-prefix.pch"; sourceTree = "<group>"; };
+		921BE5193235B3EBB502DD3B07659111 /* libCyndiLauper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libCyndiLauper.a; path = libCyndiLauper.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		923F5C050CF1463D47D3DDDCFD12E3E5 /* _CASLFontSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = _CASLFontSpec.h; sourceTree = "<group>"; };
+		92AFF567519EDE8FE7B9FF8D5CD40121 /* UICKeyChainStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UICKeyChainStore.h; path = Lib/UICKeyChainStore/UICKeyChainStore.h; sourceTree = "<group>"; };
+		9371C7CCD90679E6A160105BC5543549 /* Pods-TrueColorsTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TrueColorsTests-frameworks.sh"; sourceTree = "<group>"; };
+		93AC2584595BCE6F6001AA4A516D7D52 /* MAKVONotificationCenter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MAKVONotificationCenter-prefix.pch"; sourceTree = "<group>"; };
+		9744EDEA504C76818E986FA96BEF37BB /* ZZDataChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZDataChannel.h; path = zipzap/ZZDataChannel.h; sourceTree = "<group>"; };
+		99E9B5E7751CE5AE12D0D421CC7804ED /* CASLLocalizedString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CASLLocalizedString.m; sourceTree = "<group>"; };
+		9B88923915DE8E8F32D6877834F36F1B /* CASLColorSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CASLColorSpec.h; sourceTree = "<group>"; };
+		9C3A0A8E84FEF1F4C032BF9EFAA39530 /* ZZFileChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFileChannel.h; path = zipzap/ZZFileChannel.h; sourceTree = "<group>"; };
+		9CAA01EAE9A9BEAD84FD3014FAC597EB /* libILGDynamicObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libILGDynamicObjC.a; path = libILGDynamicObjC.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0C4DB1CAA6BAFA63E1CDDB51DAB3C3D /* HTTPHeaderFields.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HTTPHeaderFields.m; sourceTree = "<group>"; };
+		A38FF61C71733211E6DDB19385503404 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A3BE3444734B245741C373DF3BA94921 /* CASLDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CASLDocument.m; sourceTree = "<group>"; };
+		A4238AA3AB340A9170D7557A9DF36AF2 /* _CASLMetricSpec.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = _CASLMetricSpec.m; sourceTree = "<group>"; };
+		A5E783AA101040F8E9890E0195DC50B7 /* CASLDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CASLDocument.h; sourceTree = "<group>"; };
+		A79E3B1BA3BD26CD63D2FDFE84161E38 /* CyndiLauper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CyndiLauper.xcconfig; sourceTree = "<group>"; };
+		AD4993AB97B29364595D1FEB692093BB /* ZZStoreOutputStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZStoreOutputStream.m; path = zipzap/ZZStoreOutputStream.m; sourceTree = "<group>"; };
+		AD6876275B2F95CC0781382D994E1DE3 /* ILGClasses.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ILGClasses.m; path = Pod/ILGClasses/ILGClasses.m; sourceTree = "<group>"; };
+		AE935BC5D2ADDDB57B9D058600D96BB5 /* ZZChannelOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZChannelOutput.h; path = zipzap/ZZChannelOutput.h; sourceTree = "<group>"; };
+		AED8EFD5C20D7E6CB2928AA0BC16C5EB /* ZZScopeGuard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZScopeGuard.h; path = zipzap/ZZScopeGuard.h; sourceTree = "<group>"; };
+		AF68ACCFA68F4CEA1B15B89DC645AA72 /* MAKVONotificationCenter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MAKVONotificationCenter.xcconfig; sourceTree = "<group>"; };
+		AFC4B3A5D74166B49A85B16FB3321722 /* _CASLIncludedFont.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = _CASLIncludedFont.m; sourceTree = "<group>"; };
+		B06D7BD83D496B1F33AEAE10AC470D20 /* ZZError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZError.h; path = zipzap/ZZError.h; sourceTree = "<group>"; };
+		B1F46148523AFEF137D9C2588453CACD /* Pods-TrueColors-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TrueColors-frameworks.sh"; sourceTree = "<group>"; };
+		B213A166C302DE392464F9A42AA2D174 /* CASLLocalizedString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CASLLocalizedString.h; sourceTree = "<group>"; };
+		B351D370CA3F5C0B872CDC1948F7870E /* DCOAboutWindow-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DCOAboutWindow-prefix.pch"; sourceTree = "<group>"; };
+		B5C8D9915C241A752F1A1A9FFA0A39EF /* Vokoder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Vokoder.xcconfig; sourceTree = "<group>"; };
+		B68BE155F0F002239E26A1CE45B58165 /* ZZNewArchiveEntryWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZNewArchiveEntryWriter.h; path = zipzap/ZZNewArchiveEntryWriter.h; sourceTree = "<group>"; };
+		B8722D3CBB88A9030B66403ED7EA12C1 /* libPods-TrueColors.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-TrueColors.a"; path = "libPods-TrueColors.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8799BFADBF3CF84638DCABA33F1BA42 /* ZZDeflateOutputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZDeflateOutputStream.h; path = zipzap/ZZDeflateOutputStream.h; sourceTree = "<group>"; };
+		B895327D352E47C00B89389D0A3ABBB7 /* DCOAboutWindowController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DCOAboutWindowController.m; path = DCOAboutWindow/DCOAboutWindowController.m; sourceTree = "<group>"; };
+		BAD6015478CDF0A5EEFA04C70AC75BDB /* MASPreferencesWindowController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASPreferencesWindowController.m; path = Framework/MASPreferencesWindowController.m; sourceTree = "<group>"; };
+		BB6193CDB6502B7B5DA7B140F3BFB56D /* ZZAESDecryptInputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZAESDecryptInputStream.h; path = zipzap/ZZAESDecryptInputStream.h; sourceTree = "<group>"; };
+		BBDCAD9C356001659C32342894F30525 /* NSColor+CASL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSColor+CASL.h"; sourceTree = "<group>"; };
+		BDAC9170B88B24BA993B367198777E24 /* MAKVONotificationCenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MAKVONotificationCenter.h; sourceTree = "<group>"; };
+		BE4E755A101D2C1CA0B5EF7364AC7209 /* ZZArchiveEntry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZArchiveEntry.h; path = zipzap/ZZArchiveEntry.h; sourceTree = "<group>"; };
+		BF036029A9208B9EEE24F3AEEEAD5600 /* Pods-TrueColorsTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TrueColorsTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C06E4224F80A72BFA093A459A0944982 /* MASPreferences-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MASPreferences-prefix.pch"; sourceTree = "<group>"; };
+		C26206A84422DA27B050345F5B07BD1A /* VOKManagedObjectMapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VOKManagedObjectMapper.h; path = Pod/Classes/VOKManagedObjectMapper.h; sourceTree = "<group>"; };
+		C4902ACEB6F9D234A1C2BF2DA248D53D /* ILGDynamicObjC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ILGDynamicObjC-prefix.pch"; sourceTree = "<group>"; };
+		C67F5429960C8C44E7F932E68458705E /* CyndiLauper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CyndiLauper-dummy.m"; sourceTree = "<group>"; };
+		C6CBF22BEF1315A2B63FFF1F1D34DDC0 /* ILGHttpConstants-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ILGHttpConstants-prefix.pch"; sourceTree = "<group>"; };
+		C8011077DCFA9A4764F30534B6A79B63 /* CASLMetricSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CASLMetricSpec.h; sourceTree = "<group>"; };
+		C90A7F331C2E261659A08499C7F5CF49 /* ZZOldArchiveEntryWriter.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ZZOldArchiveEntryWriter.mm; path = zipzap/ZZOldArchiveEntryWriter.mm; sourceTree = "<group>"; };
+		CA67816917DF5A740369BC56166C1226 /* ZZStoreOutputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZStoreOutputStream.h; path = zipzap/ZZStoreOutputStream.h; sourceTree = "<group>"; };
+		CB4BE86DC8D06EEA9355249C71EA09D7 /* UICKeyChainStore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UICKeyChainStore-dummy.m"; sourceTree = "<group>"; };
+		CC19938BC9652AC4A40994CC732A3F89 /* ZZConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZConstants.h; path = zipzap/ZZConstants.h; sourceTree = "<group>"; };
+		CC6C1392C8548C2EABB9E229BB55DE5A /* ZZDataProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZDataProvider.h; path = zipzap/ZZDataProvider.h; sourceTree = "<group>"; };
+		CC9B5BFB353C3860D815E467A056394C /* ZZFileChannelOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFileChannelOutput.h; path = zipzap/ZZFileChannelOutput.h; sourceTree = "<group>"; };
+		CCAF96657D784AD5E9B8FA4386A599D6 /* DCOTransparentScroller.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DCOTransparentScroller.m; path = DCOTransparentScroller/DCOTransparentScroller.m; sourceTree = "<group>"; };
+		D0BE3BA928FE0E392B6A2AE28C4226E9 /* ZZOldArchiveEntry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZOldArchiveEntry.h; path = zipzap/ZZOldArchiveEntry.h; sourceTree = "<group>"; };
+		D20B564D365D0619C787E3E778A1460B /* _CASLBaseSpec.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = _CASLBaseSpec.m; sourceTree = "<group>"; };
+		D22ACE9FC0355BA0167FB01E1ED2590D /* CASLDocumentSerializerImplementation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CASLDocumentSerializerImplementation.h; sourceTree = "<group>"; };
+		D24F47689FABB44154AB113CAF8F56DB /* Vokoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Vokoder.h; path = Pod/Classes/Vokoder.h; sourceTree = "<group>"; };
+		D3B1A9E7875ADF6A8DE48519D4C20FE0 /* VOKMappableModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VOKMappableModel.h; path = Pod/Classes/VOKMappableModel.h; sourceTree = "<group>"; };
+		D479F52D8EAD971001116AEB6FC51494 /* MASPreferences.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASPreferences.h; path = Framework/MASPreferences.h; sourceTree = "<group>"; };
+		D4C8067FEF275D6E8631E65E60FF9FE0 /* DCOAboutWindow.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DCOAboutWindow.xcconfig; sourceTree = "<group>"; };
+		D7ED33AF4A63A9B85A4EA744302AE18D /* MAKVONotificationCenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MAKVONotificationCenter.m; sourceTree = "<group>"; };
+		D984977CF92EC7B13A94BC550E0B2D02 /* BFColorPickerPopover.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFColorPickerPopover.m; path = BFColorPickerPopover/BFColorPickerPopover.m; sourceTree = "<group>"; };
+		DA7CD4A219234E250151C3CBEDC75B77 /* Pods-TrueColorsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrueColorsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DA9CD9EB3AA7FF3EBC9A08286E12C900 /* libVokoder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libVokoder.a; path = libVokoder.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD372A28496EEE31986BAF53E56E1CEB /* UICKeyChainStore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UICKeyChainStore.xcconfig; sourceTree = "<group>"; };
+		DE617E4CF59A5BEE3AE0E654EE791231 /* Vokoder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Vokoder-prefix.pch"; sourceTree = "<group>"; };
+		DF7071DEF1BD71B6AAB2548AF352379E /* DCOTransparentScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DCOTransparentScrollView.m; path = DCOTransparentScroller/DCOTransparentScrollView.m; sourceTree = "<group>"; };
+		DFF533239992330A2791C6E065594C6A /* libMASPreferences.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMASPreferences.a; path = libMASPreferences.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0D4E0E771F8B63CD9419B207B7AB938 /* Pods-TrueColorsTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TrueColorsTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E19E42B43BF8B0721E0AAE573F9F2E48 /* BFColorPickerPopover.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFColorPickerPopover.h; path = BFColorPickerPopover/BFColorPickerPopover.h; sourceTree = "<group>"; };
+		E1ABD86B0DF792ADCE8B7137086B9E08 /* ZZNewArchiveEntry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZNewArchiveEntry.h; path = zipzap/ZZNewArchiveEntry.h; sourceTree = "<group>"; };
+		E75DBA080B907B350385AB122CF4DC7D /* ZZDataChannelOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZDataChannelOutput.h; path = zipzap/ZZDataChannelOutput.h; sourceTree = "<group>"; };
+		E98BAECC8C8233A029675A0758811CB6 /* ZZArchiveEntryWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZArchiveEntryWriter.h; path = zipzap/ZZArchiveEntryWriter.h; sourceTree = "<group>"; };
+		EE7CA65ABACFF805B821A19CEE743B9C /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		EF8DF7E49EC8021B5D8841355B2F7A57 /* DCOAboutWindow-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DCOAboutWindow-dummy.m"; sourceTree = "<group>"; };
+		EFD27A668774020D74928639FF0BB59F /* ZZAESDecryptInputStream.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ZZAESDecryptInputStream.mm; path = zipzap/ZZAESDecryptInputStream.mm; sourceTree = "<group>"; };
+		F03145E705F11F08FAD8B387A4959CD7 /* CASLDocumentSerializerJsonV1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CASLDocumentSerializerJsonV1.h; sourceTree = "<group>"; };
+		F09E4A275FC639007E523FF1DBB5E0F0 /* DCOTransparentScroller-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DCOTransparentScroller-prefix.pch"; sourceTree = "<group>"; };
+		F142FD1DAAA30AC67646EA93042A8E4B /* CASLIncludedFont.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CASLIncludedFont.m; sourceTree = "<group>"; };
+		F1D9156CB6C835B407BA7B2FADB10F26 /* BFIconTabBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFIconTabBar.h; path = "BFColorPickerPopover/Helper Classes/BFIconTabBar.h"; sourceTree = "<group>"; };
+		F1F509176F65E2C991E7C9308802DB84 /* libVOKUtilities.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libVOKUtilities.a; path = libVOKUtilities.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5EB82B4336A3D015801A1FBB4828B97 /* HTTPMethods.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HTTPMethods.h; sourceTree = "<group>"; };
+		F6762FE9930E2DCD1831682163391E6A /* MASPreferencesViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASPreferencesViewController.h; path = Framework/MASPreferencesViewController.h; sourceTree = "<group>"; };
+		F6F8AAFAE0567BEFBB7CB803F3A2E6B9 /* VOKCoreDataManagerInternalMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VOKCoreDataManagerInternalMacros.h; path = Pod/Classes/Internal/VOKCoreDataManagerInternalMacros.h; sourceTree = "<group>"; };
+		F7602791AAD07AD51D677965EB90FD7A /* BFColorPickerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFColorPickerViewController.h; path = "BFColorPickerPopover/Helper Classes/BFColorPickerViewController.h"; sourceTree = "<group>"; };
+		F85E018BD172DDC2A1ABD7C777AC1268 /* VOKKeyPathHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VOKKeyPathHelper.h; path = Pod/VOKKeyPathHelper/VOKKeyPathHelper.h; sourceTree = "<group>"; };
+		F8A5D052151CAB523459E43882D6FD86 /* NSColor+CASL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSColor+CASL.m"; sourceTree = "<group>"; };
+		F9021BABC5C4CD192BAC9D54F8090A6C /* ZZFileChannelOutput.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZFileChannelOutput.m; path = zipzap/ZZFileChannelOutput.m; sourceTree = "<group>"; };
+		FA8F3177FB6A8E44CC37B4338CD5AC18 /* ZZInflateInputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZInflateInputStream.h; path = zipzap/ZZInflateInputStream.h; sourceTree = "<group>"; };
+		FAB6D879177941BA95EFB7932ABED116 /* Pods-TrueColorsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrueColorsTests.release.xcconfig"; sourceTree = "<group>"; };
+		FBD84862C22B8EDA8774159E76C53DF9 /* BFPopoverColorWell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFPopoverColorWell.h; path = BFColorPickerPopover/BFPopoverColorWell.h; sourceTree = "<group>"; };
+		FC4D08876BFB10A1EF4A8C9C54AFD5F4 /* libDCOTransparentScroller.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libDCOTransparentScroller.a; path = libDCOTransparentScroller.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3EB28841AE83080E0AC72DB93349E9D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301C20D9A38A3AC7BD45C240E3789C8C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61CF9B670AFA8FCC056660937A8AD4DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68AE7F731016F1A2BA2A6BEB467AFC34 /* ApplicationServices.framework in Frameworks */,
+				C4F6EAFA355C2B7209E1B1E385FC5204 /* Cocoa.framework in Frameworks */,
+				9E9CBE265A5671A6F147CDDB66A7B2DF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C96A2154109D9EC1A7BBEDDE426EB130 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BB3CE94CEB0B60467D13020E9BB3FF8 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA8BB440F8583B94E336182DF401D84A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82035F323A5E7724BE8727A4D30734D1 /* Cocoa.framework in Frameworks */,
+				BD24862FE2AC309558EBA12A48498E4B /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8952633548A32679835C87BC28DD5073 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5AA992109BE46E768FFB9046B3E04F4 /* Cocoa.framework in Frameworks */,
+				B6D1DE1FDDB7EF0D24022F991A438431 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D736AFF5FAB61C5562C04651AF60496 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDCC4F877C5B7245957905A74CB65897 /* Cocoa.framework in Frameworks */,
+				893E9DE97C48BF5C8C53ADC304416B9A /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8E11D29706CF920A4F2E46F995FB624 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B977895B2D2BFA3997042AB82D09AE81 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15141D10078782C4A107A2CC8490502A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7948D3B4EE3526B68102E0C09FB6D6F7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B7AD23CDCED32F9E3360163134B02F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3BDD80B7306C41BD212DE41CF0BC46A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B77187EF7A2477775DC4213794B725BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CE8615DE6A7393D447B95F28DD28755 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F5CAB7273367BA77C3916B4FB457237 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DF213BFBCC0FA8D55581E480798360E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F21D9627AC05D69F0F57F62B0AC09FF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EA4DF08B4AD892CB9771EB7815AC20 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71CFC55487EABD3004083D727116309C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD8FBA031ECE472787F9D4A8C12E0877 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1E0A78515A425ACB73FFF1E5DED5776 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B14C99FAEA0D7B9C1A7A14AE131EBEDF /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D1EB8A38E8CBA4A4B0D3C897A545D0A /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DBD2F37A342D8A85F51F80A5554557C5 /* CyndiLauper */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		DC48BCE815EC154A59BCA69936CF7135 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60D6CB7F77076E4DC87A8EFAD3FF2566 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D6B7B326CF0D91D3F6B1AE941B31BF6 /* HockeySDK-Mac */ = {
+			isa = PBXGroup;
+			children = (
+				628EEDEF5D9FBEF2EFEE1867DAB81BB7 /* Frameworks */,
+				B871CC2A476BD5929D0D87847207B8B4 /* Resources */,
+			);
+			name = "HockeySDK-Mac";
+			path = "HockeySDK-Mac";
+			sourceTree = "<group>";
+		};
+		1C72E2853807FFC1044AB53C34A44E2D /* Pods-TrueColors */ = {
+			isa = PBXGroup;
+			children = (
+				805FD04197E05BCB79BDDC81CFEE98B9 /* Pods-TrueColors-acknowledgements.markdown */,
+				395AEA5B1A0A865274CB1E38F7F74CD5 /* Pods-TrueColors-acknowledgements.plist */,
+				4F094064696CD479E388CC26A20D8D8D /* Pods-TrueColors-dummy.m */,
+				B1F46148523AFEF137D9C2588453CACD /* Pods-TrueColors-frameworks.sh */,
+				3B9104E4B103EEBAE166B7BF3502A3B4 /* Pods-TrueColors-resources.sh */,
+				1958861CF4597534B1AC399D6F4606FE /* Pods-TrueColors.debug.xcconfig */,
+				430B3EA637199FCEF88EF59FCDDF24F7 /* Pods-TrueColors.release.xcconfig */,
+			);
+			name = "Pods-TrueColors";
+			path = "Target Support Files/Pods-TrueColors";
+			sourceTree = "<group>";
+		};
+		514582C16EC55BE16384830313B37905 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0D8E33816DD5B901F59DBCB31880F623 /* MAKVONotificationCenter-dummy.m */,
+				93AC2584595BCE6F6001AA4A516D7D52 /* MAKVONotificationCenter-prefix.pch */,
+				AF68ACCFA68F4CEA1B15B89DC645AA72 /* MAKVONotificationCenter.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MAKVONotificationCenter";
+			sourceTree = "<group>";
+		};
+		6BBF4932279F94A1AC71DD4AABEBDBF8 /* objc */ = {
+			isa = PBXGroup;
+			children = (
+				1E42996FED89F2957C47151338C21576 /* ZZArchiveEntry.m */,
+				68ED3DD41132CDAC546C1955C3501F18 /* ZZConstants.m */,
+				2DF2CC07040E608C57D6AEB17174460F /* ZZDataChannel.m */,
+				5BB68D1636EE9E8E28B014F79F9CE159 /* ZZDataChannelOutput.m */,
+				2C0FAB63472B8DEC09E743E21A399130 /* ZZDeflateOutputStream.m */,
+				17579446ADE3ABA2892C73E4246B1B68 /* ZZError.m */,
+				6C7EBABEDF45447E98AD7B4006F2E646 /* ZZFileChannel.m */,
+				F9021BABC5C4CD192BAC9D54F8090A6C /* ZZFileChannelOutput.m */,
+				015F8636AD8459359FC8FFE9A07AFEC4 /* ZZInflateInputStream.m */,
+				AD4993AB97B29364595D1FEB692093BB /* ZZStoreOutputStream.m */,
+			);
+			name = objc;
+			sourceTree = "<group>";
+		};
+		B871CC2A476BD5929D0D87847207B8B4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0B5962E981F3FC75152AEA0E0DD7A0FD /* CyndiLauper */ = {
+			isa = PBXGroup;
+			children = (
+				4BA031AC4A716DFAF501B1E374CC1AF2 /* Categories */,
+				4A0E6FB6DBDE1F14FEACF5CB854387CA /* Document Serializers */,
+				76EB1AC09127ED7887484227C2B12D27 /* Models */,
+				A5E783AA101040F8E9890E0195DC50B7 /* CASLDocument.h */,
+				A3BE3444734B245741C373DF3BA94921 /* CASLDocument.m */,
+				B213A166C302DE392464F9A42AA2D174 /* CASLLocalizedString.h */,
+				99E9B5E7751CE5AE12D0D421CC7804ED /* CASLLocalizedString.m */,
+			);
+			name = CyndiLauper;
+			path = CyndiLauper;
+			sourceTree = "<group>";
+		};
+		325FDCC9DE751FCE66A938DE872B23AE /* Pods-TrueColorsTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF036029A9208B9EEE24F3AEEEAD5600 /* Pods-TrueColorsTests-acknowledgements.markdown */,
+				E0D4E0E771F8B63CD9419B207B7AB938 /* Pods-TrueColorsTests-acknowledgements.plist */,
+				619524C8CC626F2E36106D4C6CDB6D68 /* Pods-TrueColorsTests-dummy.m */,
+				9371C7CCD90679E6A160105BC5543549 /* Pods-TrueColorsTests-frameworks.sh */,
+				8549A74FDE8ABBCC7F5D1BB2AA8285F1 /* Pods-TrueColorsTests-resources.sh */,
+				DA7CD4A219234E250151C3CBEDC75B77 /* Pods-TrueColorsTests.debug.xcconfig */,
+				FAB6D879177941BA95EFB7932ABED116 /* Pods-TrueColorsTests.release.xcconfig */,
+			);
+			name = "Pods-TrueColorsTests";
+			path = "Target Support Files/Pods-TrueColorsTests";
+			sourceTree = "<group>";
+		};
+		CD5E4A397BA5F4F05516577B5BB08D15 /* objc++ */ = {
+			isa = PBXGroup;
+			children = (
+				EFD27A668774020D74928639FF0BB59F /* ZZAESDecryptInputStream.mm */,
+				6E8CC48D65DDF2548FB939555467CC86 /* ZZArchive.mm */,
+				00E33D35D941298B7942E3517B0E101A /* ZZNewArchiveEntry.mm */,
+				1880BC9DD4FAB31B2BABFF03BED3A910 /* ZZNewArchiveEntryWriter.mm */,
+				645FDDEBAE37FA8D989DF04B0754A973 /* ZZOldArchiveEntry.mm */,
+				C90A7F331C2E261659A08499C7F5CF49 /* ZZOldArchiveEntryWriter.mm */,
+				7CBD50EEE2CDBEC899CF30420E3382D8 /* ZZStandardDecryptInputStream.mm */,
+			);
+			name = "objc++";
+			sourceTree = "<group>";
+		};
+		3C94223B01AE3D9B0D25BEA834DB58AC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DD47DE226A44462E15E1B219F0A93FC /* Vokoder-dummy.m */,
+				DE617E4CF59A5BEE3AE0E654EE791231 /* Vokoder-prefix.pch */,
+				B5C8D9915C241A752F1A1A9FFA0A39EF /* Vokoder.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Vokoder";
+			sourceTree = "<group>";
+		};
+		60D6CB7F77076E4DC87A8EFAD3FF2566 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				5898EB408C35E34312164E69C1341A9E /* ApplicationServices.framework */,
+				401D2715E3ECF45767B49F2CC295F881 /* Cocoa.framework */,
+				1BEF41F9488CF0AD0F1BEAB977EE1344 /* CoreData.framework */,
+				54FDE7D54163EAA180686A5268D28AE6 /* Foundation.framework */,
+				8E83F407738BE0A33709B9765136905F /* QuartzCore.framework */,
+				26630E1F0E62FBD3D49B80FD6C94C4C5 /* Security.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		ABF15E4D9BF05B1A1AC45A9BDB886ED3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5BDA1924E7800FB10E66407033C4E9DD /* MASPreferences-dummy.m */,
+				C06E4224F80A72BFA093A459A0944982 /* MASPreferences-prefix.pch */,
+				1C4A1876EE6B04A4083E5B382693595F /* MASPreferences.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MASPreferences";
+			sourceTree = "<group>";
+		};
+		628EEDEF5D9FBEF2EFEE1867DAB81BB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B7D39498B0F607D45E870B435CB95A9 /* HockeySDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1C24F5A4559F407F87D8EC3951B650D8 /* BFColorPickerPopover */ = {
+			isa = PBXGroup;
+			children = (
+				629D3C0FB3FB81C99A28C4040897F7C8 /* Support Files */,
+				E19E42B43BF8B0721E0AAE573F9F2E48 /* BFColorPickerPopover.h */,
+				D984977CF92EC7B13A94BC550E0B2D02 /* BFColorPickerPopover.m */,
+				3A28B2F8B1AF13404BBEB0CEFE25CAD8 /* BFColorPickerPopoverView.h */,
+				68CE3FE7EA80265168DB2A4A000DDD2C /* BFColorPickerPopoverView.m */,
+				F7602791AAD07AD51D677965EB90FD7A /* BFColorPickerViewController.h */,
+				7F85742A8C76A7E22DCA3C8524D6D6A3 /* BFColorPickerViewController.m */,
+				F1D9156CB6C835B407BA7B2FADB10F26 /* BFIconTabBar.h */,
+				85E8B3FDED0B2079125AF56292D347E0 /* BFIconTabBar.m */,
+				FBD84862C22B8EDA8774159E76C53DF9 /* BFPopoverColorWell.h */,
+				60B09A240F33579BFCBF4186496339F0 /* BFPopoverColorWell.m */,
+				476E5C2C2BC0FDE3CA97733D535C2ADE /* NSColor+BFColorPickerPopover.h */,
+				0F3208B3C0CE8EC59BEF833C7B0E970F /* NSColor+BFColorPickerPopover.m */,
+				89AF13AE41597EAE8850BF7E4ABEA0E7 /* NSColorPanel+BFColorPickerPopover.h */,
+				21DC2B8CB060692A8DE0FA1D9B85D0E0 /* NSColorPanel+BFColorPickerPopover.m */,
+				703E7C23BA26F31D86EF94A31DE1530A /* NSColorWell+BFColorPickerPopover.h */,
+				2A837272D2577549D032EA6BDB98D94B /* NSColorWell+BFColorPickerPopover.m */,
+			);
+			name = BFColorPickerPopover;
+			path = BFColorPickerPopover;
+			sourceTree = "<group>";
+		};
+		F653198251905F2D19DBEA48B7F9A7DC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				801B9204844DE86EC73A5E7EFC5627E1 /* ILGDynamicObjC-dummy.m */,
+				C4902ACEB6F9D234A1C2BF2DA248D53D /* ILGDynamicObjC-prefix.pch */,
+				5ED4077304AB1720B21D628EFD7A11F4 /* ILGDynamicObjC.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ILGDynamicObjC";
+			sourceTree = "<group>";
+		};
+		07682645223512826E4A81118CDC514E /* c++ */ = {
+			isa = PBXGroup;
+			children = (
+				BB6193CDB6502B7B5DA7B140F3BFB56D /* ZZAESDecryptInputStream.h */,
+				6CB1F20763B48EC5CCD4132F2D2F8411 /* ZZArchive.h */,
+				BE4E755A101D2C1CA0B5EF7364AC7209 /* ZZArchiveEntry.h */,
+				E98BAECC8C8233A029675A0758811CB6 /* ZZArchiveEntryWriter.h */,
+				872B707DD151A1785DCC91D1AD81A6AF /* ZZChannel.h */,
+				AE935BC5D2ADDDB57B9D058600D96BB5 /* ZZChannelOutput.h */,
+				CC19938BC9652AC4A40994CC732A3F89 /* ZZConstants.h */,
+				9744EDEA504C76818E986FA96BEF37BB /* ZZDataChannel.h */,
+				E75DBA080B907B350385AB122CF4DC7D /* ZZDataChannelOutput.h */,
+				CC6C1392C8548C2EABB9E229BB55DE5A /* ZZDataProvider.h */,
+				B8799BFADBF3CF84638DCABA33F1BA42 /* ZZDeflateOutputStream.h */,
+				B06D7BD83D496B1F33AEAE10AC470D20 /* ZZError.h */,
+				9C3A0A8E84FEF1F4C032BF9EFAA39530 /* ZZFileChannel.h */,
+				CC9B5BFB353C3860D815E467A056394C /* ZZFileChannelOutput.h */,
+				375F9137B0C30060BFA8257DD06AE913 /* ZZHeaders.h */,
+				FA8F3177FB6A8E44CC37B4338CD5AC18 /* ZZInflateInputStream.h */,
+				E1ABD86B0DF792ADCE8B7137086B9E08 /* ZZNewArchiveEntry.h */,
+				B68BE155F0F002239E26A1CE45B58165 /* ZZNewArchiveEntryWriter.h */,
+				D0BE3BA928FE0E392B6A2AE28C4226E9 /* ZZOldArchiveEntry.h */,
+				7A754F1E8773D68F6A16A0402A48AA84 /* ZZOldArchiveEntryWriter.h */,
+				AED8EFD5C20D7E6CB2928AA0BC16C5EB /* ZZScopeGuard.h */,
+				05C9E7346302DB676ECEE92003226EAA /* ZZStandardCryptoEngine.cpp */,
+				69E1B6D0E25B7F9CF8D1E83E46C4E729 /* ZZStandardCryptoEngine.h */,
+				67A51404042492FA8EA699D30C28D03C /* ZZStandardDecryptInputStream.h */,
+				CA67816917DF5A740369BC56166C1226 /* ZZStoreOutputStream.h */,
+				210E85EF6996C8C64F1D0B7F6574DB8B /* zipzap.h */,
+			);
+			name = "c++";
+			sourceTree = "<group>";
+		};
+		C0EADA668804F57D6D9AA862CE8EF321 /* ILGClasses */ = {
+			isa = PBXGroup;
+			children = (
+				869B5154502141C012BA472A1C847BDE /* ILGClasses.h */,
+				AD6876275B2F95CC0781382D994E1DE3 /* ILGClasses.m */,
+			);
+			name = ILGClasses;
+			sourceTree = "<group>";
+		};
+		76EB1AC09127ED7887484227C2B12D27 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				571E12D1715267E3470BEDC5C9B04850 /* Generated */,
+				4FE0F798527D79242E686833965B2B28 /* CASLBaseSpec.h */,
+				099D445D5DDBF173E314FF79605CD8F1 /* CASLBaseSpec.m */,
+				9B88923915DE8E8F32D6877834F36F1B /* CASLColorSpec.h */,
+				71E4606D507269BE6BCC13C894B6E208 /* CASLColorSpec.m */,
+				139B062AEA430F256384CBF3217E02E7 /* CASLFontSpec.h */,
+				4D00882C91C75C5E3EC6CCDA9A5341AE /* CASLFontSpec.m */,
+				3AD61DDF7BBAC4A7A1C98850C1092AB3 /* CASLIncludedFont.h */,
+				F142FD1DAAA30AC67646EA93042A8E4B /* CASLIncludedFont.m */,
+				C8011077DCFA9A4764F30534B6A79B63 /* CASLMetricSpec.h */,
+				0E3D277B6AA8EC9A30A9C6FEA48FF197 /* CASLMetricSpec.m */,
+				31AF5BF13178DA694C1553BEFF0B1CAE /* CASLSpecsModel.h */,
+			);
+			name = Models;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2877ABC4F2A34BD67E4E4D78BE445562 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				854CB6779389BE60CEEC7F97D49A2DC4 /* MASPreferencesWindow.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		27E772C472EE5BD87EA005C1E920FEC6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1C72E2853807FFC1044AB53C34A44E2D /* Pods-TrueColors */,
+				325FDCC9DE751FCE66A938DE872B23AE /* Pods-TrueColorsTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5DECD2D2DDBCF1DF25E1166EAF85634C = {
+			isa = PBXGroup;
+			children = (
+				6D1EB8A38E8CBA4A4B0D3C897A545D0A /* Development Pods */,
+				DC48BCE815EC154A59BCA69936CF7135 /* Frameworks */,
+				A38FF61C71733211E6DDB19385503404 /* Podfile */,
+				1432AA59D8B53139E350543A9C80D7F8 /* Pods */,
+				F11F3D9AADDE75DD48B2D75FDE6D0F2A /* Products */,
+				27E772C472EE5BD87EA005C1E920FEC6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		33BD4D7621883AE06670534C616B7E59 /* ILGHttpConstants */ = {
+			isa = PBXGroup;
+			children = (
+				371C6BB1E05A0D52FF0E02F44679BAD2 /* Support Files */,
+				0C32C32695C63B283B75FAEB560D06C4 /* HTTPHeaderFields.h */,
+				A0C4DB1CAA6BAFA63E1CDDB51DAB3C3D /* HTTPHeaderFields.m */,
+				F5EB82B4336A3D015801A1FBB4828B97 /* HTTPMethods.h */,
+				1695AB3A8A19C52D55D04E30CEE1A43B /* HTTPMethods.m */,
+				2095BAD9C9FE5F0C217EDEF811B6819E /* HTTPStatusCodes.h */,
+			);
+			name = ILGHttpConstants;
+			path = ILGHttpConstants;
+			sourceTree = "<group>";
+		};
+		F6A3A2E7119CB2EB737C0EC77B5B66AA /* Sparkle */ = {
+			isa = PBXGroup;
+			children = (
+				57A119378698EA03CC4467F8A310D10C /* Frameworks */,
+			);
+			name = Sparkle;
+			path = Sparkle;
+			sourceTree = "<group>";
+		};
+		F11F3D9AADDE75DD48B2D75FDE6D0F2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A73AC89904B4CB8B2E43FCBC389ACB6 /* libBFColorPickerPopover.a */,
+				921BE5193235B3EBB502DD3B07659111 /* libCyndiLauper.a */,
+				1B572CB9984A978AF62503FFAAB84F2B /* libDCOAboutWindow.a */,
+				FC4D08876BFB10A1EF4A8C9C54AFD5F4 /* libDCOTransparentScroller.a */,
+				9CAA01EAE9A9BEAD84FD3014FAC597EB /* libILGDynamicObjC.a */,
+				39627B63A63E68CF6B14CD427FB4A257 /* libILGHttpConstants.a */,
+				071E9F2272DA3099E5CA74E0188D3AF8 /* libMAKVONotificationCenter.a */,
+				DFF533239992330A2791C6E065594C6A /* libMASPreferences.a */,
+				B8722D3CBB88A9030B66403ED7EA12C1 /* libPods-TrueColors.a */,
+				213F1EDD352D1113E0BE78AF92C77F8E /* libPods-TrueColorsTests.a */,
+				8A394941B20DD3A413521222761FC640 /* libUICKeyChainStore.a */,
+				F1F509176F65E2C991E7C9308802DB84 /* libVOKUtilities.a */,
+				DA9CD9EB3AA7FF3EBC9A08286E12C900 /* libVokoder.a */,
+				3D82BDEC03D71C6DD490BC69166E8924 /* libzipzap.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A433FE6A343961BAD2B564426630D78 /* VOKKeyPathHelper */ = {
+			isa = PBXGroup;
+			children = (
+				F85E018BD172DDC2A1ABD7C777AC1268 /* VOKKeyPathHelper.h */,
+				2FBBCFFA37F19790C3C413A6040D3409 /* VOKKeyPathHelper.m */,
+			);
+			name = VOKKeyPathHelper;
+			sourceTree = "<group>";
+		};
+		629D3C0FB3FB81C99A28C4040897F7C8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				59C608FCD37535108BFC543A877A63D0 /* BFColorPickerPopover-dummy.m */,
+				2C16142EBE2451A9D9CF859BCB9A8D88 /* BFColorPickerPopover-prefix.pch */,
+				40E945B18B6DD5A61CBC2947AAD239EE /* BFColorPickerPopover.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BFColorPickerPopover";
+			sourceTree = "<group>";
+		};
+		F2CA3E76863601A0AF08474E3A2CE1D1 /* UICKeyChainStore */ = {
+			isa = PBXGroup;
+			children = (
+				B82D7C772CA33E64ECD763ED5B175DF8 /* Support Files */,
+				92AFF567519EDE8FE7B9FF8D5CD40121 /* UICKeyChainStore.h */,
+				0573D0AE523AD2AEB827B7364818D506 /* UICKeyChainStore.m */,
+			);
+			name = UICKeyChainStore;
+			path = UICKeyChainStore;
+			sourceTree = "<group>";
+		};
+		BD7499100F865877C1C99B30B406027B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C67F5429960C8C44E7F932E68458705E /* CyndiLauper-dummy.m */,
+				6198398CA69DD96604BCFE001E8D1F91 /* CyndiLauper-prefix.pch */,
+				A79E3B1BA3BD26CD63D2FDFE84161E38 /* CyndiLauper.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Pods/Target Support Files/CyndiLauper";
+			sourceTree = "<group>";
+		};
+		0E26AFFA4DE1F25FB5447960356CD53B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				865A7924B288E8A22BC46BF690A46AEA /* NSManagedObject+VOKManagedObjectAdditions.h */,
+				4359BCABCE47E7C92ACE7558AAD4A768 /* NSManagedObject+VOKManagedObjectAdditions.m */,
+				68A7F3947C9050363A79E1B8E1EBA6AF /* VOKCoreDataCollectionTypes.h */,
+				8887C1F9E5BED81419AF61153677868A /* VOKCoreDataManager.h */,
+				79445E964287F8FC32B983A79E706E10 /* VOKCoreDataManager.m */,
+				F6F8AAFAE0567BEFBB7CB803F3A2E6B9 /* VOKCoreDataManagerInternalMacros.h */,
+				16C521EB5693D4EC4CF276F3DE32EF6B /* VOKManagedObjectMap.h */,
+				06039549FED41DA6C0BC7DB6407A0731 /* VOKManagedObjectMap.m */,
+				C26206A84422DA27B050345F5B07BD1A /* VOKManagedObjectMapper.h */,
+				8331D3F6A669DA495CDD14525FDCCD61 /* VOKManagedObjectMapper.m */,
+				D3B1A9E7875ADF6A8DE48519D4C20FE0 /* VOKMappableModel.h */,
+				6337B23E4CF16C140A282FE7C71A4875 /* VOKNullabilityFeatures.h */,
+				D24F47689FABB44154AB113CAF8F56DB /* Vokoder.h */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		F3484C0B454A4521FAB597769E25E46F /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				F03145E705F11F08FAD8B387A4959CD7 /* CASLDocumentSerializerJsonV1.h */,
+				3B6F3663D6599DB4FBCF36B212176C86 /* CASLDocumentSerializerJsonV1.m */,
+				3925F57CA3B0A2BA8F5FC3B129DB68AD /* CASLDocumentSerializerZipV1.h */,
+				6F97C84C185BB7833645101492A6B58D /* CASLDocumentSerializerZipV1.m */,
+			);
+			name = Implementations;
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		4BA031AC4A716DFAF501B1E374CC1AF2 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				BBDCAD9C356001659C32342894F30525 /* NSColor+CASL.h */,
+				F8A5D052151CAB523459E43882D6FD86 /* NSColor+CASL.m */,
+				02886F66072257ED6322DC3B1504A483 /* NSFont+CASL.h */,
+				402D0124CFBB165DE0AAB07F005AD71D /* NSFont+CASL.m */,
+				32855DE321CEDDE5A58AF45B4216F4D2 /* NSManagedObjectModel+CASL.h */,
+				6C518C198EB882CC036E6B107014B9BD /* NSManagedObjectModel+CASL.m */,
+			);
+			name = Categories;
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		80D53C389890CE9982E494F8ED896911 /* Vokoder */ = {
+			isa = PBXGroup;
+			children = (
+				0E26AFFA4DE1F25FB5447960356CD53B /* Core */,
+				3C94223B01AE3D9B0D25BEA834DB58AC /* Support Files */,
+			);
+			name = Vokoder;
+			path = Vokoder;
+			sourceTree = "<group>";
+		};
+		73AB5E5F94B4DE5984CD16FDB5EABFD4 /* xUnique */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = xUnique;
+			path = xUnique;
+			sourceTree = "<group>";
+		};
+		B1C7A3FFFB8104E8814A95DADA90E28F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8C34A9035F750E51C8C1226C5CAD0305 /* zipzap-dummy.m */,
+				63CA1C0320BAA4E933E75346BA6BB4CD /* zipzap-prefix.pch */,
+				5933CD9A0DAC0519588907B3C7F83940 /* zipzap.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/zipzap";
+			sourceTree = "<group>";
+		};
+		87ABDD90FC957DFA680F52CBCE88C6D5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF8DF7E49EC8021B5D8841355B2F7A57 /* DCOAboutWindow-dummy.m */,
+				B351D370CA3F5C0B872CDC1948F7870E /* DCOAboutWindow-prefix.pch */,
+				D4C8067FEF275D6E8631E65E60FF9FE0 /* DCOAboutWindow.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DCOAboutWindow";
+			sourceTree = "<group>";
+		};
+		4A0E6FB6DBDE1F14FEACF5CB854387CA /* Document Serializers */ = {
+			isa = PBXGroup;
+			children = (
+				F3484C0B454A4521FAB597769E25E46F /* Implementations */,
+				316D1945269B07B52D058CBD17395B8E /* CASLDocumentSerializer.h */,
+				610A0960C4485ACC72021D68C5017068 /* CASLDocumentSerializer.m */,
+				D22ACE9FC0355BA0167FB01E1ED2590D /* CASLDocumentSerializerImplementation.h */,
+			);
+			name = "Document Serializers";
+			path = "Document Serializers";
+			sourceTree = "<group>";
+		};
+		571E12D1715267E3470BEDC5C9B04850 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				316AA82476C93D7BACD144F3DD747F96 /* _CASLBaseSpec.h */,
+				D20B564D365D0619C787E3E778A1460B /* _CASLBaseSpec.m */,
+				32634CA2B8A2826DDA25550884A43512 /* _CASLColorSpec.h */,
+				0AFFB229A0514A0991C0FCA25E377C5C /* _CASLColorSpec.m */,
+				923F5C050CF1463D47D3DDDCFD12E3E5 /* _CASLFontSpec.h */,
+				7788A60DD06583552CD8C9DC5965D32F /* _CASLFontSpec.m */,
+				45A541C797183444681814BDD52AAC01 /* _CASLIncludedFont.h */,
+				AFC4B3A5D74166B49A85B16FB3321722 /* _CASLIncludedFont.m */,
+				476B658A06645553CE9EE8D7738B1E28 /* _CASLMetricSpec.h */,
+				A4238AA3AB340A9170D7557A9DF36AF2 /* _CASLMetricSpec.m */,
+			);
+			name = Generated;
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		64A744481D86C49024ABD1B22282325F /* zipzap */ = {
+			isa = PBXGroup;
+			children = (
+				B1C7A3FFFB8104E8814A95DADA90E28F /* Support Files */,
+				07682645223512826E4A81118CDC514E /* c++ */,
+				6BBF4932279F94A1AC71DD4AABEBDBF8 /* objc */,
+				CD5E4A397BA5F4F05516577B5BB08D15 /* objc++ */,
+			);
+			name = zipzap;
+			path = zipzap;
+			sourceTree = "<group>";
+		};
+		9AC4EEA59BEA2D12DE6235339CB77DA9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				42EE8B2345FF20ACC90882EF4DA3E634 /* DCOAboutWindow.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A1EE9488B3F5598BACB303051C44FECF /* MASPreferences */ = {
+			isa = PBXGroup;
+			children = (
+				2877ABC4F2A34BD67E4E4D78BE445562 /* Resources */,
+				ABF15E4D9BF05B1A1AC45A9BDB886ED3 /* Support Files */,
+				D479F52D8EAD971001116AEB6FC51494 /* MASPreferences.h */,
+				F6762FE9930E2DCD1831682163391E6A /* MASPreferencesViewController.h */,
+				7D365606FA95FE21EC3B0A195C1EF337 /* MASPreferencesWindowController.h */,
+				BAD6015478CDF0A5EEFA04C70AC75BDB /* MASPreferencesWindowController.m */,
+			);
+			name = MASPreferences;
+			path = MASPreferences;
+			sourceTree = "<group>";
+		};
+		371C6BB1E05A0D52FF0E02F44679BAD2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C9C29C822C84E66F224F68BAA08F470 /* ILGHttpConstants-dummy.m */,
+				C6CBF22BEF1315A2B63FFF1F1D34DDC0 /* ILGHttpConstants-prefix.pch */,
+				487E2D24426FCCB029A220237341E7B6 /* ILGHttpConstants.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ILGHttpConstants";
+			sourceTree = "<group>";
+		};
+		57A119378698EA03CC4467F8A310D10C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE7CA65ABACFF805B821A19CEE743B9C /* Sparkle.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA69128BA538E22FB0AF31EEBAD8D0E8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				812A6DF58E85CCC1E9280954D46182B9 /* VOKUtilities-dummy.m */,
+				8EBBB96056A220B2BEF1F01EEE84DE2C /* VOKUtilities-prefix.pch */,
+				42FD299E712A65D222D03FF9FA03010B /* VOKUtilities.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/VOKUtilities";
+			sourceTree = "<group>";
+		};
+		B82D7C772CA33E64ECD763ED5B175DF8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB4BE86DC8D06EEA9355249C71EA09D7 /* UICKeyChainStore-dummy.m */,
+				051ABA5D49CC7B77B2EF3DC6ABBF3964 /* UICKeyChainStore-prefix.pch */,
+				DD372A28496EEE31986BAF53E56E1CEB /* UICKeyChainStore.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UICKeyChainStore";
+			sourceTree = "<group>";
+		};
+		3567951209435258B9DE9AA269F03999 /* DCOTransparentScroller */ = {
+			isa = PBXGroup;
+			children = (
+				5D39C4938EDBD44E772CDE8928071B57 /* Support Files */,
+				1E1094C8B788597638DE857D80233A34 /* DCOTransparentScrollView.h */,
+				DF7071DEF1BD71B6AAB2548AF352379E /* DCOTransparentScrollView.m */,
+				3D8412CC9C9021F826FC761B960BF692 /* DCOTransparentScroller.h */,
+				CCAF96657D784AD5E9B8FA4386A599D6 /* DCOTransparentScroller.m */,
+			);
+			name = DCOTransparentScroller;
+			path = DCOTransparentScroller;
+			sourceTree = "<group>";
+		};
+		5D39C4938EDBD44E772CDE8928071B57 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2BD77EB3DBFBA55B2BC6D3813FDA3AD5 /* DCOTransparentScroller-dummy.m */,
+				F09E4A275FC639007E523FF1DBB5E0F0 /* DCOTransparentScroller-prefix.pch */,
+				1595FB80A8544C131F73DBF3C782BCC4 /* DCOTransparentScroller.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DCOTransparentScroller";
+			sourceTree = "<group>";
+		};
+		BD69F150A8C2569270FC79BDA1504428 /* ILGDynamicObjC */ = {
+			isa = PBXGroup;
+			children = (
+				C0EADA668804F57D6D9AA862CE8EF321 /* ILGClasses */,
+				F653198251905F2D19DBEA48B7F9A7DC /* Support Files */,
+			);
+			name = ILGDynamicObjC;
+			path = ILGDynamicObjC;
+			sourceTree = "<group>";
+		};
+		DBD2F37A342D8A85F51F80A5554557C5 /* CyndiLauper */ = {
+			isa = PBXGroup;
+			children = (
+				0B5962E981F3FC75152AEA0E0DD7A0FD /* CyndiLauper */,
+				BD7499100F865877C1C99B30B406027B /* Support Files */,
+			);
+			name = CyndiLauper;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		1432AA59D8B53139E350543A9C80D7F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C24F5A4559F407F87D8EC3951B650D8 /* BFColorPickerPopover */,
+				A2F9B468F50FEBFC583124407A870D64 /* DCOAboutWindow */,
+				3567951209435258B9DE9AA269F03999 /* DCOTransparentScroller */,
+				5D6B7B326CF0D91D3F6B1AE941B31BF6 /* HockeySDK-Mac */,
+				BD69F150A8C2569270FC79BDA1504428 /* ILGDynamicObjC */,
+				33BD4D7621883AE06670534C616B7E59 /* ILGHttpConstants */,
+				88FE7F07E7B8EFA346205EE9D4A1384B /* MAKVONotificationCenter */,
+				A1EE9488B3F5598BACB303051C44FECF /* MASPreferences */,
+				F6A3A2E7119CB2EB737C0EC77B5B66AA /* Sparkle */,
+				F2CA3E76863601A0AF08474E3A2CE1D1 /* UICKeyChainStore */,
+				0628D34B912C2431236471EF4C7720C0 /* VOKUtilities */,
+				80D53C389890CE9982E494F8ED896911 /* Vokoder */,
+				73AB5E5F94B4DE5984CD16FDB5EABFD4 /* xUnique */,
+				64A744481D86C49024ABD1B22282325F /* zipzap */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		88FE7F07E7B8EFA346205EE9D4A1384B /* MAKVONotificationCenter */ = {
+			isa = PBXGroup;
+			children = (
+				514582C16EC55BE16384830313B37905 /* Support Files */,
+				BDAC9170B88B24BA993B367198777E24 /* MAKVONotificationCenter.h */,
+				D7ED33AF4A63A9B85A4EA744302AE18D /* MAKVONotificationCenter.m */,
+			);
+			name = MAKVONotificationCenter;
+			path = MAKVONotificationCenter;
+			sourceTree = "<group>";
+		};
+		0628D34B912C2431236471EF4C7720C0 /* VOKUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				FA69128BA538E22FB0AF31EEBAD8D0E8 /* Support Files */,
+				7A433FE6A343961BAD2B564426630D78 /* VOKKeyPathHelper */,
+			);
+			name = VOKUtilities;
+			path = VOKUtilities;
+			sourceTree = "<group>";
+		};
+		A2F9B468F50FEBFC583124407A870D64 /* DCOAboutWindow */ = {
+			isa = PBXGroup;
+			children = (
+				9AC4EEA59BEA2D12DE6235339CB77DA9 /* Resources */,
+				87ABDD90FC957DFA680F52CBCE88C6D5 /* Support Files */,
+				61313A1623BAFAEDC2CF07E30944A8E6 /* DCOAboutWindowController.h */,
+				B895327D352E47C00B89389D0A3ABBB7 /* DCOAboutWindowController.m */,
+			);
+			name = DCOAboutWindow;
+			path = DCOAboutWindow;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		45D6D0F3F5D96685B67A0C4A9C9324CC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				937FC35804E0285C21AE5AA9F54A79C3 /* BFColorPickerPopover.h in Headers */,
+				46F22CD0BD9CB4667740E325A1B07843 /* BFColorPickerPopoverView.h in Headers */,
+				4F3A1B4CE98F3BF4948EE0E0E2DB3717 /* BFColorPickerViewController.h in Headers */,
+				469F26643700713411149B41C953FF67 /* BFIconTabBar.h in Headers */,
+				2CD7DC83398784B137445E52BD86C504 /* BFPopoverColorWell.h in Headers */,
+				5EE819069D413BA86EDEBEC287881A44 /* NSColor+BFColorPickerPopover.h in Headers */,
+				FA0A1B5C778EE996BA37ECDA57E56E6D /* NSColorPanel+BFColorPickerPopover.h in Headers */,
+				FF636DC08E85F8989820931DB559740A /* NSColorWell+BFColorPickerPopover.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D22E50FBE57D326B186A324EF0EAF668 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E63EFB9B228A5DBAA0A19CAF3F531E93 /* VOKKeyPathHelper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57E920AFD11675C2CEE659ACA5101473 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB4C0203D0D046647CD238AC5DB2D1FD /* DCOTransparentScrollView.h in Headers */,
+				096580924DDC6F7E9A97F069124F9311 /* DCOTransparentScroller.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0945EB554AB97154E71FA3B092906367 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C71213B2E8C3A6434B869C6FA3AEDAA3 /* ZZAESDecryptInputStream.h in Headers */,
+				8C3E8AAEADF15D824CEE54EA908584B9 /* ZZArchive.h in Headers */,
+				5CF2BD62A9D51B6FFFE1D8BD4104DC9D /* ZZArchiveEntry.h in Headers */,
+				D725AA88367250014A13CF169C409ED4 /* ZZArchiveEntryWriter.h in Headers */,
+				0CAF595A6A6E71E985283B50060FCD6C /* ZZChannel.h in Headers */,
+				15ADB6BFF7D6CCAFB5B1BBD42CE1118D /* ZZChannelOutput.h in Headers */,
+				757DA5D191020D6CFA442EE47BFF90B9 /* ZZConstants.h in Headers */,
+				7C076938A43B3891F41A2BD84AEE3CAE /* ZZDataChannel.h in Headers */,
+				9BC27C38E3FBD1B7B0F1C1A2A6852A5A /* ZZDataChannelOutput.h in Headers */,
+				A092E9ED92EDC14DA6F1576CEF89E163 /* ZZDataProvider.h in Headers */,
+				140E90D4AAD3357AD5C932CAD5227608 /* ZZDeflateOutputStream.h in Headers */,
+				350405D2CC9495C198D6B5C3129975A0 /* ZZError.h in Headers */,
+				5E810F3CECFDDB0E7140BE710531D59D /* ZZFileChannel.h in Headers */,
+				570E37D84206D6C5EF2C25C8C70BD5A5 /* ZZFileChannelOutput.h in Headers */,
+				A1678EC5DB1F124717D5031321449952 /* ZZHeaders.h in Headers */,
+				CD2465B60CAA94534D5EDE984BACCBDD /* ZZInflateInputStream.h in Headers */,
+				92E2F2D4AFF83546B9BA163257CB4F72 /* ZZNewArchiveEntry.h in Headers */,
+				F57C3C2B783AE0FBC867BC3582A65FE3 /* ZZNewArchiveEntryWriter.h in Headers */,
+				7F89A555AB4DB25A422A2701CAC27D0D /* ZZOldArchiveEntry.h in Headers */,
+				639D1503AA86BA6D829B92485EEE1F78 /* ZZOldArchiveEntryWriter.h in Headers */,
+				8B80ECBF7B2D6AE016EC6DEF11373713 /* ZZScopeGuard.h in Headers */,
+				4B29508715287A6427EC7F1FB81BCC59 /* ZZStandardCryptoEngine.h in Headers */,
+				DB31666A13BD4EF9AD997A3157F31004 /* ZZStandardDecryptInputStream.h in Headers */,
+				8E235962294071F9ACF3F92F409F5733 /* ZZStoreOutputStream.h in Headers */,
+				3862F65A7C64D183F3096521C6298348 /* zipzap.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFA026208DB7AC9C1EEE9263428BC7D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				266C2EB085F2A07622C62FB075718E2C /* ILGClasses.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3F30ED179AEC7E1DDA7B6FBF7AD8D52 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11EB8B4F6AF4581E3A523A9AE2A000A7 /* UICKeyChainStore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD41B6FEF6BF2661A6CF56C4D0CE3287 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5B2E2F202D98805EABAC93EB9A26C53 /* DCOAboutWindowController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D4F68B55AB42535D4335D6DE0D0BFAD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78DD6D927B3EAC16365CD23AF34A2769 /* MASPreferences.h in Headers */,
+				596FE4D3FF71FB3BD95A5F046812920C /* MASPreferencesViewController.h in Headers */,
+				DFCFE3AEACB75DAE430F75A46D9995D7 /* MASPreferencesWindowController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDD2B603D7FF021196A1E28EA316FC07 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E0D461EE34D21C1E3FF3A8CA2AF33E3 /* HTTPHeaderFields.h in Headers */,
+				C259501B321BFB2251D4DA1729796750 /* HTTPMethods.h in Headers */,
+				E023E6EAC218192B4D339698EEBE2293 /* HTTPStatusCodes.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3660ECEF9A7E91C4E0664D203F4852E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B043B1CD45741D0F7F1EE224DA74D7C4 /* CASLBaseSpec.h in Headers */,
+				419AFF9FFBC7CFD73C6DE1905DC200D9 /* CASLColorSpec.h in Headers */,
+				758437192FA6FD57885E1F549E4472F9 /* CASLDocument.h in Headers */,
+				CA80FCF5665B2941B1C1499AD03D4BE8 /* CASLDocumentSerializer.h in Headers */,
+				DDBB61BD71D2FA7A4EC780212489DC5E /* CASLDocumentSerializerImplementation.h in Headers */,
+				0EF17A500D3587BC336E887ADC77BACE /* CASLDocumentSerializerJsonV1.h in Headers */,
+				DA1A33BB5AA89ED9963F90E4B12F3D4E /* CASLDocumentSerializerZipV1.h in Headers */,
+				1CF35A59261877A44CB46A32AE991E51 /* CASLFontSpec.h in Headers */,
+				F035683B7DAEC23006F52B7BCEFD4A91 /* CASLIncludedFont.h in Headers */,
+				8C79535ED1C181201CDB4B7C8EC048D4 /* CASLLocalizedString.h in Headers */,
+				FF523376CE62EAA4EF28CFA4046B01AC /* CASLMetricSpec.h in Headers */,
+				1E1767474C4AA0944307B5F542D2BE85 /* CASLSpecsModel.h in Headers */,
+				32EB5756026F0C5815A92B2CBA5E0D51 /* NSColor+CASL.h in Headers */,
+				4330F449DBD175CF60EE5858F60226EA /* NSFont+CASL.h in Headers */,
+				E4EC9B7C0C6A52B5AC677FA08A5EAF1F /* NSManagedObjectModel+CASL.h in Headers */,
+				AF1AADEA65581B3BA45D77EACBAD844F /* _CASLBaseSpec.h in Headers */,
+				7600447844886AFC455F655CD58A58E1 /* _CASLColorSpec.h in Headers */,
+				0FE3C07033FDC60C6750F0066C82B469 /* _CASLFontSpec.h in Headers */,
+				26FDBFD0355D52984C452520F3102713 /* _CASLIncludedFont.h in Headers */,
+				339C139BAC46239DF1C0F48B3F9BECEB /* _CASLMetricSpec.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1796AA295D0C21900B10C57B17F2B05E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98EEE2BA31F27B7853D35E0C2C26228B /* NSManagedObject+VOKManagedObjectAdditions.h in Headers */,
+				E5D424CCFB7C14C4E4C522B795EBDFF0 /* VOKCoreDataCollectionTypes.h in Headers */,
+				188674B1FBA04FFD17E44815B59FB590 /* VOKCoreDataManager.h in Headers */,
+				61105CB93020C603855AFC81FC539274 /* VOKCoreDataManagerInternalMacros.h in Headers */,
+				4567A5E2A5523FF4BE62FD719D87B620 /* VOKManagedObjectMap.h in Headers */,
+				CEDBFD292E2BF56AE398F784876F9C4C /* VOKManagedObjectMapper.h in Headers */,
+				8729B79F85BE7C77B600308B2DDC88FF /* VOKMappableModel.h in Headers */,
+				D45F8C1FDF9DE997DAEEFAE02AFCD223 /* VOKNullabilityFeatures.h in Headers */,
+				F134279FD824F73A34CFC9FC1208C6F0 /* Vokoder.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C660176DBD0323BC8BABB1C774910388 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D634472FE235768670A1C54D7BD38F7 /* MAKVONotificationCenter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A133B4B5C05337BCC23F8A078837F064 /* DCOAboutWindow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96E8BF138AE25A1E78D6CF6B9A8E70B9 /* Build configuration list for PBXNativeTarget "DCOAboutWindow" */;
+			buildPhases = (
+				FE81B1B4C3622A4B75E1A808C3277331 /* Sources */,
+				AA8BB440F8583B94E336182DF401D84A /* Frameworks */,
+				BD41B6FEF6BF2661A6CF56C4D0CE3287 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D687BF5A2B39735BC782E151B82B51BD /* PBXTargetDependency */,
+			);
+			name = DCOAboutWindow;
+			productName = DCOAboutWindow;
+			productReference = 1B572CB9984A978AF62503FFAAB84F2B /* libDCOAboutWindow.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		739F5F8C5B9569DD0C1FC73E4D715DF8 /* ILGHttpConstants */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E92708ACB50CE2DD9219500C32C07B89 /* Build configuration list for PBXNativeTarget "ILGHttpConstants" */;
+			buildPhases = (
+				810E8FFE5168BFAAF3E078971810801A /* Sources */,
+				13B7AD23CDCED32F9E3360163134B02F /* Frameworks */,
+				CDD2B603D7FF021196A1E28EA316FC07 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ILGHttpConstants;
+			productName = ILGHttpConstants;
+			productReference = 39627B63A63E68CF6B14CD427FB4A257 /* libILGHttpConstants.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D37E90728AE46AFAD63A0DA44CE9E986 /* MASPreferences */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6862C735467DD4C81C81DA9184DCBF8B /* Build configuration list for PBXNativeTarget "MASPreferences" */;
+			buildPhases = (
+				E2D665E4F93ED98B1D14192ECDFC9DCD /* Sources */,
+				C96A2154109D9EC1A7BBEDDE426EB130 /* Frameworks */,
+				0D4F68B55AB42535D4335D6DE0D0BFAD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MASPreferences;
+			productName = MASPreferences;
+			productReference = DFF533239992330A2791C6E065594C6A /* libMASPreferences.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		1D09AFAFA1408B5E3648A75382ECF764 /* Pods-TrueColors */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C05520A1284C1CBBE395A66CE48A05BF /* Build configuration list for PBXNativeTarget "Pods-TrueColors" */;
+			buildPhases = (
+				7E775EE3BDF937B2B3C5D85D0B8C5D15 /* Sources */,
+				3EB28841AE83080E0AC72DB93349E9D3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE4C6B28E7947D85C7D1D0B21BBC14D1 /* PBXTargetDependency */,
+				1F18FA8A54A67D77AC0BBB7A707AB429 /* PBXTargetDependency */,
+				90AE6B6AAFF083CE6B2A0DC70F2B1C2E /* PBXTargetDependency */,
+				93A087A02FC24AFD166A2F0A3C090D9A /* PBXTargetDependency */,
+				2A332E33206A8B322A2966E286CD8A28 /* PBXTargetDependency */,
+				821AA3E774BC560256ACEFFD4CD34370 /* PBXTargetDependency */,
+				7565466144A752557BAF14067D5D1574 /* PBXTargetDependency */,
+				E6936F965136EC154A41E00B918315AA /* PBXTargetDependency */,
+				3C57D2F7935B8A6C6EB1318796AB5AE8 /* PBXTargetDependency */,
+				C21A9955DCBEED674EC6ADD3B2E5496D /* PBXTargetDependency */,
+				DF5C6D15A06B2BF5CFE53C0A1888E5FE /* PBXTargetDependency */,
+				677EEE9FEC84701930237FC30F985442 /* PBXTargetDependency */,
+			);
+			name = "Pods-TrueColors";
+			productName = "Pods-TrueColors";
+			productReference = B8722D3CBB88A9030B66403ED7EA12C1 /* libPods-TrueColors.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DD87C9F3B4BDA2DBB53DA8251452153C /* DCOTransparentScroller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D77EDF633F64E3CC36DB38E3EDC9AAFC /* Build configuration list for PBXNativeTarget "DCOTransparentScroller" */;
+			buildPhases = (
+				DF4E3BA75A05892A992E84CD506343AB /* Sources */,
+				2F5CAB7273367BA77C3916B4FB457237 /* Frameworks */,
+				57E920AFD11675C2CEE659ACA5101473 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DCOTransparentScroller;
+			productName = DCOTransparentScroller;
+			productReference = FC4D08876BFB10A1EF4A8C9C54AFD5F4 /* libDCOTransparentScroller.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EF8661F73CD02E38BBAB9D1A0CE5C8A7 /* CyndiLauper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D3E3FBFDB35DC6A79AD531859B2AFEC /* Build configuration list for PBXNativeTarget "CyndiLauper" */;
+			buildPhases = (
+				7D529AB6B102C262A2AF4353BE69394A /* Sources */,
+				B77187EF7A2477775DC4213794B725BC /* Frameworks */,
+				B3660ECEF9A7E91C4E0664D203F4852E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B781CDC4B348CD7365423075264AFC9D /* PBXTargetDependency */,
+				A2CE6A712D8423A6F9EA09939CE0F0D0 /* PBXTargetDependency */,
+				9C83B1FDD6DBCC18FE4DC333AE57F6A4 /* PBXTargetDependency */,
+				9B64FE79E196CD2B75D0185DE40EC35E /* PBXTargetDependency */,
+			);
+			name = CyndiLauper;
+			productName = CyndiLauper;
+			productReference = 921BE5193235B3EBB502DD3B07659111 /* libCyndiLauper.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9B916079869A4966B8474E5FB83E747E /* MAKVONotificationCenter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0061591617DD871581DFB6607AEE53C3 /* Build configuration list for PBXNativeTarget "MAKVONotificationCenter" */;
+			buildPhases = (
+				9BEC7417D6C0093DD98E468C2D77EBD3 /* Sources */,
+				71CFC55487EABD3004083D727116309C /* Frameworks */,
+				C660176DBD0323BC8BABB1C774910388 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MAKVONotificationCenter;
+			productName = MAKVONotificationCenter;
+			productReference = 071E9F2272DA3099E5CA74E0188D3AF8 /* libMAKVONotificationCenter.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		69C3F52DD0A5FFBD9C342F59625053AA /* ILGDynamicObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D25BA6930540CB15E94ABBAB2C15CF0 /* Build configuration list for PBXNativeTarget "ILGDynamicObjC" */;
+			buildPhases = (
+				E689EC53BCC09E40CBF49B13569C5E18 /* Sources */,
+				15141D10078782C4A107A2CC8490502A /* Frameworks */,
+				EAFA026208DB7AC9C1EEE9263428BC7D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ILGDynamicObjC;
+			productName = ILGDynamicObjC;
+			productReference = 9CAA01EAE9A9BEAD84FD3014FAC597EB /* libILGDynamicObjC.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D3386F7507ECAC65A323584F9CFBAD32 /* zipzap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60C8912D4A5645FA900F0DAB58F26E4A /* Build configuration list for PBXNativeTarget "zipzap" */;
+			buildPhases = (
+				45FF0535174297C66F8A9432874C0D57 /* Sources */,
+				61CF9B670AFA8FCC056660937A8AD4DA /* Frameworks */,
+				0945EB554AB97154E71FA3B092906367 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = zipzap;
+			productName = zipzap;
+			productReference = 3D82BDEC03D71C6DD490BC69166E8924 /* libzipzap.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BA5E2F05EA983D823D3414221069869D /* Vokoder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D796A3DA726D8A0C5DFC94A247BDEDEE /* Build configuration list for PBXNativeTarget "Vokoder" */;
+			buildPhases = (
+				48D61696053C90D4304CCE14AD7E6F96 /* Sources */,
+				8952633548A32679835C87BC28DD5073 /* Frameworks */,
+				1796AA295D0C21900B10C57B17F2B05E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C77C5C3C6E92CF56F30CF30BE6CACD4A /* PBXTargetDependency */,
+				14AB4CB86C360F74B3E581E02C31A7EB /* PBXTargetDependency */,
+			);
+			name = Vokoder;
+			productName = Vokoder;
+			productReference = DA9CD9EB3AA7FF3EBC9A08286E12C900 /* libVokoder.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		110774E0A74411EB3D9AC98D358F899E /* BFColorPickerPopover */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99879C6D2CC34DA533EA41E1A1620471 /* Build configuration list for PBXNativeTarget "BFColorPickerPopover" */;
+			buildPhases = (
+				ED0581FCF12248873D8FBA28DDF2E36A /* Sources */,
+				F21D9627AC05D69F0F57F62B0AC09FF6 /* Frameworks */,
+				45D6D0F3F5D96685B67A0C4A9C9324CC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BFColorPickerPopover;
+			productName = BFColorPickerPopover;
+			productReference = 3A73AC89904B4CB8B2E43FCBC389ACB6 /* libBFColorPickerPopover.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		3259982B4F3ADB4584E54D7A70C980FF /* UICKeyChainStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF73E4A92E8D9825ED596E46EA9E8113 /* Build configuration list for PBXNativeTarget "UICKeyChainStore" */;
+			buildPhases = (
+				FA54AB786F581DFEC76673596D29CF23 /* Sources */,
+				5D736AFF5FAB61C5562C04651AF60496 /* Frameworks */,
+				A3F30ED179AEC7E1DDA7B6FBF7AD8D52 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UICKeyChainStore;
+			productName = UICKeyChainStore;
+			productReference = 8A394941B20DD3A413521222761FC640 /* libUICKeyChainStore.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EF3D3A0DA86E953CE63D898DC130F533 /* Pods-TrueColorsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D729477EF760E4864C2AA5371E4DB5F /* Build configuration list for PBXNativeTarget "Pods-TrueColorsTests" */;
+			buildPhases = (
+				EF865E5583045EA8B0F79CA545B8451F /* Sources */,
+				F8E11D29706CF920A4F2E46F995FB624 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TrueColorsTests";
+			productName = "Pods-TrueColorsTests";
+			productReference = 213F1EDD352D1113E0BE78AF92C77F8E /* libPods-TrueColorsTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7BF6F455B6726E7C85743DC17CAFDD20 /* VOKUtilities */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFEF623AB493671B39040FD1DBA758AE /* Build configuration list for PBXNativeTarget "VOKUtilities" */;
+			buildPhases = (
+				530EC35663471E8D1147EC79301EEE0C /* Sources */,
+				D1E0A78515A425ACB73FFF1E5DED5776 /* Frameworks */,
+				D22E50FBE57D326B186A324EF0EAF668 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VOKUtilities;
+			productName = VOKUtilities;
+			productReference = F1F509176F65E2C991E7C9308802DB84 /* libVOKUtilities.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = FC02AE59B0DCC1367E03651BD0868F72 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5DECD2D2DDBCF1DF25E1166EAF85634C;
+			productRefGroup = F11F3D9AADDE75DD48B2D75FDE6D0F2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				110774E0A74411EB3D9AC98D358F899E /* BFColorPickerPopover */,
+				EF8661F73CD02E38BBAB9D1A0CE5C8A7 /* CyndiLauper */,
+				A133B4B5C05337BCC23F8A078837F064 /* DCOAboutWindow */,
+				DD87C9F3B4BDA2DBB53DA8251452153C /* DCOTransparentScroller */,
+				69C3F52DD0A5FFBD9C342F59625053AA /* ILGDynamicObjC */,
+				739F5F8C5B9569DD0C1FC73E4D715DF8 /* ILGHttpConstants */,
+				9B916079869A4966B8474E5FB83E747E /* MAKVONotificationCenter */,
+				D37E90728AE46AFAD63A0DA44CE9E986 /* MASPreferences */,
+				1D09AFAFA1408B5E3648A75382ECF764 /* Pods-TrueColors */,
+				EF3D3A0DA86E953CE63D898DC130F533 /* Pods-TrueColorsTests */,
+				3259982B4F3ADB4584E54D7A70C980FF /* UICKeyChainStore */,
+				BA5E2F05EA983D823D3414221069869D /* Vokoder */,
+				7BF6F455B6726E7C85743DC17CAFDD20 /* VOKUtilities */,
+				D3386F7507ECAC65A323584F9CFBAD32 /* zipzap */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA54AB786F581DFEC76673596D29CF23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA52076BEC827DC81C1932F6D5FDF2E6 /* UICKeyChainStore-dummy.m in Sources */,
+				680325EF31E4891994A290014CDDD389 /* UICKeyChainStore.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BEC7417D6C0093DD98E468C2D77EBD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5753D2C159F12A862B897424FF9F1026 /* MAKVONotificationCenter-dummy.m in Sources */,
+				296C49C6C6DB064578F454F3319882AD /* MAKVONotificationCenter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		530EC35663471E8D1147EC79301EEE0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				388C22BC0C6295739569BEFD0E62A532 /* VOKKeyPathHelper.m in Sources */,
+				13860E57730CB68C980144C1246E8166 /* VOKUtilities-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE81B1B4C3622A4B75E1A808C3277331 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCFABFA7B8F8CA0CEED730D12AE4A68E /* DCOAboutWindow-dummy.m in Sources */,
+				DDD9ECE5E8A5A601F3F8C6222BFD7E35 /* DCOAboutWindowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45FF0535174297C66F8A9432874C0D57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				085DB56690808473E88BB2C764187869 /* ZZAESDecryptInputStream.mm in Sources */,
+				5D9CA7A4C79A1BE98623F7E848E634EE /* ZZArchive.mm in Sources */,
+				AFF640C44A8865AD8BFCEAF6B58A117E /* ZZArchiveEntry.m in Sources */,
+				88CCCFD3E22C1D236191B084CE2B4101 /* ZZConstants.m in Sources */,
+				43BA52D750C650FAD8BF2D7141A2F982 /* ZZDataChannel.m in Sources */,
+				7E40EE50CABD801245A4E85DFC559232 /* ZZDataChannelOutput.m in Sources */,
+				DCB5FF61F89FC71895FBE9F45AE6FE70 /* ZZDeflateOutputStream.m in Sources */,
+				956385329EBDA0218527EDF4EDE83939 /* ZZError.m in Sources */,
+				C8D849E62B7879B7F382C5941CC944D6 /* ZZFileChannel.m in Sources */,
+				BFF2D0BD9CA6DD58860C69B0CD4C5D64 /* ZZFileChannelOutput.m in Sources */,
+				510229007776BA14DD7FBBADC729DC2C /* ZZInflateInputStream.m in Sources */,
+				15698A6DF9424E91CCDFFFC9F891630C /* ZZNewArchiveEntry.mm in Sources */,
+				442B34FCD9FDFC9C1CB25BC013A62418 /* ZZNewArchiveEntryWriter.mm in Sources */,
+				FA70FB836479282F31A95DA4190C5322 /* ZZOldArchiveEntry.mm in Sources */,
+				75E8153D31648F8B91343C1FDACAC543 /* ZZOldArchiveEntryWriter.mm in Sources */,
+				26E8E70BCB8A4271A84875CB3B142139 /* ZZStandardCryptoEngine.cpp in Sources */,
+				05AD3893E5E62BCFCE56A19E0FF8A290 /* ZZStandardDecryptInputStream.mm in Sources */,
+				A7C4D4C6494357CD3A978D40A1AD60CE /* ZZStoreOutputStream.m in Sources */,
+				88F53E1A6EA757EB1ACE063BA4D501F5 /* zipzap-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2D665E4F93ED98B1D14192ECDFC9DCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30E1A35B04A1072026635B7DD0D403C8 /* MASPreferences-dummy.m in Sources */,
+				7E0C783343487AC790D8AFD000C31D45 /* MASPreferencesWindowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E689EC53BCC09E40CBF49B13569C5E18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23DA4A38A0F5999A47726AD2E3A3CB64 /* ILGClasses.m in Sources */,
+				1523ECABEAC8045673063FA3D6E70899 /* ILGDynamicObjC-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		810E8FFE5168BFAAF3E078971810801A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BBBADA11C008237C48DDF046E53DD4A /* HTTPHeaderFields.m in Sources */,
+				B281D09DB995432D33964B8E09987EB0 /* HTTPMethods.m in Sources */,
+				38E6258111DEDA7AA894C3EAAFE46BC9 /* ILGHttpConstants-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48D61696053C90D4304CCE14AD7E6F96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBF2843214000588D87ADC19EA39D18D /* NSManagedObject+VOKManagedObjectAdditions.m in Sources */,
+				1BF2AD3C6FE8E7FB1A09BDCEFA6F5263 /* VOKCoreDataManager.m in Sources */,
+				2C95790636E21C6849AEC79F172CB825 /* VOKManagedObjectMap.m in Sources */,
+				74DD6103B08C68347CFD184842501D9D /* VOKManagedObjectMapper.m in Sources */,
+				133A3ADCC22AE3F88025E9990697B38D /* Vokoder-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF865E5583045EA8B0F79CA545B8451F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18D234716A540BCB266035F4359BFECB /* Pods-TrueColorsTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED0581FCF12248873D8FBA28DDF2E36A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35DE720F91A3F346EBC820B27C13C183 /* BFColorPickerPopover-dummy.m in Sources */,
+				311B5AFD1BBD1730D855D283A76F359D /* BFColorPickerPopover.m in Sources */,
+				25D2DEB9A1232CE238BACD391EE056D8 /* BFColorPickerPopoverView.m in Sources */,
+				E4940B201A8DE50F92F123F6BCE90762 /* BFColorPickerViewController.m in Sources */,
+				87A378C65E2C0B9380DA1E3A1ECA160D /* BFIconTabBar.m in Sources */,
+				DEFC009369DC6D3C61F89C63C614F0C1 /* BFPopoverColorWell.m in Sources */,
+				01D03E910DFFCC3A16E2DC64CBF98CC7 /* NSColor+BFColorPickerPopover.m in Sources */,
+				109421DAD3C2ADC59625B65DE4C558C3 /* NSColorPanel+BFColorPickerPopover.m in Sources */,
+				FF8F1BC5360D9BF1B859D5B1AE3ADCDA /* NSColorWell+BFColorPickerPopover.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF4E3BA75A05892A992E84CD506343AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9247B3DA803569E7DE6CA918114D6AE0 /* DCOTransparentScrollView.m in Sources */,
+				0236FFC42CF6C0238E01DF06618F27C4 /* DCOTransparentScroller-dummy.m in Sources */,
+				837C1F63125D1848BC5FC0C5C83198DD /* DCOTransparentScroller.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D529AB6B102C262A2AF4353BE69394A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EA7CEA2A19C2B772F43C88D7A66C62B /* CASLBaseSpec.m in Sources */,
+				3079F64EB39231C378FB7F6844513DBD /* CASLColorSpec.m in Sources */,
+				91931EFC863F9B400D435DA04A00C371 /* CASLDocument.m in Sources */,
+				DF4F53447DEDF2E4F58F993726162990 /* CASLDocumentSerializer.m in Sources */,
+				501F11AF8A77EDDE1189D12733717791 /* CASLDocumentSerializerJsonV1.m in Sources */,
+				B8E552729D69613A1F83CC0C115AA59C /* CASLDocumentSerializerZipV1.m in Sources */,
+				B4D11BF5DD42D42DCE121DDE2972D811 /* CASLFontSpec.m in Sources */,
+				C7195956D04C93F0CAF5839D78D9B279 /* CASLIncludedFont.m in Sources */,
+				5448214C228F0081189701BE44A61698 /* CASLLocalizedString.m in Sources */,
+				6023321AA44BCAD41943D89E77937DF7 /* CASLMetricSpec.m in Sources */,
+				D052A96DC92D18AA47D2E4092F1A6DE1 /* CyndiLauper-dummy.m in Sources */,
+				08225A8B6CC1E33AFAF23D5EDE6A459B /* NSColor+CASL.m in Sources */,
+				8D65D0732B68A22FD7A1408ABB078F96 /* NSFont+CASL.m in Sources */,
+				2258D631D15F5408000F60E4BB264262 /* NSManagedObjectModel+CASL.m in Sources */,
+				732986A809B9C1FEFA03531469CFC7FA /* _CASLBaseSpec.m in Sources */,
+				058534364798123029F415B51F978593 /* _CASLColorSpec.m in Sources */,
+				CF3AD675A00EBCDD2F76C841831FFC55 /* _CASLFontSpec.m in Sources */,
+				2630F9BCDA0FB87CA1E27510C8B1D88F /* _CASLIncludedFont.m in Sources */,
+				D366AF903BB7B47DF13B1AB7B1D3426D /* _CASLMetricSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E775EE3BDF937B2B3C5D85D0B8C5D15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A37A31B8FBF92B9D249B719083CC946 /* Pods-TrueColors-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		90AE6B6AAFF083CE6B2A0DC70F2B1C2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DCOAboutWindow;
+			target = A133B4B5C05337BCC23F8A078837F064 /* DCOAboutWindow */;
+			targetProxy = CDA87359B9E007350D6295B866D6194F /* PBXContainerItemProxy */;
+		};
+		DF5C6D15A06B2BF5CFE53C0A1888E5FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Vokoder;
+			target = BA5E2F05EA983D823D3414221069869D /* Vokoder */;
+			targetProxy = 9BE4D3DBBE8C297822632CEF649D8126 /* PBXContainerItemProxy */;
+		};
+		C77C5C3C6E92CF56F30CF30BE6CACD4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ILGDynamicObjC;
+			target = 69C3F52DD0A5FFBD9C342F59625053AA /* ILGDynamicObjC */;
+			targetProxy = BAAD07A27454A07F29747B96469992AE /* PBXContainerItemProxy */;
+		};
+		7565466144A752557BAF14067D5D1574 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MAKVONotificationCenter;
+			target = 9B916079869A4966B8474E5FB83E747E /* MAKVONotificationCenter */;
+			targetProxy = 970C0567F47A6264D467C78C738FE928 /* PBXContainerItemProxy */;
+		};
+		1F18FA8A54A67D77AC0BBB7A707AB429 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CyndiLauper;
+			target = EF8661F73CD02E38BBAB9D1A0CE5C8A7 /* CyndiLauper */;
+			targetProxy = 1156E97F2EDF1CF5513597C969D8632B /* PBXContainerItemProxy */;
+		};
+		D687BF5A2B39735BC782E151B82B51BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DCOTransparentScroller;
+			target = DD87C9F3B4BDA2DBB53DA8251452153C /* DCOTransparentScroller */;
+			targetProxy = 82A5550DDEDEF9279090079C1A63ED98 /* PBXContainerItemProxy */;
+		};
+		BE4C6B28E7947D85C7D1D0B21BBC14D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BFColorPickerPopover;
+			target = 110774E0A74411EB3D9AC98D358F899E /* BFColorPickerPopover */;
+			targetProxy = F9530FACFA3319D7F66C337BF12F8CE3 /* PBXContainerItemProxy */;
+		};
+		93A087A02FC24AFD166A2F0A3C090D9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DCOTransparentScroller;
+			target = DD87C9F3B4BDA2DBB53DA8251452153C /* DCOTransparentScroller */;
+			targetProxy = C7F1DD3CD0C25A781982D3B7A632E8E6 /* PBXContainerItemProxy */;
+		};
+		9B64FE79E196CD2B75D0185DE40EC35E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = zipzap;
+			target = D3386F7507ECAC65A323584F9CFBAD32 /* zipzap */;
+			targetProxy = 44D4EBCF73A5F767B91CE73F646D1C64 /* PBXContainerItemProxy */;
+		};
+		A2CE6A712D8423A6F9EA09939CE0F0D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VOKUtilities;
+			target = 7BF6F455B6726E7C85743DC17CAFDD20 /* VOKUtilities */;
+			targetProxy = C767D381F4508CE72D51DFB932F62722 /* PBXContainerItemProxy */;
+		};
+		677EEE9FEC84701930237FC30F985442 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = zipzap;
+			target = D3386F7507ECAC65A323584F9CFBAD32 /* zipzap */;
+			targetProxy = 6FAD7216AA79B384336D892733DC3A4C /* PBXContainerItemProxy */;
+		};
+		9C83B1FDD6DBCC18FE4DC333AE57F6A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Vokoder;
+			target = BA5E2F05EA983D823D3414221069869D /* Vokoder */;
+			targetProxy = 8772AE30AA384785C6E00F71EB2BC619 /* PBXContainerItemProxy */;
+		};
+		B781CDC4B348CD7365423075264AFC9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ILGDynamicObjC;
+			target = 69C3F52DD0A5FFBD9C342F59625053AA /* ILGDynamicObjC */;
+			targetProxy = 88123C48255820227FFDC14551EDB205 /* PBXContainerItemProxy */;
+		};
+		821AA3E774BC560256ACEFFD4CD34370 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ILGHttpConstants;
+			target = 739F5F8C5B9569DD0C1FC73E4D715DF8 /* ILGHttpConstants */;
+			targetProxy = 0C5CE6CDACC964A05E839AF72F6E3CCD /* PBXContainerItemProxy */;
+		};
+		E6936F965136EC154A41E00B918315AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MASPreferences;
+			target = D37E90728AE46AFAD63A0DA44CE9E986 /* MASPreferences */;
+			targetProxy = E8D5CA76566823C35ECA23F40319E1CC /* PBXContainerItemProxy */;
+		};
+		14AB4CB86C360F74B3E581E02C31A7EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VOKUtilities;
+			target = 7BF6F455B6726E7C85743DC17CAFDD20 /* VOKUtilities */;
+			targetProxy = 9E19846C346BFE4CC9BEB3E76B429238 /* PBXContainerItemProxy */;
+		};
+		2A332E33206A8B322A2966E286CD8A28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ILGDynamicObjC;
+			target = 69C3F52DD0A5FFBD9C342F59625053AA /* ILGDynamicObjC */;
+			targetProxy = 6B4BCACF09813D36512DB8BA56841A0F /* PBXContainerItemProxy */;
+		};
+		C21A9955DCBEED674EC6ADD3B2E5496D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VOKUtilities;
+			target = 7BF6F455B6726E7C85743DC17CAFDD20 /* VOKUtilities */;
+			targetProxy = 6797BB1361056475184CFB3F5406FF58 /* PBXContainerItemProxy */;
+		};
+		3C57D2F7935B8A6C6EB1318796AB5AE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UICKeyChainStore;
+			target = 3259982B4F3ADB4584E54D7A70C980FF /* UICKeyChainStore */;
+			targetProxy = C935D71D1D57C9FE28A821FDB760B7EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		854CB6779389BE60CEEC7F97D49A2DC4 /* MASPreferencesWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				767004AB338A993F7DB72534A2CFF0AE /* MASPreferencesWindow.xib */,
+			);
+			name = MASPreferencesWindow.xib;
+			path = Framework;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0F09218617B76EFF095DF51C162A75C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ED4077304AB1720B21D628EFD7A11F4 /* ILGDynamicObjC.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ILGDynamicObjC/ILGDynamicObjC-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		96EFE557D6C9E0DA7FB17A49139746F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF68ACCFA68F4CEA1B15B89DC645AA72 /* MAKVONotificationCenter.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MAKVONotificationCenter/MAKVONotificationCenter-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		298A133AF86039F34C4A7F0D468BCEFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD372A28496EEE31986BAF53E56E1CEB /* UICKeyChainStore.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UICKeyChainStore/UICKeyChainStore-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A5AF4999ADA259FAC11871A43F93B813 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1595FB80A8544C131F73DBF3C782BCC4 /* DCOTransparentScroller.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DCOTransparentScroller/DCOTransparentScroller-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		29915A707A12A2C46DAA846C396CAB6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		421E8C39AF4097D7E66BFE9EEB4A04F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C4A1876EE6B04A4083E5B382693595F /* MASPreferences.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MASPreferences/MASPreferences-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		661CE797A8B50E558DA9702A2D0E9E2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5C8D9915C241A752F1A1A9FFA0A39EF /* Vokoder.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Vokoder/Vokoder-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E8FBB0CD57FD8DCD04AAFCBB92076350 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A79E3B1BA3BD26CD63D2FDFE84161E38 /* CyndiLauper.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CyndiLauper/CyndiLauper-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		719AC54A22450E0FA6830D04BA31B6D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 487E2D24426FCCB029A220237341E7B6 /* ILGHttpConstants.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ILGHttpConstants/ILGHttpConstants-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A0A2E0A06F06447543D6BBA8789E1790 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF68ACCFA68F4CEA1B15B89DC645AA72 /* MAKVONotificationCenter.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MAKVONotificationCenter/MAKVONotificationCenter-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D9A276E8165F0C6FA07E0A3073C748F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAB6D879177941BA95EFB7932ABED116 /* Pods-TrueColorsTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B23C6F35351918F1E9B39A2C809EE826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ED4077304AB1720B21D628EFD7A11F4 /* ILGDynamicObjC.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ILGDynamicObjC/ILGDynamicObjC-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		412D0E2BEF6511A26696B149D05E573F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1958861CF4597534B1AC399D6F4606FE /* Pods-TrueColors.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E9EA7AF3FC0A3B293D053ECB7851A69D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A79E3B1BA3BD26CD63D2FDFE84161E38 /* CyndiLauper.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CyndiLauper/CyndiLauper-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		79739A95417BF014478956C03E795217 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD372A28496EEE31986BAF53E56E1CEB /* UICKeyChainStore.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UICKeyChainStore/UICKeyChainStore-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D857B8A9483E2DE7053A59AC7E8FE4EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5933CD9A0DAC0519588907B3C7F83940 /* zipzap.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/zipzap/zipzap-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		79BA8038F51BCB42051218913838C57E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C4A1876EE6B04A4083E5B382693595F /* MASPreferences.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MASPreferences/MASPreferences-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		83A231D450E3FDDE5752E26C0B43E730 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 487E2D24426FCCB029A220237341E7B6 /* ILGHttpConstants.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ILGHttpConstants/ILGHttpConstants-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		53A91932E91666A33E0E28482EF00967 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5C8D9915C241A752F1A1A9FFA0A39EF /* Vokoder.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Vokoder/Vokoder-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2397D9E731FB5B56139E556EFC0CD38C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA7CD4A219234E250151C3CBEDC75B77 /* Pods-TrueColorsTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		78F0498F2AF1B86F8B7B7477CD49552F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9DFB0543998835ED222423C4CBE58886 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5933CD9A0DAC0519588907B3C7F83940 /* zipzap.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/zipzap/zipzap-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		47F4F9023BB75B10F07DAA6B248EB1B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1595FB80A8544C131F73DBF3C782BCC4 /* DCOTransparentScroller.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DCOTransparentScroller/DCOTransparentScroller-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E64332DA3D463D12C8B464DADD3287D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40E945B18B6DD5A61CBC2947AAD239EE /* BFColorPickerPopover.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BFColorPickerPopover/BFColorPickerPopover-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CA4F131465F9EC80A985ECD3CFF50214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42FD299E712A65D222D03FF9FA03010B /* VOKUtilities.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/VOKUtilities/VOKUtilities-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6B0409CD4A62EB712BD575EE55B77D5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4C8067FEF275D6E8631E65E60FF9FE0 /* DCOAboutWindow.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DCOAboutWindow/DCOAboutWindow-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C2AAAFAD2D9AD95F556342353EF5389C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4C8067FEF275D6E8631E65E60FF9FE0 /* DCOAboutWindow.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DCOAboutWindow/DCOAboutWindow-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B8370B2E6A08B72E348BCF819A477EE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40E945B18B6DD5A61CBC2947AAD239EE /* BFColorPickerPopover.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BFColorPickerPopover/BFColorPickerPopover-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D78EF48B0F3173A8EFECFE2C804D4354 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42FD299E712A65D222D03FF9FA03010B /* VOKUtilities.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/VOKUtilities/VOKUtilities-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AC41141A590FB76542A6EBABC2C0D83A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 430B3EA637199FCEF88EF59FCDDF24F7 /* Pods-TrueColors.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		99879C6D2CC34DA533EA41E1A1620471 /* Build configuration list for PBXNativeTarget "BFColorPickerPopover" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8370B2E6A08B72E348BCF819A477EE8 /* Debug */,
+				E64332DA3D463D12C8B464DADD3287D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC02AE59B0DCC1367E03651BD0868F72 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78F0498F2AF1B86F8B7B7477CD49552F /* Debug */,
+				29915A707A12A2C46DAA846C396CAB6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D729477EF760E4864C2AA5371E4DB5F /* Build configuration list for PBXNativeTarget "Pods-TrueColorsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2397D9E731FB5B56139E556EFC0CD38C /* Debug */,
+				D9A276E8165F0C6FA07E0A3073C748F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60C8912D4A5645FA900F0DAB58F26E4A /* Build configuration list for PBXNativeTarget "zipzap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DFB0543998835ED222423C4CBE58886 /* Debug */,
+				D857B8A9483E2DE7053A59AC7E8FE4EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0061591617DD871581DFB6607AEE53C3 /* Build configuration list for PBXNativeTarget "MAKVONotificationCenter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96EFE557D6C9E0DA7FB17A49139746F1 /* Debug */,
+				A0A2E0A06F06447543D6BBA8789E1790 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D796A3DA726D8A0C5DFC94A247BDEDEE /* Build configuration list for PBXNativeTarget "Vokoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53A91932E91666A33E0E28482EF00967 /* Debug */,
+				661CE797A8B50E558DA9702A2D0E9E2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C05520A1284C1CBBE395A66CE48A05BF /* Build configuration list for PBXNativeTarget "Pods-TrueColors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				412D0E2BEF6511A26696B149D05E573F /* Debug */,
+				AC41141A590FB76542A6EBABC2C0D83A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E92708ACB50CE2DD9219500C32C07B89 /* Build configuration list for PBXNativeTarget "ILGHttpConstants" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				719AC54A22450E0FA6830D04BA31B6D8 /* Debug */,
+				83A231D450E3FDDE5752E26C0B43E730 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6862C735467DD4C81C81DA9184DCBF8B /* Build configuration list for PBXNativeTarget "MASPreferences" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				421E8C39AF4097D7E66BFE9EEB4A04F8 /* Debug */,
+				79BA8038F51BCB42051218913838C57E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D77EDF633F64E3CC36DB38E3EDC9AAFC /* Build configuration list for PBXNativeTarget "DCOTransparentScroller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5AF4999ADA259FAC11871A43F93B813 /* Debug */,
+				47F4F9023BB75B10F07DAA6B248EB1B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96E8BF138AE25A1E78D6CF6B9A8E70B9 /* Build configuration list for PBXNativeTarget "DCOAboutWindow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B0409CD4A62EB712BD575EE55B77D5F /* Debug */,
+				C2AAAFAD2D9AD95F556342353EF5389C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D3E3FBFDB35DC6A79AD531859B2AFEC /* Build configuration list for PBXNativeTarget "CyndiLauper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9EA7AF3FC0A3B293D053ECB7851A69D /* Debug */,
+				E8FBB0CD57FD8DCD04AAFCBB92076350 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF73E4A92E8D9825ED596E46EA9E8113 /* Build configuration list for PBXNativeTarget "UICKeyChainStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				298A133AF86039F34C4A7F0D468BCEFF /* Debug */,
+				79739A95417BF014478956C03E795217 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D25BA6930540CB15E94ABBAB2C15CF0 /* Build configuration list for PBXNativeTarget "ILGDynamicObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F09218617B76EFF095DF51C162A75C3 /* Debug */,
+				B23C6F35351918F1E9B39A2C809EE826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFEF623AB493671B39040FD1DBA758AE /* Build configuration list for PBXNativeTarget "VOKUtilities" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D78EF48B0F3173A8EFECFE2C804D4354 /* Debug */,
+				CA4F131465F9EC80A985ECD3CFF50214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

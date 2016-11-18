@@ -1,0 +1,28 @@
+{
+  "metrics" : [
+
+  ],
+  "fonts" : [
+
+  ],
+  "colors" : [
+    {
+      "name" : "New Group",
+      "values" : [
+        {
+          "name" : "New Color",
+          "rgba" : "#000000FF"
+        },
+        {
+          "name" : "New Color 2",
+          "rgba" : "#000000FF"
+        },
+        {
+          "name" : "New Color 3",
+          "rgba" : "#000000FF"
+        }
+      ],
+      "rgba" : "#000000FF"
+    }
+  ]
+}

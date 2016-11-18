@@ -1,0 +1,9 @@
+coverage_service: cobertura_xml
+xcodeproj: TrueColors.xcodeproj
+workspace: TrueColors.xcworkspace
+scheme: TrueColors
+output_directory: fastlane/test_output
+ignore:
+  - Pods/*
+  - ../*
+  - CyndiLauper/Models/Generated/*

@@ -1,0 +1,40 @@
+language: objective-c
+osx_image: xcode7.3
+before_install:
+  - echo -e "machine github.com\n login ${CI_USER_TOKEN}" >> ~/.netrc
+before_script:
+  - chmod +x travis/*.sh # Ensure that scripts are executable
+  - "echo \"build_directory: ${TRAVIS_BUILD_DIR}\" >> \".slather.yml\""  # Work around for https://github.com/SlatherOrg/slather/issues/197
+  - "echo \"derived_data_path \\\"${TRAVIS_BUILD_DIR}\\\"\" >> \"fastlane/Scanfile\""
+script: bundle exec scan
+after_success:
+  - bundle exec slather
+  - ./travis/cvr.sh # Upload code coverage to CVR
+env:
+  global:
+  - APPNAME="TrueColors"
+  ################## Secure environment variables ##################
+  # Apple Developer password for user specified as apple_dev_portal_id in the Appfile (FASTLANE_PASSWORD):
+  - FASTLANE_PASSWORD="FIXME"
+  # Passphrase for match certificate repo (MATCH_PASSWORD):
+  - MATCH_PASSWORD="FIXME"
+  # GitHub personal access token for match to use to access the certificate repo (CI_USER_TOKEN)
+  - CI_USER_TOKEN="FIXME"
+  ################## Predefined environment variables for Fastlane ##################
+  # folder containing all fastlane files
+  - FASTLANE_FOLDER="fastlane"
+  # folder name for test output, relative to FASTLANE_FOLDER
+  - TEST_OUTPUT_FOLDER="test_output"
+  # filename for test output, relative to TEST_OUTPUT_FOLDER
+  - TEST_COVERAGE_FILE="cobertura.xml"
+branches:
+  except:
+    - /^[^\/]+\/\d+(?:\.\d+)+\/\d+$/ # This makes travis ignore triggers from pushes from tagging builds of format builds/x.y.z/vvvv
+git:
+  depth: 10000  # For the auto-incrementing build number script to work, we need to clone with a basically-infinite depth.
+cache:
+  - bundler  # After main-repo builds, save the "bundler" (local Ruby gems) stuff to cache for future builds.
+notifications:
+  webhooks:
+    urls:
+      - https://travis.vokal.io/webhook

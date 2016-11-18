@@ -1,0 +1,26 @@
+//
+//  TRUPrefixHeader.pch
+//  TrueColors
+//
+//  Created by Isaac Greenspan on 6/19/15.
+//  Copyright (c) 2015 Vokal. All rights reserved.
+//
+
+#ifndef TrueColors_TRUPrefixHeader_pch
+#define TrueColors_TRUPrefixHeader_pch
+
+#ifdef __OBJC__
+
+#import <Foundation/Foundation.h>
+#import <VOKUtilities/VOKKeyPathHelper.h>
+
+// Define DLOG to log to NSLog when DEBUG is defined
+#ifdef DEBUG
+#   define DLOG(...) NSLog(@"%s:%d %@", __PRETTY_FUNCTION__, __LINE__, [NSString stringWithFormat:@""__VA_ARGS__])
+#else
+#   define DLOG(...) do {} while (NO)
+#endif
+
+#endif // __OBJC__
+
+#endif
