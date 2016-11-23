@@ -9,7 +9,8 @@
 #import "CASLDocumentSerializerZipV1.h"
 
 #import <VOKUtilities/VOKKeyPathHelper.h>
-#import <zipzap.h>
+#import <zipzap/ZZArchive.h>
+#import <zipzap/ZZArchiveEntry.h>
 
 #import "NSFont+CASL.h"
 
