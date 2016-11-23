@@ -8,8 +8,8 @@
 
 #import "CASLDocument.h"
 
-#import <VOKCoreDataManager.h>
-#import <VOKKeyPathHelper.h>
+#import <Vokoder/VOKCoreDataManager.h>
+#import <VOKUtilities/VOKKeyPathHelper.h>
 
 #import "NSManagedObjectModel+CASL.h"
 

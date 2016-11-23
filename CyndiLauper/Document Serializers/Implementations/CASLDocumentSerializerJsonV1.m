@@ -8,8 +8,8 @@
 
 #import "CASLDocumentSerializerJsonV1.h"
 
+#import <Vokoder/VOKCoreDataManager.h>
 #import <VOKUtilities/VOKKeyPathHelper.h>
-#import <VOKCoreDataManager.h>
 
 #import "CASLDocument.h"
 
