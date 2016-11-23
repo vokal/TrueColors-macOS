@@ -456,7 +456,7 @@
 				ADE0ACCCFF5660FFFA1801916F1C6D77 /* Sources */,
 				B444A59F07DCDB92799900ABEFC5942B /* Frameworks */,
 				6891E9A6BC25CD6B2D0C1AE085B91B84 /* Resources */,
-				70047CD69FF5FD5C9ECBCD1562BDEA3F /* Version Incrementing Run Script */,
+				2E6AB101082ADDD62D75FA6AC8528A1A /* Version Incrementing Run Script */,
 				E7DA9C7E2ABA3CD11FDE5BA923D37422 /* [CP] Embed Pods Frameworks */,
 				227456AD2B35DF4361993DA51E14B9B6 /* Sign Sparkle.framework */,
 				21ECCAA10976C6E5465F27034CED74F5 /* [CP] Copy Pods Resources */,
@@ -629,7 +629,7 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PROJECT_DIR}/util/mogenerator.sh\"";
 		};
-		70047CD69FF5FD5C9ECBCD1562BDEA3F /* Version Incrementing Run Script */ = {
+		2E6AB101082ADDD62D75FA6AC8528A1A /* Version Incrementing Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -641,7 +641,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Update build number with number of git commits\nbuildNumber=$(git rev-list HEAD --count)\necho \"Updating build number to $buildNumber\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\nbaseVersion=$(/usr/libexec/PlistBuddy -c \"Print :TRUBaseVersionNumber\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\")\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString $baseVersion ($buildNumber)\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"";
+			shellScript = "\"${SRCROOT}/util/set_version_number.sh\"";
 		};
 		7B4F25A76B5F05527B4CBBF36D6944FA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
