@@ -7,9 +7,8 @@
 
 A Mac app for designers to specify colors, fonts, and metrics in a standardized format for developers to consume.
 
-Download latest build here:
-[https://rink.hockeyapp.net/apps/e2a44471302146ef8a121891f117f358](https://rink.hockeyapp.net/apps/e2a44471302146ef8a121891f117f358)  
-(The app will check for updates its self after initial install.)
+[Download the latest build from HockeyApp](https://rink.hockeyapp.net/apps/e2a44471302146ef8a121891f117f358)  
+(The app will check for updates itself after initial install.)
 
 ## CyndiLauper
 A Cocoa library for handling `.truecolors` files and the data contained therein.  To install
