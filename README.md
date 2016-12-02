@@ -7,6 +7,9 @@
 
 A Mac app for designers to specify colors, fonts, and metrics in a standardized format for developers to consume.
 
+[Download the latest build from HockeyApp](https://rink.hockeyapp.net/apps/e2a44471302146ef8a121891f117f358)  
+(The app will check for updates itself after initial install.)
+
 ## CyndiLauper
 A Cocoa library for handling `.truecolors` files and the data contained therein.  To install
 it, simply add the following line to your Podfile:
@@ -32,7 +35,7 @@ TrueColors and the included CyndiLauper library are both released under the MIT 
 
 ## Related Projects
 - [DevsJustWantToHaveFun](https://github.com/vokal/DevsJustWantToHaveFun-macOS): A Mac tool to generate iOS code from the design elements in a `.truecolors` file.
-- [android-res-gen](https://github.com/vokal/android-res-gen): Automatic resource exporter plugin for android projects, including generating styles from a `.truecolors` file.
+- [TrueColors-Android](https://github.com/vokal/TrueColors-Android): Gradle plugin to generate resources for android projects, including  styles, colors, and dimensions from a `.truecolors` file.
 - [TrueColors-LESS](https://github.com/vokal/TrueColors-LESS): A tool for the Web team to use to generate whatever they need from `.truecolors` files.
 
 
